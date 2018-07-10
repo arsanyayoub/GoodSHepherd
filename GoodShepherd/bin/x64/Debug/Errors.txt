@@ -1,0 +1,608 @@
+
+
+3/22/2018  =  7:42 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  7:42 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  7:42 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  7:43 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  7:43 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  8:08 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  8:09 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  8:11 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  8:13 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  8:14 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  10:33 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_MainForm
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Tab_InventoryOptions_TabClosed
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  10:35 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/22/2018  =  10:45 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  9:55 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:34 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:34 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:37 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:38 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:38 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:47 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+3/23/2018  =  10:51 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'ID'.
+The statement has been terminated.
+============================================================================
+
+
+3/23/2018  =  10:51 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'ID'.
+The statement has been terminated.
+============================================================================
+
+
+3/23/2018  =  10:51 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'ID'.
+The statement has been terminated.
+============================================================================
+
+
+3/24/2018  =  7:04 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Street", column 'Area_ID'.
+The statement has been terminated.
+============================================================================
+
+
+3/24/2018  =  7:04 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Street", column 'Area_ID'.
+The statement has been terminated.
+============================================================================
+
+
+3/24/2018  =  7:24 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Row insertion not supported by this data source.
+============================================================================
+
+
+3/24/2018  =  7:24 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Row insertion not supported by this data source.
+============================================================================
+
+
+3/24/2018  =  7:24 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Row insertion not supported by this data source.
+============================================================================
+
+
+3/24/2018  =  7:24 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Row insertion not supported by this data source.
+============================================================================
+
+
+3/24/2018  =  8:15 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Meetings
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_Meetings_Load
+		The Error Is Invalid object name 'VIW_MeetingsData'.
+============================================================================
+
+
+3/24/2018  =  9:42 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Area_TBL_City". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'City_ID'.
+The statement has been terminated.
+============================================================================
+
+
+3/24/2018  =  9:42 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Area_TBL_City". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'City_ID'.
+The statement has been terminated.
+============================================================================
+
+
+4/13/2018  =  5:31 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Input string was not in a correct format.
+============================================================================
+
+
+4/13/2018  =  5:31 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Input string was not in a correct format.
+============================================================================
+
+
+4/13/2018  =  6:56 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Index was outside the bounds of the array.
+============================================================================
+
+
+4/13/2018  =  6:56 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Index was outside the bounds of the array.
+============================================================================
+
+
+4/13/2018  =  6:59 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Index was outside the bounds of the array.
+============================================================================
+
+
+4/13/2018  =  6:59 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Index was outside the bounds of the array.
+============================================================================
+
+
+4/13/2018  =  8:09 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_DBBackupRestore
+	THE SUB NAME THAT HAS OCCURED THE ERROR: query
+		The Error Is Cannot open backup device 'C:\Users\Maichael\Desktop\GoodShepherd1222.Bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally.
+============================================================================
+
+
+4/13/2018  =  8:10 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_DBBackupRestore
+	THE SUB NAME THAT HAS OCCURED THE ERROR: query
+		The Error Is Invalid zero-length device name. Reissue the BACKUP statement with a valid device name.
+RESTORE DATABASE is terminating abnormally.
+User does not have permission to alter database 'GoodShepherd', the database does not exist, or the database is not in a state that allows access checks.
+ALTER DATABASE statement failed.
+Changed database context to 'master'.
+Nonqualified transactions are being rolled back. Estimated rollback completion: 100%.
+Changed database context to 'master'.
+============================================================================
+
+
+4/13/2018  =  8:10 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_DBBackupRestore
+	THE SUB NAME THAT HAS OCCURED THE ERROR: query
+		The Error Is User does not have permission to alter database 'GoodShepherd', the database does not exist, or the database is not in a state that allows access checks.
+ALTER DATABASE statement failed.
+Cannot drop the database 'GoodShepherd', because it does not exist or you do not have permission.
+Invalid zero-length device name. Reissue the BACKUP statement with a valid device name.
+RESTORE DATABASE is terminating abnormally.
+User does not have permission to alter database 'GoodShepherd', the database does not exist, or the database is not in a state that allows access checks.
+ALTER DATABASE statement failed.
+Changed database context to 'master'.
+============================================================================
+
+
+4/14/2018  =  9:21 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Meetings
+	THE SUB NAME THAT HAS OCCURED THE ERROR: fIsDataChanged
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+4/14/2018  =  9:21 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Meetings
+	THE SUB NAME THAT HAS OCCURED THE ERROR: fIsDataChanged
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+4/14/2018  =  9:30 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+4/23/2018  =  8:35 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_User
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_User_Load
+		The Error Is Invalid object name 'GoodShepherd.dbo.TBL_Users'.
+============================================================================
+
+
+4/23/2018  =  8:37 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is Invalid column name 'Code'.
+Invalid column name 'AccessLeve'.
+Invalid column name 'InventoryName'.
+Invalid column name 'Department'.
+============================================================================
+
+
+4/23/2018  =  8:37 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is Invalid column name 'Code'.
+Invalid column name 'AccessLeve'.
+Invalid column name 'InventoryName'.
+Invalid column name 'Department'.
+============================================================================
+
+
+4/23/2018  =  8:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is Invalid column name 'Department'.
+============================================================================
+
+
+4/23/2018  =  8:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is Invalid column name 'Department'.
+============================================================================
+
+
+4/23/2018  =  8:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is Invalid column name 'Department'.
+============================================================================
+
+
+4/23/2018  =  8:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is Invalid column name 'Department'.
+============================================================================
+
+
+4/23/2018  =  8:41 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is InventoryName
+============================================================================
+
+
+4/23/2018  =  8:41 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Users
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFind
+		The Error Is InventoryName
+============================================================================
+
+
+4/23/2018  =  10:54 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Cross-thread operation not valid: Control 'FRM_Waiting' accessed from a thread other than the thread it was created on.
+============================================================================
+
+
+4/23/2018  =  10:56 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Cross-thread operation not valid: Control 'FRM_Waiting' accessed from a thread other than the thread it was created on.
+============================================================================
+
+
+4/23/2018  =  11:18 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Cross-thread operation not valid: Control 'FRM_Waiting' accessed from a thread other than the thread it was created on.
+============================================================================
+
+
+4/23/2018  =  11:22 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Cross-thread operation not valid: Control 'FRM_Waiting' accessed from a thread other than the thread it was created on.
+============================================================================
+
+
+4/23/2018  =  11:26 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/23/2018  =  11:31 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/23/2018  =  11:35 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Cross-thread operation not valid: Control 'ProgressBar1' accessed from a thread other than the thread it was created on.
+============================================================================
+
+
+4/23/2018  =  11:47 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/23/2018  =  11:52 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/23/2018  =  11:55 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/23/2018  =  11:57 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/24/2018  =  12:04 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/24/2018  =  12:07 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+4/24/2018  =  12:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is String was not recognized as a valid DateTime.
+============================================================================
+
+
+4/24/2018  =  12:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is String was not recognized as a valid DateTime.
+============================================================================
+
+
+4/24/2018  =  12:24 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is String was not recognized as a valid DateTime.
+============================================================================
+
+
+4/24/2018  =  12:36 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\Maichael\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+5/11/2018  =  9:43 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is PersType_ID
+============================================================================
+
+
+5/11/2018  =  9:43 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is PersType_ID
+============================================================================
+
+
+5/11/2018  =  9:43 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is PersType_ID
+============================================================================
+
+
+5/11/2018  =  9:43 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is PersType_ID
+============================================================================
+
+
+5/11/2018  =  9:48 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:49 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:50 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:50 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:50 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:52 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:53 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:55 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+5/11/2018  =  9:58 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
