@@ -606,3 +606,27 @@ Invalid column name 'Department'.
 	THE SUB NAME THAT HAS OCCURED THE ERROR: sNewRecord
 		The Error Is Object reference not set to an instance of an object.
 ============================================================================
+
+
+10/26/2018  =  10:00 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_DBBackupRestore
+	THE SUB NAME THAT HAS OCCURED THE ERROR: query
+		The Error Is Cannot open backup device 'C:\Users\arsany\Desktop\GoodShepherd.Bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally.
+============================================================================
+
+
+10/26/2018  =  10:01 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_DBBackupRestore
+	THE SUB NAME THAT HAS OCCURED THE ERROR: query
+		The Error Is The file 'E:\GoodShepherd\GoodShephed2.mdf' cannot be overwritten.  It is being used by database 'GoodShepherd2'.
+File 'GoodShephed2' cannot be restored to 'E:\GoodShepherd\GoodShephed2.mdf'. Use WITH MOVE to identify a valid location for the file.
+The file 'E:\GoodShepherd\GoodShephed2_log.ldf' cannot be overwritten.  It is being used by database 'GoodShepherd2'.
+File 'GoodShephed2_log' cannot be restored to 'E:\GoodShepherd\GoodShephed2_log.ldf'. Use WITH MOVE to identify a valid location for the file.
+Problems were identified while planning for the RESTORE statement. Previous messages provide details.
+RESTORE DATABASE is terminating abnormally.
+User does not have permission to alter database 'GoodShepherd', the database does not exist, or the database is not in a state that allows access checks.
+ALTER DATABASE statement failed.
+Changed database context to 'master'.
+Changed database context to 'master'.
+============================================================================

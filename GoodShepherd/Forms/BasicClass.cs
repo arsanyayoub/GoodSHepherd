@@ -45,6 +45,7 @@ public class BasicClass
             vPath = "SOFTWARE\\ProVision";
             vRegVer = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(vPath);
             vDecryptedText = vRegVer.GetValue(pRegKey).ToString();
+            //vDecryptedText = "rz6hrkSLFbceHYh20294wkDXx+u/olCta5b6TAodMy2rlcBvg4nFgIFb9cN4KzGOi0FbTfjz0sir1ZQDx6TYTB0wTdmbqCcdzN14gEFfWWk3rtptHHFSB1A5EvCJVDgEmdT4fa64KSM2U1C7pUIcZrjzqcdcLaFCTFr/DjUXQS8=";
             vConectionString = sDecrypt(vDecryptedText);
 
             //vConectionString = "Data Source=EIME00/EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";

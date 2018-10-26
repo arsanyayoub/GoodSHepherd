@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="GoodShepherd.exe" version="1.0.0.18" publicKeyToken="0000000000000000" language="ar" processorArchitecture="amd64" type="win32" />
+  <asmv1:assemblyIdentity name="GoodShepherd.exe" version="1.0.0.20" publicKeyToken="0000000000000000" language="ar" processorArchitecture="amd64" type="win32" />
   <description asmv2:iconFile="lost_sheep3_by_joeatta78_d6qlsbf_F7X_12.ico" asmv2:publisher="GoodShepherd" asmv2:product="GoodShepherd" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -51,7 +51,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TjdM5Jdv461Tl2ysBqnU7POxKxA=</dsig:DigestValue>
+        <dsig:DigestValue>VZZIwoDCn7ziYjbZD0QSMQyvBQs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -451,13 +451,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="GoodShepherd.pdb" size="1041920">
+  <file name="GoodShepherd.pdb" size="1074688">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>iiE+FIW27EuY8Fj0DM3NBVkFIcQ=</dsig:DigestValue>
+      <dsig:DigestValue>4gEmVMKEbM0FCCA/cPsLlxsh8rU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="lost_sheep3_by_joeatta78_d6qlsbf_F7X_12.ico" size="106440">
