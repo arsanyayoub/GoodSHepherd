@@ -12,6 +12,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using GoodShepherd;
+using Infragistics.Win.UltraWinGrid;
 
 namespace GoodShepherd
 {
@@ -328,8 +329,8 @@ namespace GoodShepherd
 
                     if (TXT_PicPath.Text == "")
                     {
-                        vSqlCommand.CommandText = "INSERT INTO [TBL_User]" + "(        [Code]         ,            [UserName]                 ,         [Password]                    ,           [InventoryName]            , [Department]  , LastUpdate,             MachineName                ,                    ProcessID                      ) " + "\n" +
-                                                  "VALUES                 " + "( '" + vCurrentCode + "','" + this.TXT_UserName.Text.Trim() + "','" + this.TXT_Password.Text.Trim() + "','" + this.CMX_ChurchName.Value + "'," + vdeptId + ", getDate() ,'" + Environment.MachineName.Trim() + "','" + Process.GetCurrentProcess().Id.ToString() + "') ";
+                        vSqlCommand.CommandText = "INSERT INTO [TBL_User]" + "(  [UserName]                             ,         [Password]                    ,           [InventoryName]            , [Department]  , LastUpdate,             MachineName                ,                    ProcessID                      ) " + "\n" +
+                                                  "VALUES                 " + "( '" + this.TXT_UserName.Text.Trim() + "','" + this.TXT_Password.Text.Trim() + "','" + this.CMX_ChurchName.Value + "'," + vdeptId + ", getDate() ,'" + Environment.MachineName.Trim() + "','" + Process.GetCurrentProcess().Id.ToString() + "') ";
                         sqlConnection1.Open();
                     }
                     else
@@ -350,7 +351,7 @@ namespace GoodShepherd
 
                     vSQLReader.Close();
                     sqlConnection1.Close();
-
+                    sSaveSystemModules();
                     return true;
                 }
                 catch (Exception ex)
@@ -385,15 +386,15 @@ namespace GoodShepherd
                     vPersonStatment = "  Update [TBL_User] Set                                 " + "\n" +
                         "  UserName         ='" + Strings.Trim(TXT_UserName.Text)           + "'" + "\n" +
                         " ,Password         ='" + Strings.Trim(TXT_Password.Text)           + "'" + "\n" +
-                        " ,InventoryName    ='" + CMX_ChurchName.Value                   + "'" + "\n" +
-                        " ,Department       ='" + CMX_Role.Value                      + "'" + "\n" +
+                        " ,Church_ID        ='" + CMX_ChurchName.Value + "'" + "\n" +
+                        " ,Role_ID       ='" + CMX_Role.Value + "'" + "\n" +
                         //" ,Picture          =   @image                                          " + "\n" +
                         " ,LastUpdate       =   GetDate()                                       " + "\n" +
                         " ,ProcessID        ='" + Process.GetCurrentProcess().Id.ToString() + "'" + "\n" +
                         " ,MachineName      ='" + Strings.Trim(System.Environment.MachineName) + "'";
 
 
-                    vSqlCommand.CommandText = vPersonStatment + " Where Code ='" + vCurrentCode + "'";
+                    vSqlCommand.CommandText = vPersonStatment + " Where IDUser ='" + vCurrentCode + "'";
 
                     sqlConnection1.Open();
 
@@ -403,7 +404,7 @@ namespace GoodShepherd
 
                     vSQLReader.Close();
                     sqlConnection1.Close();
-
+                    sSaveSystemModules();
                     return true;
                 }
                 catch (Exception ex)
@@ -593,14 +594,7 @@ namespace GoodShepherd
                         CMX_ChurchName.Focus();
                         return false;
                     }
-                    if (CMX_ChurchName.IsItemInList() == false)
-                    {
-                        STS_Message.Items["Msg"].Text = "من فضلك اختار الفرع من القائمة الموجودة";
-                        STS_Message.Items["Msg"].ForeColor = Color.Red;
-                        Timer_MSgCleaner.Start();
-                        CMX_ChurchName.Focus();
-                        return false;
-                    }
+                   
                     if (CMX_Role.Text == "")
                     {
                         STS_Message.Items["Msg"].Text = "من فضلك اختار القسم";
@@ -609,14 +603,7 @@ namespace GoodShepherd
                         CMX_Role.Focus();
                         return false;
                     }
-                    if (CMX_Role.IsItemInList() == false)
-                    {
-                        STS_Message.Items["Msg"].Text = "من فضلك اختار القسم من القائمة الموجودة";
-                        STS_Message.Items["Msg"].ForeColor = Color.Red;
-                        Timer_MSgCleaner.Start();
-                        CMX_Role.Focus();
-                        return false;
-                    }
+                   
                 }
                 catch (Exception ex)
                 {
@@ -723,7 +710,7 @@ namespace GoodShepherd
                 vSqlCommand.CommandText =  " With MyItems as                                         " + "\n" +
                                            " (SELECT *                                               " + "\n" +
                                            ",ROW_NUMBER() over(Order  By [TBL_User].IDUser) RecPos  " + "\n" +
-                                           " FROM [GoodShepherd].[dbo].[TBL_User])                     " + "\n" +
+                                           " FROM [dbo].[TBL_User])                     " + "\n" +
                                            " Select MAX(RecPos)as Maxx From MyItems                  ";
 
                     sqlConnection1.Open();
@@ -770,7 +757,7 @@ namespace GoodShepherd
                                                 " With MyItems as                                                                                    " + "\n" +
                                                 " (SELECT *                                                 " + "\n" +
                                                 ", ROW_NUMBER() over(Order  By [TBL_User].IDUser) RecPos                                            " + "\n" +
-                                                " FROM [GoodShepherd].[dbo].[TBL_User])                                                                " + "\n" +
+                                                " FROM [dbo].[TBL_User])                                                                " + "\n" +
                                                 " Select * From MyItems                                                                              " + "\n" +
                                                 " WHERE 1=1                                                                                          " + "\n" +
                                                 vWhereStmt;
@@ -788,10 +775,12 @@ namespace GoodShepherd
                             if (vSQLReader["IDUser"] != System.DBNull.Value)
                             {
                                 TXT_UserID.Text = vSQLReader["IDUser"].ToString().Trim();
+                                vCurrentCode = vSQLReader["IDUser"].ToString().Trim();
                             }
                             else
                             {
                                 TXT_UserID.Text = "";
+                                vCurrentCode = "";
                             }
 
 
@@ -869,6 +858,7 @@ namespace GoodShepherd
                         sqlConnection1.Close();
                         vResult = true;
                         vFormMode = "N";
+                        sQueryForms();
                     }
 
 
@@ -1042,9 +1032,248 @@ namespace GoodShepherd
             }
 
 
+        #region "HANDLE USER CONTROLS "
+            private void sQueryForms()
+            {
+                SqlConnection sqlConnection1 = new SqlConnection(BasicClass.vConectionString);
+                SqlCommand vSqlCommand = new SqlCommand();
+                try
+                {
+                    SqlDataReader vSQLReader;
+                    vSqlCommand.Connection = sqlConnection1;
+                    string vWhereStmt = "";
+                    vSqlCommand.CommandText = "\n" +
+                                            "SELECT     System_Forms.Code, System_Forms.DescA									" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.IsEnabled,'N') AS IsEnabled					" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.AllowQuery,'N') AS AllowQuery					" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.AllowInsert,'N')  AS AllowInsert				" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.AllowUpdate,'N')  AS AllowUpdate				" + "\n" +
+                                            "		   ,ISNULL (User_System_Forms.AllowDelete , 'N') AS AllowDelete				" + "\n" +
+                                            "          ,       Case IsNull(USR_ID, '')"  + "\n" +
+                                            "                 When '' then 'NI'"  + "\n" +
+                                            "                 else 'N' "  + "\n" +
+                                            "                 End  DML " + "\n" +
+                                            "FROM				System_Forms													" + "\n" +
+                                            "LEFT OUTER JOIN    User_System_Forms												" + "\n" +
+                                            "ON					System_Forms.Code = User_System_Forms.SYS_FRM_Code				" + "\n" +
+                                            "AND				User_System_Forms.USR_ID = "+ TXT_UserID.Text +"									" + "\n";
+
+                    sqlConnection1.Open();
+                    vSQLReader = vSqlCommand.ExecuteReader();
+
+                    if (vSQLReader.HasRows == true)
+                    {
+                        DS_System_Modules.Rows.Clear();
+                        int vRowCounter = 0;
+                        while (vSQLReader.Read())
+                        {
+                            //to fill all field by found to next adn previous
+                            DS_System_Modules.Rows.SetCount(vRowCounter + 1);
+
+                            if (vSQLReader["Code"] != System.DBNull.Value) { DS_System_Modules.Rows[vRowCounter]["Code"] = vSQLReader["Code"].ToString().Trim(); } else { DS_System_Modules.Rows[vRowCounter]["Code"] = 0; }
+                            if (vSQLReader["DescA"] != System.DBNull.Value) { DS_System_Modules.Rows[vRowCounter]["DescA"] = vSQLReader["DescA"].ToString().Trim(); } else { DS_System_Modules.Rows[vRowCounter]["DescA"] = ""; }
+                            if (vSQLReader["IsEnabled"] != System.DBNull.Value) {
+                                if (vSQLReader["IsEnabled"].ToString().Trim() == "Y")
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["IsEnabled"] = true;
+                                }
+                                else
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["IsEnabled"] = false;
+                                }
+                            } else {
+                                DS_System_Modules.Rows[vRowCounter]["IsEnabled"] = false; 
+                            }
+                            if (vSQLReader["AllowQuery"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowQuery"].ToString().Trim() == "Y")
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowQuery"] = true;
+                                }
+                                else
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowQuery"] = false;
+                                }
+                            }
+                            else
+                            {
+                                DS_System_Modules.Rows[vRowCounter]["AllowQuery"] = false;
+                            }
+
+                            if (vSQLReader["AllowInsert"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowInsert"].ToString().Trim() == "Y")
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowInsert"] = true;
+                                }
+                                else
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowInsert"] = false;
+                                }
+                            }
+                            else
+                            {
+                                DS_System_Modules.Rows[vRowCounter]["AllowInsert"] = false;
+                            }
+
+                            if (vSQLReader["AllowUpdate"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowUpdate"].ToString().Trim() == "Y")
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowUpdate"] = true;
+                                }
+                                else
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowUpdate"] = false;
+                                }
+                            }
+                            else
+                            {
+                                DS_System_Modules.Rows[vRowCounter]["AllowUpdate"] = false;
+                            }
+
+                            if (vSQLReader["AllowDelete"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowDelete"].ToString().Trim() == "Y")
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowDelete"] = true;
+                                }
+                                else
+                                {
+                                    DS_System_Modules.Rows[vRowCounter]["AllowDelete"] = false;
+                                }
+                            }
+                            else
+                            {
+                                DS_System_Modules.Rows[vRowCounter]["AllowDelete"] = false;
+                            }
+
+                            if (vSQLReader["DML"] != System.DBNull.Value) { DS_System_Modules.Rows[vRowCounter]["DML"] = vSQLReader["DML"].ToString().Trim(); } else { DS_System_Modules.Rows[vRowCounter]["DML"] = "NI"; }
+                            
+                            vRowCounter += 1;
+                        }
+                        vSQLReader.Close();
+                        sqlConnection1.Close();
+                        GRD_Forms.DataSource = DS_System_Modules;
+                        GRD_Forms.DataBind();
+                        GRD_Forms.Refresh();
+                        GRD_Forms.UpdateData();
+                       
+                    }
 
 
-            
+                }
+                catch (Exception ex)
+                {
+                    
+                    ExceptionHandler.HandleException(ex.Message,this.Name, "sControlForm");
+                }
+            }
+            private void GRD_Forms_CellChange(object sender, Infragistics.Win.UltraWinGrid.CellEventArgs e)
+            {
+
+                if (vFormMode == "NI")
+                {
+                    vFormMode = "I";
+                }
+                else if (vFormMode == "N")
+                {
+                    vFormMode = "U";
+                }
+                if (GRD_Forms.ActiveRow != null)
+                {
+                    if (GRD_Forms.ActiveRow.Cells["Code"].Value != null)
+                    {
+                        if (GRD_Forms.ActiveRow.Cells["Code"].Value.ToString() != "")
+                        {
+                            if (GRD_Forms.ActiveRow.Cells["DML"].Value.ToString() == "NI")
+                            {
+                                GRD_Forms.ActiveRow.Cells["DML"].Value = "I";
+                            }
+                            else if (GRD_Forms.ActiveRow.Cells["DML"].Value.ToString() == "N")
+                            {
+                                GRD_Forms.ActiveRow.Cells["DML"].Value = "U";
+                            }
+
+                        }
+                    }
+                }
+
+            }
+
+            private void sSaveSystemModules()
+            {
+                // AR 20-11-2018
+                try
+                {
+                    GRD_Forms.PerformAction(UltraGridAction.ExitEditMode);
+                    long rowsAffected = 0;
+                    string vIsEnabled = "";
+                    string vQuery = "";
+                    string vUpdate = "";
+                    string vInsert = "";
+                    string vDelete = "";
+                    string vSysStatment = "";
+                    foreach (UltraGridRow vCurrRow in GRD_Forms.Rows)
+                    {
+                        if (vCurrRow.Cells["IsEnabled"].Value.ToString() == "True")
+                            vIsEnabled = "Y";
+                        else if (vCurrRow.Cells["IsEnabled"].Value.ToString() == "False")
+                            vIsEnabled = "N";
+                        if (vCurrRow.Cells["AllowQuery"].Value.ToString() == "True")
+                            vQuery = "Y";
+                        else if (vCurrRow.Cells["AllowQuery"].Value.ToString() == "False")
+                            vQuery = "N";
+                        if (vCurrRow.Cells["AllowInsert"].Value.ToString() == "True")
+                            vInsert = "Y";
+                        else if (vCurrRow.Cells["AllowInsert"].Value.ToString() == "False")
+                            vInsert = "N";
+                        if (vCurrRow.Cells["AllowUpdate"].Value.ToString() == "True")
+                            vUpdate = "Y";
+                        else if (vCurrRow.Cells["AllowUpdate"].Value.ToString() == "False")
+                            vUpdate = "N";
+                        if (vCurrRow.Cells["AllowDelete"].Value.ToString() == "True")
+                            vDelete = "Y";
+                        else if (vCurrRow.Cells["AllowDelete"].Value.ToString() == "False")
+                            vDelete = "N";
+
+                        if (vCurrRow.Cells["DML"].Value == "I")
+                        {
+                            vSysStatment += "INSERT INTO [User_System_Forms]" + "                 ([SYS_FRM_Code]                        , [USR_ID]                                  ,      [IsEnabled]         ,     [AllowQuery]      ,  [AllowInsert]    ,   [AllowUpdate]    ,   [AllowDelete]  ) VALUES" + "\n" +
+                                                                            " ('" + (vCurrRow.Cells["Code"].Value.ToString()) + "','" + (TXT_UserID.Text.ToString()) + "','" + vIsEnabled + "','" + vQuery + "','" + vInsert + "'  ,'" + vUpdate + "'   ,'" + vDelete + "' )";
+                           
+
+
+                        }
+                        else if (vCurrRow.Cells["DML"].Value == "U")
+                        {
+                            vSysStatment += " UPDATE [User_System_Forms] SET " + "        [IsEnabled] = '" + vIsEnabled + "'" + "       ,[AllowQuery] = '" + vQuery + "'" + "       ,[AllowInsert] = '" + vInsert + "'" + "       ,[AllowUpdate] = '" + vUpdate + "'" + "       ,[AllowDelete] = '" + vDelete + "'" + " WHERE  [SYS_FRM_Code] = '" + (vCurrRow.Cells["Code"].Value.ToString()) + "' " + " And    [USR_ID] = '" + TXT_UserID.Text.ToString() + "'";
+                         
+
+                        }
+
+                      
+
+                    }
+                    rowsAffected = BasicClass.fDMLData(vSysStatment, this.Name);
+                    if (rowsAffected > 0)
+                    {
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    
+                    ExceptionHandler.HandleException(ex.Message,this.Name , "sSaveSystemModules");
+                }
+                
+            }
+
+        #endregion
+
+           
+
+
 
     }
 }

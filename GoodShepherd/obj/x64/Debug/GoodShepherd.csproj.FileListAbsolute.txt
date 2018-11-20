@@ -134,3 +134,4 @@ D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.csproj.Generate
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.exe.licenses
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.exe.manifest
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.application
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\GoodShepherd.exe.config

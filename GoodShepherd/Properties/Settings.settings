@@ -5,10 +5,10 @@
     <Setting Name="GoodShepherdConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=DESKTOP-ECH3CV8\MAICHAEL;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=3112005&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=ARCI;Initial Catalog=GoodShepherd2;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=DESKTOP-ECH3CV8\MAICHAEL;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=3112005</Value>
+      <Value Profile="(Default)">Data Source=ARCI;Initial Catalog=GoodShepherd2;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4</Value>
     </Setting>
   </Settings>
 </SettingsFile>
