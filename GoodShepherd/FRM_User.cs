@@ -44,12 +44,12 @@ namespace GoodShepherd
 
                 try
                 {
-                    sEnableOptions();
+                  
 
                     GetMaxRec();
 
                     CheckPosition();
-
+                    EnableOptions();
                     //sNew();
 
 
@@ -1203,7 +1203,6 @@ namespace GoodShepherd
 
             private void sSaveSystemModules()
             {
-                // AR 20-11-2018
                 try
                 {
                     GRD_Forms.PerformAction(UltraGridAction.ExitEditMode);
@@ -1267,6 +1266,121 @@ namespace GoodShepherd
                     ExceptionHandler.HandleException(ex.Message,this.Name , "sSaveSystemModules");
                 }
                 
+            }
+            private void EnableOptions()
+            {
+                SqlConnection sqlConnection1 = new SqlConnection(BasicClass.vConectionString);
+                SqlCommand vSqlCommand = new SqlCommand();
+                try
+                {
+                    SqlDataReader vSQLReader;
+                    vSqlCommand.Connection = sqlConnection1;
+                    string vWhereStmt = "";
+                    vSqlCommand.CommandText = "\n" +
+                                            "SELECT     System_Forms.Code, System_Forms.DescA									" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.IsEnabled,'N') AS IsEnabled					" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.AllowQuery,'N') AS AllowQuery					" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.AllowInsert,'N')  AS AllowInsert				" + "\n" +
+                                            "		   , ISNULL(User_System_Forms.AllowUpdate,'N')  AS AllowUpdate				" + "\n" +
+                                            "		   ,ISNULL (User_System_Forms.AllowDelete , 'N') AS AllowDelete				" + "\n" +
+                                            "FROM				System_Forms													" + "\n" +
+                                            "LEFT OUTER JOIN    User_System_Forms												" + "\n" +
+                                            "ON					System_Forms.Code = User_System_Forms.SYS_FRM_Code				" + "\n" +
+                                            "AND				User_System_Forms.USR_ID = " + BasicClass.vUsrID + "									" + "\n" +
+                                            "AND				User_System_Forms.SYS_FRM_Code = '" + this.Name + "'									" + "\n";
+
+                    sqlConnection1.Open();
+                    vSQLReader = vSqlCommand.ExecuteReader();
+
+                    if (vSQLReader.HasRows == true)
+                    {
+                        while (vSQLReader.Read())
+                        {
+                            //to fill all field by found to next adn previous
+                            
+                            if (vSQLReader["AllowQuery"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowQuery"].ToString().Trim() == "Y")
+                                {
+                                    Toolbar_Options.Tools["BTN_Previous"].SharedProps.Enabled = true;
+                                    Toolbar_Options.Tools["BTN_Next"].SharedProps.Enabled = true;
+                                    Toolbar_Options.Tools["BTN_Firest"].SharedProps.Enabled = true;
+                                    Toolbar_Options.Tools["BTN_last"].SharedProps.Enabled = true;
+                                }
+                                else
+                                {
+                                    Toolbar_Options.Tools["BTN_Previous"].SharedProps.Enabled = false;
+                                    Toolbar_Options.Tools["BTN_Next"].SharedProps.Enabled = false;
+                                    Toolbar_Options.Tools["BTN_Firest"].SharedProps.Enabled = false;
+                                    Toolbar_Options.Tools["BTN_last"].SharedProps.Enabled = false;
+                                }
+                            }
+                            else
+                            {
+                                Toolbar_Options.Tools["BTN_Previous"].SharedProps.Enabled = false;
+                                Toolbar_Options.Tools["BTN_Next"].SharedProps.Enabled = false;
+                            }
+
+                            if (vSQLReader["AllowInsert"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowInsert"].ToString().Trim() == "Y")
+                                {
+                                    Toolbar_Options.Tools["BTN_New"].SharedProps.Enabled = true;
+                                }
+                                else
+                                {
+                                    Toolbar_Options.Tools["BTN_New"].SharedProps.Enabled = false;
+                                }
+                            }
+                            else
+                            {
+                                Toolbar_Options.Tools["BTN_New"].SharedProps.Enabled = false;
+                            }
+
+                            if (vSQLReader["AllowUpdate"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowUpdate"].ToString().Trim() == "Y")
+                                {
+
+                                    Toolbar_Options.Tools["BTN_Save"].SharedProps.Enabled = true;
+                                }
+                                else
+                                {
+                                    Toolbar_Options.Tools["BTN_Save"].SharedProps.Enabled = false;
+                                }
+                            }
+                            else
+                            {
+                                Toolbar_Options.Tools["BTN_Save"].SharedProps.Enabled = false;
+                            }
+
+                            if (vSQLReader["AllowDelete"] != System.DBNull.Value)
+                            {
+                                if (vSQLReader["AllowDelete"].ToString().Trim() == "Y")
+                                {
+                                    Toolbar_Options.Tools["BTN_Delete"].SharedProps.Enabled = true;
+                                }
+                                else
+                                {
+                                    Toolbar_Options.Tools["BTN_Delete"].SharedProps.Enabled = false;
+                                }
+                            }
+                            else
+                            {
+                                Toolbar_Options.Tools["BTN_Delete"].SharedProps.Enabled = false;
+                            }
+
+                        }
+                        vSQLReader.Close();
+                        sqlConnection1.Close();
+                        
+                    }
+                }
+                catch (Exception ex)
+                {
+                    
+                    ExceptionHandler.HandleException(ex.Message,this.Name ,"EnableOptions");
+                }
             }
 
         #endregion

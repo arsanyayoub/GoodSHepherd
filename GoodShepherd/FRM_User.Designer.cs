@@ -38,14 +38,14 @@
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("VIW_Church", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn11 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("CityDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Area_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn14 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Street_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn16 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn25 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn26 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn27 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("CityDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn28 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Area_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn29 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn30 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Street_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn31 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn32 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
@@ -78,6 +78,36 @@
             Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_User));
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand2 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Code");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("DescA");
+            Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("IsEnabled");
+            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowQuery");
+            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowInsert");
+            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowUpdate");
+            Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowDelete");
+            Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance46 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn24 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("DML");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn1 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Code");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn2 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("DescA");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn3 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("IsEnabled");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn4 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowQuery");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn5 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowInsert");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn6 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowUpdate");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn7 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowDelete");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn8 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML");
             Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar1 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("                                      ");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Firest");
@@ -107,36 +137,6 @@
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool4 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Last");
             Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("                                      ");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_User));
-            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand2 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn17 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Code");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn18 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("DescA");
-            Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn19 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("IsEnabled");
-            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn20 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowQuery");
-            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn21 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowInsert");
-            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn22 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowUpdate");
-            Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn23 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AllowDelete");
-            Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance46 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("DML");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn1 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Code");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn2 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("DescA");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn3 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("IsEnabled");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn4 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowQuery");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn5 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowInsert");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn6 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowUpdate");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn7 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("AllowDelete");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn8 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML");
             this.Timer_MSgCleaner = new System.Windows.Forms.Timer(this.components);
             this.BTN_ClearPic = new Telerik.WinControls.UI.RadButton();
             this.BTN_LoadPic = new Telerik.WinControls.UI.RadButton();
@@ -150,7 +150,6 @@
             this.CMX_Role = new Infragistics.Win.UltraWinGrid.UltraCombo();
             this.TXT_UserID = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.TXT_PicPath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.Toolbar_Options = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
             this._panel2_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._panel2_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._panel2_Toolbars_Dock_Area_Left = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
@@ -163,6 +162,7 @@
             this.GRD_Forms = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.DS_System_Modules = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.vIW_ChurchTableAdapter = new GoodShepherd.UserChurchDataSetTableAdapters.VIW_ChurchTableAdapter();
+            this.Toolbar_Options = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
             label2 = new System.Windows.Forms.Label();
             userNameLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
@@ -180,11 +180,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.CMX_Role)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_UserID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_PicPath)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Message)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GRD_Forms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DS_System_Modules)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -315,23 +315,23 @@
             appearance2.BackColor = System.Drawing.SystemColors.Window;
             appearance2.BorderColor = System.Drawing.SystemColors.InactiveCaption;
             this.CMX_ChurchName.DisplayLayout.Appearance = appearance2;
-            ultraGridColumn9.Header.VisiblePosition = 0;
-            ultraGridColumn10.Header.VisiblePosition = 1;
-            ultraGridColumn11.Header.VisiblePosition = 2;
-            ultraGridColumn12.Header.VisiblePosition = 3;
-            ultraGridColumn13.Header.VisiblePosition = 4;
-            ultraGridColumn14.Header.VisiblePosition = 5;
-            ultraGridColumn15.Header.VisiblePosition = 6;
-            ultraGridColumn16.Header.VisiblePosition = 7;
+            ultraGridColumn25.Header.VisiblePosition = 0;
+            ultraGridColumn26.Header.VisiblePosition = 1;
+            ultraGridColumn27.Header.VisiblePosition = 2;
+            ultraGridColumn28.Header.VisiblePosition = 3;
+            ultraGridColumn29.Header.VisiblePosition = 4;
+            ultraGridColumn30.Header.VisiblePosition = 5;
+            ultraGridColumn31.Header.VisiblePosition = 6;
+            ultraGridColumn32.Header.VisiblePosition = 7;
             ultraGridBand1.Columns.AddRange(new object[] {
-            ultraGridColumn9,
-            ultraGridColumn10,
-            ultraGridColumn11,
-            ultraGridColumn12,
-            ultraGridColumn13,
-            ultraGridColumn14,
-            ultraGridColumn15,
-            ultraGridColumn16});
+            ultraGridColumn25,
+            ultraGridColumn26,
+            ultraGridColumn27,
+            ultraGridColumn28,
+            ultraGridColumn29,
+            ultraGridColumn30,
+            ultraGridColumn31,
+            ultraGridColumn32});
             this.CMX_ChurchName.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.CMX_ChurchName.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_ChurchName.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
@@ -559,92 +559,6 @@
             this.TXT_PicPath.TabIndex = 3;
             this.TXT_PicPath.TextChanged += new System.EventHandler(this.TexttChanged);
             // 
-            // Toolbar_Options
-            // 
-            this.Toolbar_Options.AlwaysShowMenusExpanded = Infragistics.Win.DefaultableBoolean.True;
-            this.Toolbar_Options.DesignerFlags = 1;
-            this.Toolbar_Options.DockWithinContainer = this;
-            this.Toolbar_Options.DockWithinContainerBaseType = typeof(Telerik.WinControls.UI.RadForm);
-            this.Toolbar_Options.ImageSizeLarge = new System.Drawing.Size(64, 64);
-            this.Toolbar_Options.Ribbon.Caption = "";
-            this.Toolbar_Options.ShowFullMenusDelay = 500;
-            this.Toolbar_Options.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.Office2013;
-            ultraToolbar1.DockedColumn = 0;
-            ultraToolbar1.DockedRow = 0;
-            ultraToolbar1.FloatingLocation = new System.Drawing.Point(322, 313);
-            ultraToolbar1.FloatingSize = new System.Drawing.Size(213, 280);
-            ultraToolbar1.IsMainMenuBar = true;
-            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            buttonTool6,
-            buttonTool1,
-            buttonTool13,
-            buttonTool14,
-            buttonTool2,
-            buttonTool15,
-            buttonTool16,
-            buttonTool17});
-            ultraToolbar1.Text = "UltraToolbar1";
-            this.Toolbar_Options.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
-            ultraToolbar1});
-            this.Toolbar_Options.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
-            this.Toolbar_Options.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal;
-            this.Toolbar_Options.ToolbarSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.True;
-            appearance47.Image = global::GoodShepherd.Properties.Resources._1468181667_file_add;
-            buttonTool18.SharedPropsInternal.AppearancesLarge.Appearance = appearance47;
-            buttonTool18.SharedPropsInternal.Caption = "جديد";
-            buttonTool18.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
-            appearance48.Image = global::GoodShepherd.Properties.Resources._1468181872_document_save_as;
-            buttonTool19.SharedPropsInternal.AppearancesLarge.Appearance = appearance48;
-            buttonTool19.SharedPropsInternal.Caption = "حفظ";
-            buttonTool19.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
-            appearance49.Image = global::GoodShepherd.Properties.Resources._1468181797_Close_Box_Red;
-            buttonTool20.SharedPropsInternal.AppearancesLarge.Appearance = appearance49;
-            buttonTool20.SharedPropsInternal.Caption = "حذف";
-            buttonTool20.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
-            buttonTool20.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            appearance50.Image = global::GoodShepherd.Properties.Resources._1468181962_shutdown;
-            buttonTool21.SharedPropsInternal.AppearancesLarge.Appearance = appearance50;
-            buttonTool21.SharedPropsInternal.Caption = "اغلاق";
-            buttonTool21.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltF4;
-            appearance51.Image = global::GoodShepherd.Properties.Resources._1448741181_previous;
-            buttonTool22.SharedPropsInternal.AppearancesLarge.Appearance = appearance51;
-            buttonTool22.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
-            buttonTool22.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltLeftArrow;
-            appearance52.Image = global::GoodShepherd.Properties.Resources._1448741173_next;
-            buttonTool23.SharedPropsInternal.AppearancesLarge.Appearance = appearance52;
-            buttonTool23.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
-            buttonTool23.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltRightArrow;
-            controlContainerTool2.SharedPropsInternal.AllowMultipleInstances = true;
-            controlContainerTool2.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.TextOnlyAlways;
-            controlContainerTool2.SharedPropsInternal.Width = 69;
-            appearance53.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance53.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            buttonTool3.SharedPropsInternal.AppearancesLarge.Appearance = appearance53;
-            appearance54.Image = global::GoodShepherd.Properties.Resources.First;
-            appearance54.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance54.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            buttonTool3.SharedPropsInternal.AppearancesSmall.Appearance = appearance54;
-            buttonTool3.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
-            appearance55.Image = global::GoodShepherd.Properties.Resources.Last;
-            appearance55.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance55.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            buttonTool4.SharedPropsInternal.AppearancesSmall.Appearance = appearance55;
-            buttonTool4.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
-            buttonTool7.SharedPropsInternal.Caption = "                                      ";
-            this.Toolbar_Options.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            buttonTool18,
-            buttonTool19,
-            buttonTool20,
-            buttonTool21,
-            labelTool7,
-            buttonTool22,
-            buttonTool23,
-            controlContainerTool2,
-            buttonTool3,
-            buttonTool4,
-            buttonTool7});
-            this.Toolbar_Options.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.Toolbar_Options_ToolClick);
-            // 
             // _panel2_Toolbars_Dock_Area_Top
             // 
             this._panel2_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
@@ -778,78 +692,90 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.GRD_Forms.DataSource = this.DS_System_Modules;
-            ultraGridColumn17.Header.VisiblePosition = 0;
-            ultraGridColumn17.Hidden = true;
+            ultraGridColumn2.Header.VisiblePosition = 0;
+            ultraGridColumn2.Hidden = true;
             appearance35.TextHAlignAsString = "Right";
             appearance35.TextVAlignAsString = "Middle";
-            ultraGridColumn18.CellAppearance = appearance35;
+            ultraGridColumn3.CellAppearance = appearance35;
             appearance36.TextHAlignAsString = "Right";
             appearance36.TextVAlignAsString = "Middle";
-            ultraGridColumn18.Header.Appearance = appearance36;
-            ultraGridColumn18.Header.Caption = "الشاشة";
-            ultraGridColumn18.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
-            ultraGridColumn18.Header.VisiblePosition = 6;
-            appearance37.TextHAlignAsString = "Right";
+            ultraGridColumn3.Header.Appearance = appearance36;
+            ultraGridColumn3.Header.Caption = "الشاشة";
+            ultraGridColumn3.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
+            ultraGridColumn3.Header.VisiblePosition = 1;
+            ultraGridColumn3.MaxWidth = 250;
+            ultraGridColumn3.MinWidth = 250;
+            appearance37.TextHAlignAsString = "Center";
             appearance37.TextVAlignAsString = "Middle";
-            ultraGridColumn19.CellAppearance = appearance37;
-            ultraGridColumn19.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
-            appearance38.TextHAlignAsString = "Right";
+            ultraGridColumn4.CellAppearance = appearance37;
+            ultraGridColumn4.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
+            appearance38.TextHAlignAsString = "Center";
             appearance38.TextVAlignAsString = "Middle";
-            ultraGridColumn19.Header.Appearance = appearance38;
-            ultraGridColumn19.Header.Caption = "متاح";
-            ultraGridColumn19.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
-            ultraGridColumn19.Header.VisiblePosition = 5;
-            appearance39.TextHAlignAsString = "Right";
+            ultraGridColumn4.Header.Appearance = appearance38;
+            ultraGridColumn4.Header.Caption = "متاح";
+            ultraGridColumn4.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
+            ultraGridColumn4.Header.VisiblePosition = 2;
+            ultraGridColumn4.MaxWidth = 100;
+            ultraGridColumn4.MinWidth = 100;
+            appearance39.TextHAlignAsString = "Center";
             appearance39.TextVAlignAsString = "Middle";
-            ultraGridColumn20.CellAppearance = appearance39;
-            ultraGridColumn20.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
-            appearance40.TextHAlignAsString = "Right";
+            ultraGridColumn5.CellAppearance = appearance39;
+            ultraGridColumn5.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
+            appearance40.TextHAlignAsString = "Center";
             appearance40.TextVAlignAsString = "Middle";
-            ultraGridColumn20.Header.Appearance = appearance40;
-            ultraGridColumn20.Header.Caption = "الاستعلام";
-            ultraGridColumn20.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
-            ultraGridColumn20.Header.VisiblePosition = 4;
-            appearance41.TextHAlignAsString = "Right";
+            ultraGridColumn5.Header.Appearance = appearance40;
+            ultraGridColumn5.Header.Caption = "الاستعلام";
+            ultraGridColumn5.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
+            ultraGridColumn5.Header.VisiblePosition = 5;
+            ultraGridColumn5.MaxWidth = 100;
+            ultraGridColumn5.MinWidth = 100;
+            appearance41.TextHAlignAsString = "Center";
             appearance41.TextVAlignAsString = "Middle";
-            ultraGridColumn21.CellAppearance = appearance41;
-            ultraGridColumn21.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
-            appearance42.TextHAlignAsString = "Right";
+            ultraGridColumn6.CellAppearance = appearance41;
+            ultraGridColumn6.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
+            appearance42.TextHAlignAsString = "Center";
             appearance42.TextVAlignAsString = "Middle";
-            ultraGridColumn21.Header.Appearance = appearance42;
-            ultraGridColumn21.Header.Caption = "الاضافة";
-            ultraGridColumn21.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
-            ultraGridColumn21.Header.VisiblePosition = 3;
-            appearance43.TextHAlignAsString = "Right";
+            ultraGridColumn6.Header.Appearance = appearance42;
+            ultraGridColumn6.Header.Caption = "الاضافة";
+            ultraGridColumn6.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
+            ultraGridColumn6.Header.VisiblePosition = 3;
+            ultraGridColumn6.MaxWidth = 100;
+            ultraGridColumn6.MinWidth = 100;
+            appearance43.TextHAlignAsString = "Center";
             appearance43.TextVAlignAsString = "Middle";
-            ultraGridColumn22.CellAppearance = appearance43;
-            ultraGridColumn22.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
-            appearance44.TextHAlignAsString = "Right";
+            ultraGridColumn7.CellAppearance = appearance43;
+            ultraGridColumn7.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
+            appearance44.TextHAlignAsString = "Center";
             appearance44.TextVAlignAsString = "Middle";
-            ultraGridColumn22.Header.Appearance = appearance44;
-            ultraGridColumn22.Header.Caption = "التعديل";
-            ultraGridColumn22.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
-            ultraGridColumn22.Header.VisiblePosition = 2;
-            appearance45.TextHAlignAsString = "Right";
+            ultraGridColumn7.Header.Appearance = appearance44;
+            ultraGridColumn7.Header.Caption = "التعديل";
+            ultraGridColumn7.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
+            ultraGridColumn7.Header.VisiblePosition = 4;
+            ultraGridColumn7.MaxWidth = 100;
+            ultraGridColumn7.MinWidth = 100;
+            appearance45.TextHAlignAsString = "Center";
             appearance45.TextVAlignAsString = "Middle";
-            ultraGridColumn23.CellAppearance = appearance45;
-            ultraGridColumn23.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
-            appearance46.TextHAlignAsString = "Right";
+            ultraGridColumn8.CellAppearance = appearance45;
+            ultraGridColumn8.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.Edit;
+            appearance46.TextHAlignAsString = "Center";
             appearance46.TextVAlignAsString = "Middle";
-            ultraGridColumn23.Header.Appearance = appearance46;
-            ultraGridColumn23.Header.Caption = "الحذف";
-            ultraGridColumn23.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
-            ultraGridColumn23.Header.VisiblePosition = 1;
-            ultraGridColumn1.Header.VisiblePosition = 7;
-            ultraGridColumn1.Hidden = true;
+            ultraGridColumn8.Header.Appearance = appearance46;
+            ultraGridColumn8.Header.Caption = "الحذف";
+            ultraGridColumn8.Header.FixedHeaderIndicator = Infragistics.Win.UltraWinGrid.FixedHeaderIndicator.None;
+            ultraGridColumn8.Header.VisiblePosition = 6;
+            ultraGridColumn8.MaxWidth = 100;
+            ultraGridColumn8.MinWidth = 100;
+            ultraGridColumn24.Header.VisiblePosition = 7;
+            ultraGridColumn24.Hidden = true;
             ultraGridBand2.Columns.AddRange(new object[] {
-            ultraGridColumn17,
-            ultraGridColumn18,
-            ultraGridColumn19,
-            ultraGridColumn20,
-            ultraGridColumn21,
-            ultraGridColumn22,
-            ultraGridColumn23,
-            ultraGridColumn1});
+            ultraGridColumn2,
+            ultraGridColumn3,
+            ultraGridColumn4,
+            ultraGridColumn5,
+            ultraGridColumn6,
+            ultraGridColumn7,
+            ultraGridColumn8,
+            ultraGridColumn24});
             this.GRD_Forms.DisplayLayout.BandsSerializer.Add(ultraGridBand2);
             this.GRD_Forms.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
             this.GRD_Forms.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.No;
@@ -860,9 +786,9 @@
             this.GRD_Forms.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
             this.GRD_Forms.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
             this.GRD_Forms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GRD_Forms.Location = new System.Drawing.Point(186, 335);
+            this.GRD_Forms.Location = new System.Drawing.Point(0, 353);
             this.GRD_Forms.Name = "GRD_Forms";
-            this.GRD_Forms.Size = new System.Drawing.Size(329, 135);
+            this.GRD_Forms.Size = new System.Drawing.Size(882, 135);
             this.GRD_Forms.TabIndex = 126;
             this.GRD_Forms.Text = "ultraGrid1";
             this.GRD_Forms.CellChange += new Infragistics.Win.UltraWinGrid.CellEventHandler(this.GRD_Forms_CellChange);
@@ -892,6 +818,92 @@
             // vIW_ChurchTableAdapter
             // 
             this.vIW_ChurchTableAdapter.ClearBeforeFill = true;
+            // 
+            // Toolbar_Options
+            // 
+            this.Toolbar_Options.AlwaysShowMenusExpanded = Infragistics.Win.DefaultableBoolean.True;
+            this.Toolbar_Options.DesignerFlags = 1;
+            this.Toolbar_Options.DockWithinContainer = this;
+            this.Toolbar_Options.DockWithinContainerBaseType = typeof(Telerik.WinControls.UI.RadForm);
+            this.Toolbar_Options.ImageSizeLarge = new System.Drawing.Size(64, 64);
+            this.Toolbar_Options.Ribbon.Caption = "";
+            this.Toolbar_Options.ShowFullMenusDelay = 500;
+            this.Toolbar_Options.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.Office2013;
+            ultraToolbar1.DockedColumn = 0;
+            ultraToolbar1.DockedRow = 0;
+            ultraToolbar1.FloatingLocation = new System.Drawing.Point(322, 313);
+            ultraToolbar1.FloatingSize = new System.Drawing.Size(213, 280);
+            ultraToolbar1.IsMainMenuBar = true;
+            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            buttonTool6,
+            buttonTool1,
+            buttonTool13,
+            buttonTool14,
+            buttonTool2,
+            buttonTool15,
+            buttonTool16,
+            buttonTool17});
+            ultraToolbar1.Text = "UltraToolbar1";
+            this.Toolbar_Options.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
+            ultraToolbar1});
+            this.Toolbar_Options.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
+            this.Toolbar_Options.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal;
+            this.Toolbar_Options.ToolbarSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.True;
+            appearance47.Image = global::GoodShepherd.Properties.Resources._1468181667_file_add;
+            buttonTool18.SharedPropsInternal.AppearancesLarge.Appearance = appearance47;
+            buttonTool18.SharedPropsInternal.Caption = "جديد";
+            buttonTool18.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
+            appearance48.Image = global::GoodShepherd.Properties.Resources._1468181872_document_save_as;
+            buttonTool19.SharedPropsInternal.AppearancesLarge.Appearance = appearance48;
+            buttonTool19.SharedPropsInternal.Caption = "حفظ";
+            buttonTool19.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
+            appearance49.Image = global::GoodShepherd.Properties.Resources._1468181797_Close_Box_Red;
+            buttonTool20.SharedPropsInternal.AppearancesLarge.Appearance = appearance49;
+            buttonTool20.SharedPropsInternal.Caption = "حذف";
+            buttonTool20.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
+            buttonTool20.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            appearance50.Image = global::GoodShepherd.Properties.Resources._1468181962_shutdown;
+            buttonTool21.SharedPropsInternal.AppearancesLarge.Appearance = appearance50;
+            buttonTool21.SharedPropsInternal.Caption = "اغلاق";
+            buttonTool21.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltF4;
+            appearance51.Image = global::GoodShepherd.Properties.Resources._1448741181_previous;
+            buttonTool22.SharedPropsInternal.AppearancesLarge.Appearance = appearance51;
+            buttonTool22.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
+            buttonTool22.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltLeftArrow;
+            appearance52.Image = global::GoodShepherd.Properties.Resources._1448741173_next;
+            buttonTool23.SharedPropsInternal.AppearancesLarge.Appearance = appearance52;
+            buttonTool23.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
+            buttonTool23.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltRightArrow;
+            controlContainerTool2.SharedPropsInternal.AllowMultipleInstances = true;
+            controlContainerTool2.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.TextOnlyAlways;
+            controlContainerTool2.SharedPropsInternal.Width = 69;
+            appearance53.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance53.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            buttonTool3.SharedPropsInternal.AppearancesLarge.Appearance = appearance53;
+            appearance54.Image = global::GoodShepherd.Properties.Resources.First;
+            appearance54.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance54.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            buttonTool3.SharedPropsInternal.AppearancesSmall.Appearance = appearance54;
+            buttonTool3.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
+            appearance55.Image = global::GoodShepherd.Properties.Resources.Last;
+            appearance55.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance55.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            buttonTool4.SharedPropsInternal.AppearancesSmall.Appearance = appearance55;
+            buttonTool4.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.DefaultForToolType;
+            buttonTool7.SharedPropsInternal.Caption = "                                      ";
+            this.Toolbar_Options.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            buttonTool18,
+            buttonTool19,
+            buttonTool20,
+            buttonTool21,
+            labelTool7,
+            buttonTool22,
+            buttonTool23,
+            controlContainerTool2,
+            buttonTool3,
+            buttonTool4,
+            buttonTool7});
+            this.Toolbar_Options.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.Toolbar_Options_ToolClick);
             // 
             // FRM_User
             // 
@@ -941,11 +953,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.CMX_Role)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_UserID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_PicPath)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Message)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GRD_Forms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DS_System_Modules)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
