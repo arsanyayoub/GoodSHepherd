@@ -883,7 +883,7 @@ namespace GoodShepherd.Forms
                             Timer_MSgCleaner.Stop();
                             if (fSaveData(false) == true)
                             {
-                                sHandleMessage(3, "تم الحفظ بنجاح");
+                                sHandleMessage(4, "تم الحفظ بنجاح");
                             }
                         
                             break;
@@ -1406,7 +1406,7 @@ namespace GoodShepherd.Forms
                                         vRowsAffected = BasicClass.fDMLData(vDeleteStatment, this.Name);
                                         if (vRowsAffected > 0)
                                         {
-                                            sHandleMessage(1, "تم حذف البيانات بنجاح");
+                                            sHandleMessage(4, "تم حذف البيانات بنجاح");
                                             this.vIW_GetPeopleData1TableAdapter.FillByChurchID(this.goodShepherdDataSet.VIW_GetPeopleData1,BasicClass.vChurchID);
                                             sNewRecord();
                                         }

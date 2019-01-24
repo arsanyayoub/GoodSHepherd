@@ -26,8 +26,8 @@ namespace GoodShepherd.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ARCI;Initial Catalog=GoodShepherd2;Persist Security Info=True;User ID" +
-            "=sa;Password=P@$$w0rdMeedos4")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ARCI;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=" +
+            "sa;Password=P@$$w0rdMeedos4")]
         public string GoodShepherdConnectionString {
             get {
                 return ((string)(this["GoodShepherdConnectionString"]));

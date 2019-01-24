@@ -48,7 +48,7 @@ namespace GoodShepherd.Forms
                 // DateTime dt = DateTime.Parse(TXT_Date.Text);
              
 
-                string DayStartformat = "hh:mm tt";
+                string DayStartformat = "hh:mm";
                 string vDayStart = "";
                 // DateTime dt = DateTime.Parse(TXT_Date.Text);
                 vDayStart =  date.ToString(DayStartformat) ;
@@ -406,6 +406,12 @@ namespace GoodShepherd.Forms
                             {
                                 GRD_Details.ActiveRow.Cells["BirthDate"].Value = null;
                             }
+
+                            DateTime attTime = DateTime.Parse(BasicClass.fGetCurDateTime().ToString());
+                            string attFormat = "hh:mm";
+                            // DateTime dt = DateTime.Parse(TXT_Date.Text);
+                            string MeetingattTime = attTime.ToString(attFormat);
+                            GRD_Details.ActiveRow.Cells["AttendanceTime"].Value = MeetingattTime;
                         }
 
                     }
@@ -485,7 +491,7 @@ namespace GoodShepherd.Forms
                                 if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                                 {
                                     ultraGridExcelExporter1.Export(GRD_Summary, saveDialog.FileName);
-                                    sHandleMessage(2, "تم تصدير البيانات بنجاح");
+                                    sHandleMessage(4, "تم تصدير البيانات بنجاح");
                                 }
                             }
                         
@@ -516,7 +522,7 @@ namespace GoodShepherd.Forms
                             Timer_MSgCleaner.Stop();
                             if (fSaveData(false) == true)
                             {
-                                sHandleMessage(3, "تم الحفظ بنجاح");
+                                sHandleMessage(4, "تم الحفظ بنجاح");
                             }
                         
 
@@ -627,7 +633,7 @@ namespace GoodShepherd.Forms
                 if (TXT_TDate.Value !=null)
 	            {
                      DateTime time = DateTime.Parse(TXT_TDate.Value.ToString());
-                     string format = "MM-dd-yyy";
+                     string format = "MM-dd-yyyy";
                       // DateTime dt = DateTime.Parse(TXT_Date.Text);
                         vTDate = "'" + time.ToString(format) + "'";
 	            }
@@ -639,7 +645,7 @@ namespace GoodShepherd.Forms
                 if (TXT_DayStart.Value != null)
                 {
                     DateTime time = DateTime.Parse(TXT_DayStart.Value.ToString());
-                    string format = "hh:mm tt";
+                    string format = "hh:mm";
                     // DateTime dt = DateTime.Parse(TXT_Date.Text);
                     vDayStart = "'" + time.ToString(format) + "'";
                 }
@@ -731,10 +737,16 @@ namespace GoodShepherd.Forms
                 {
                     if (vRow!= null)
                     {
-                        DateTime time = DateTime.Parse(vRow.Cells["AttendanceTime"].Value.ToString());
-                        string format = "hh:mm tt";
+                        string vAttendanceTime = "NULL";
+                        if (vRow.Cells["AttendanceTime"].Value != null)
+                        {
+                            DateTime time = DateTime.Parse(vRow.Cells["AttendanceTime"].Value.ToString());
+                            string format = "hh:mm";
+                               vAttendanceTime = "'" + time.ToString(format) + "'";
+                        }
+                       
                         // DateTime dt = DateTime.Parse(TXT_Date.Text);
-                      string  vAttendanceTime = "'" + time.ToString(format) + "'";
+                     
 
                         if (vRow.Cells["Name"].Value != null)
                         {
@@ -812,7 +824,7 @@ namespace GoodShepherd.Forms
                                 }
                                 if (fValidateDetails() == true)
                                 {
-                                   // sSaveDetails();
+                                   sSaveDetails();
                                 }
                                 else
                                 {
@@ -1327,7 +1339,7 @@ namespace GoodShepherd.Forms
                       if (GRD_Summary.ActiveRow.Cells["DayStart"].Value != System.DBNull.Value)
                       {
                           DateTime time = DateTime.Parse(GRD_Summary.ActiveRow.Cells["DayStart"].Value.ToString().Trim());
-                          string format = "hh:mm tt";
+                          string format = "hh:mm";
                           // DateTime dt = DateTime.Parse(TXT_Date.Text);
                           string vDayStart = "" + time.ToString(format) + "";
                           TXT_DayStart.Value = vDayStart;
@@ -1472,7 +1484,7 @@ namespace GoodShepherd.Forms
                         if (vSQLReader["Name"] != System.DBNull.Value) { DS_MeetingDetail.Rows[vRowCounter]["Name"] = vSQLReader["Name"].ToString().Trim(); } else { DS_MeetingDetail.Rows[vRowCounter]["Name"] = ""; }
                         if (vSQLReader["AttendanceTime"] != System.DBNull.Value) {
                             DateTime time = DateTime.Parse(vSQLReader["AttendanceTime"].ToString().Trim());
-                            string format = "hh:mm tt";
+                            string format = "hh:mm";
                             // DateTime dt = DateTime.Parse(TXT_Date.Text);
                             string vAttendanceTime = "" + time.ToString(format) + "";
                             DS_MeetingDetail.Rows[vRowCounter]["AttendanceTime"] = vAttendanceTime; 

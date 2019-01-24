@@ -246,11 +246,6 @@
       <DependentUpon>PeopleData.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="PeopleData.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PeopleData.xsd</DependentUpon>
-    </Compile>
     <Compile Include="MainClass.cs" />
     <Compile Include="Forms\FRM_Login.cs">
       <SubType>Form</SubType>
@@ -263,6 +258,11 @@
     </Compile>
     <Compile Include="Forms\FRM_Main.Designer.cs">
       <DependentUpon>FRM_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PeopleData.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudiesDataSet.Designer.cs">
@@ -351,8 +351,8 @@
     </None>
     <None Include="PeopleData.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PeopleData.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>PeopleData.Designer.cs</LastGenOutput>
     </None>
     <None Include="PeopleData.xss">
       <DependentUpon>PeopleData.xsd</DependentUpon>

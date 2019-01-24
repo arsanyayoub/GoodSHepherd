@@ -859,8 +859,6 @@ namespace GoodShepherd {
             
             private global::System.Data.DataColumn columnChurchName;
             
-            private global::System.Data.DataColumn columnChurchArae;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public VIW_ChurchDataTable() {
@@ -960,14 +958,6 @@ namespace GoodShepherd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ChurchAraeColumn {
-                get {
-                    return this.columnChurchArae;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1003,7 +993,7 @@ namespace GoodShepherd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VIW_ChurchRow AddVIW_ChurchRow(long ID, long City_ID, string CityDesc, long Area_ID, string AreaDesc, long Street_ID, string StreetDesc, string ChurchName, string ChurchArae) {
+            public VIW_ChurchRow AddVIW_ChurchRow(long ID, long City_ID, string CityDesc, long Area_ID, string AreaDesc, long Street_ID, string StreetDesc, string ChurchName) {
                 VIW_ChurchRow rowVIW_ChurchRow = ((VIW_ChurchRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
@@ -1013,8 +1003,7 @@ namespace GoodShepherd {
                         AreaDesc,
                         Street_ID,
                         StreetDesc,
-                        ChurchName,
-                        ChurchArae};
+                        ChurchName};
                 rowVIW_ChurchRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowVIW_ChurchRow);
                 return rowVIW_ChurchRow;
@@ -1052,7 +1041,6 @@ namespace GoodShepherd {
                 this.columnStreet_ID = base.Columns["Street_ID"];
                 this.columnStreetDesc = base.Columns["StreetDesc"];
                 this.columnChurchName = base.Columns["ChurchName"];
-                this.columnChurchArae = base.Columns["ChurchArae"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1074,8 +1062,6 @@ namespace GoodShepherd {
                 base.Columns.Add(this.columnStreetDesc);
                 this.columnChurchName = new global::System.Data.DataColumn("ChurchName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnChurchName);
-                this.columnChurchArae = new global::System.Data.DataColumn("ChurchArae", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnChurchArae);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AllowDBNull = false;
@@ -1084,8 +1070,6 @@ namespace GoodShepherd {
                 this.columnAreaDesc.MaxLength = 50;
                 this.columnStreetDesc.MaxLength = 50;
                 this.columnChurchName.MaxLength = 50;
-                this.columnChurchArae.ReadOnly = true;
-                this.columnChurchArae.MaxLength = 103;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1881,22 +1865,6 @@ namespace GoodShepherd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ChurchArae {
-                get {
-                    try {
-                        return ((string)(this[this.tableVIW_Church.ChurchAraeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ChurchArae\' in table \'VIW_Church\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableVIW_Church.ChurchAraeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCity_IDNull() {
                 return this.IsNull(this.tableVIW_Church.City_IDColumn);
             }
@@ -1977,18 +1945,6 @@ namespace GoodShepherd {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetChurchNameNull() {
                 this[this.tableVIW_Church.ChurchNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsChurchAraeNull() {
-                return this.IsNull(this.tableVIW_Church.ChurchAraeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetChurchAraeNull() {
-                this[this.tableVIW_Church.ChurchAraeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2424,7 +2380,6 @@ WHERE Church_ID=@Church_ID";
             tableMapping.ColumnMappings.Add("Street_ID", "Street_ID");
             tableMapping.ColumnMappings.Add("StreetDesc", "StreetDesc");
             tableMapping.ColumnMappings.Add("ChurchName", "ChurchName");
-            tableMapping.ColumnMappings.Add("ChurchArae", "ChurchArae");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2442,7 +2397,7 @@ WHERE Church_ID=@Church_ID";
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID, City_ID, CityDesc, Area_ID, AreaDesc, Street_ID, StreetDesc, ChurchNam" +
-                "e, ChurchArae FROM VIW_Church";
+                "e, AreaDesc FROM VIW_Church";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

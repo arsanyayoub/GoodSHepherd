@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodShepherd.exe" size="2904576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodShepherd.exe" size="2904064">
       <assemblyIdentity name="GoodShepherd" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>d4k8eld5Y6NJJPVqnvQdy3OK8HE=</dsig:DigestValue>
+        <dsig:DigestValue>BQc41v9dQA5nhoEtUtD7AAFNo7s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -451,13 +451,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="GoodShepherd.exe.config" size="451">
+  <file name="GoodShepherd.exe.config" size="450">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Z9sa8N1K4x6mRcPf+82VYUIiYoE=</dsig:DigestValue>
+      <dsig:DigestValue>E7n1NwalVEBprtxitrVC1aTj0DY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="GoodShepherd.pdb" size="1041920">
@@ -466,7 +466,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>aKQxFDeAIBrSclW9hwTBRaKWO6c=</dsig:DigestValue>
+      <dsig:DigestValue>+bnS/bLSPk7O1oRzE9IsiX9Q2gw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="lost_sheep3_by_joeatta78_d6qlsbf_F7X_12.ico" size="106440">
