@@ -38,14 +38,14 @@
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("VIW_Church", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("CityDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Area_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Street_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn24 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn25 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn26 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn27 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("CityDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn28 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Area_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn29 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn30 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Street_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn31 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn32 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
@@ -315,23 +315,23 @@
             appearance2.BackColor = System.Drawing.SystemColors.Window;
             appearance2.BorderColor = System.Drawing.SystemColors.InactiveCaption;
             this.CMX_ChurchName.DisplayLayout.Appearance = appearance2;
-            ultraGridColumn2.Header.VisiblePosition = 0;
-            ultraGridColumn3.Header.VisiblePosition = 1;
-            ultraGridColumn4.Header.VisiblePosition = 2;
-            ultraGridColumn5.Header.VisiblePosition = 3;
-            ultraGridColumn6.Header.VisiblePosition = 4;
-            ultraGridColumn7.Header.VisiblePosition = 5;
-            ultraGridColumn8.Header.VisiblePosition = 6;
-            ultraGridColumn24.Header.VisiblePosition = 7;
+            ultraGridColumn25.Header.VisiblePosition = 0;
+            ultraGridColumn26.Header.VisiblePosition = 1;
+            ultraGridColumn27.Header.VisiblePosition = 2;
+            ultraGridColumn28.Header.VisiblePosition = 3;
+            ultraGridColumn29.Header.VisiblePosition = 4;
+            ultraGridColumn30.Header.VisiblePosition = 5;
+            ultraGridColumn31.Header.VisiblePosition = 6;
+            ultraGridColumn32.Header.VisiblePosition = 7;
             ultraGridBand1.Columns.AddRange(new object[] {
-            ultraGridColumn2,
-            ultraGridColumn3,
-            ultraGridColumn4,
-            ultraGridColumn5,
-            ultraGridColumn6,
-            ultraGridColumn7,
-            ultraGridColumn8,
-            ultraGridColumn24});
+            ultraGridColumn25,
+            ultraGridColumn26,
+            ultraGridColumn27,
+            ultraGridColumn28,
+            ultraGridColumn29,
+            ultraGridColumn30,
+            ultraGridColumn31,
+            ultraGridColumn32});
             this.CMX_ChurchName.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.CMX_ChurchName.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_ChurchName.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
@@ -383,7 +383,7 @@
             this.CMX_ChurchName.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.CMX_ChurchName.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
             this.CMX_ChurchName.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
-            this.CMX_ChurchName.DisplayMember = "InvNameA";
+            this.CMX_ChurchName.DisplayMember = "ChurchName";
             this.CMX_ChurchName.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
             appearance14.BackColor = System.Drawing.Color.DarkGray;
             appearance14.BackColor2 = System.Drawing.Color.Maroon;
@@ -394,7 +394,7 @@
             this.CMX_ChurchName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CMX_ChurchName.Size = new System.Drawing.Size(200, 25);
             this.CMX_ChurchName.TabIndex = 5;
-            this.CMX_ChurchName.ValueMember = "IDInvName";
+            this.CMX_ChurchName.ValueMember = "ID";
             this.CMX_ChurchName.TextChanged += new System.EventHandler(this.TexttChanged);
             // 
             // TXT_UserName
@@ -508,7 +508,6 @@
             this.CMX_Role.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.CMX_Role.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
             this.CMX_Role.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
-            this.CMX_Role.DisplayMember = "DepartmentA";
             this.CMX_Role.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
             this.CMX_Role.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.CMX_Role.Location = new System.Drawing.Point(414, 181);

@@ -1,0 +1,106 @@
+
+
+24/01/2019  =  12:59 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Area_TBL_City". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'City_ID'.
+The statement has been terminated.
+============================================================================
+
+
+24/01/2019  =  12:59 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Area_TBL_City". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'City_ID'.
+The statement has been terminated.
+============================================================================
+
+
+24/01/2019  =  01:00 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'ID'.
+The statement has been terminated.
+============================================================================
+
+
+24/01/2019  =  01:00 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'ID'.
+The statement has been terminated.
+============================================================================
+
+
+24/01/2019  =  01:00 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TBL_Street_TBL_Area". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Area", column 'ID'.
+The statement has been terminated.
+============================================================================
+
+
+24/01/2019  =  01:47 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\arsany\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+24/01/2019  =  02:03 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Meetings
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sSaveDetails
+		The Error Is String was not recognized as a valid DateTime.
+============================================================================
+
+
+24/01/2019  =  02:04 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Meetings
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sSaveDetails
+		The Error Is String was not recognized as a valid DateTime.
+============================================================================
+
+
+24/01/2019  =  02:29 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_DBBackupRestore
+	THE SUB NAME THAT HAS OCCURED THE ERROR: query
+		The Error Is Cannot open backup device 'C:\Users\arsany\Desktop\GoodShepherd.Bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally.
+============================================================================
+
+
+18/02/2019  =  12:59 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: 
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_reportViewer
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+01/03/2019  =  11:21 ص
+	THE FORM NAME THAT HAS OCCURED THE ERROR: 
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_reportViewer
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+01/03/2019  =  11:29 ص
+	THE FORM NAME THAT HAS OCCURED THE ERROR: 
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_reportViewer
+		The Error Is Value cannot be null.
+Parameter name: dataTable
+============================================================================
+
+
+01/03/2019  =  11:37 ص
+	THE FORM NAME THAT HAS OCCURED THE ERROR: 
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_reportViewer
+		The Error Is Value cannot be null.
+Parameter name: dataTable
+============================================================================
+
+
+08/03/2019  =  08:22 ص
+	THE FORM NAME THAT HAS OCCURED THE ERROR: 
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_reportViewer
+		The Error Is Object reference not set to an instance of an object.
+============================================================================

@@ -17,9 +17,9 @@ using GoodShepherd;
 public class BasicClass
 {
 
-   // public static string vConectionString = "Data Source=.;Initial Catalog=StudentExam;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
+    public static string vConectionString = "Data Source=.;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
 
-    public static string vConectionString =""; //"Data Source=EimeCinter\\EimeSRV;Initial Catalog=StudentExam;User Id=sa;Password=P@$$w0rd2017;";
+   // public static string vConectionString =""; //"Data Source=EimeCinter\\EimeSRV;Initial Catalog=StudentExam;User Id=sa;Password=P@$$w0rd2017;";
 
     // public static string vConectionString = "Data Source=192.168.1.47,1433;Network Library=DBMSSOCN;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd;";
 	public bool vSuccess;
@@ -39,17 +39,18 @@ public class BasicClass
 	private void sTestConenction(string pRegKey)
 	{
 		try {
-			Microsoft.Win32.RegistryKey vRegVer = default(Microsoft.Win32.RegistryKey);
-            string vPath = null;
-            string vDecryptedText = "";
-            vPath = "SOFTWARE\\ProVision";
-            vRegVer = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(vPath);
-            vDecryptedText = vRegVer.GetValue(pRegKey).ToString();
-            //vDecryptedText = "rz6hrkSLFbceHYh20294wkDXx+u/olCta5b6TAodMy2rlcBvg4nFgIFb9cN4KzGOi0FbTfjz0sir1ZQDx6TYTB0wTdmbqCcdzN14gEFfWWk3rtptHHFSB1A5EvCJVDgEmdT4fa64KSM2U1C7pUIcZrjzqcdcLaFCTFr/DjUXQS8=";
-            vConectionString = sDecrypt(vDecryptedText);
+            //Microsoft.Win32.RegistryKey vRegVer = default(Microsoft.Win32.RegistryKey);
+            //string vPath = null;
+            //string vDecryptedText = "";
+            //vPath = "SOFTWARE\\ProVision";
+            //vRegVer = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(vPath);
+            //vDecryptedText = vRegVer.GetValue(pRegKey).ToString();
+            ////vDecryptedText = "rz6hrkSLFbceHYh20294wkDXx+u/olCta5b6TAodMy2rlcBvg4nFgIFb9cN4KzGOi0FbTfjz0sir1ZQDx6TYTB0wTdmbqCcdzN14gEFfWWk3rtptHHFSB1A5EvCJVDgEmdT4fa64KSM2U1C7pUIcZrjzqcdcLaFCTFr/DjUXQS8=";
+            //vConectionString = sDecrypt(vDecryptedText);
 
             //vConectionString = "Data Source=EIME00/EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";
-           // vConectionString = "Data Source=.;Initial Catalog=StudentExam;User ID=sa;Password=P@$$w0rdMeedos4";
+           //vConectionString = "Data Source=Lenovo-PC\\SQL2014;Initial Catalog=GoodShepherd;User Id=sa;Password=3112005;";
+            vConectionString = "Data Source=.;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
 			System.Data.SqlClient.SqlConnection vSqlConnection = new System.Data.SqlClient.SqlConnection(vConectionString);
 			Microsoft.SqlServer.Management.Common.ServerConnection vConn = new Microsoft.SqlServer.Management.Common.ServerConnection(vSqlConnection);
 			vConn.Connect();

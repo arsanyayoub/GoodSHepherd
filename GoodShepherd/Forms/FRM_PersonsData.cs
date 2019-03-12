@@ -11,6 +11,9 @@ using Microsoft.VisualBasic;
 using System.IO;
 using Infragistics.Win.UltraWinGrid;
 using System.Diagnostics;
+using System.Collections;
+using GoodShepherd.Reports;
+using GoodShepherd.Datasets;
 
 namespace GoodShepherd.Forms
 {
@@ -879,6 +882,13 @@ namespace GoodShepherd.Forms
                             }
 
                             break;
+                        case "BTN_Report":
+                            if (fCancelTransaction() == true)
+                            {
+                                sPeopleDataRep();
+                            }
+
+                            break;
                         case "BTN_Save":
                             Timer_MSgCleaner.Stop();
                             if (fSaveData(false) == true)
@@ -899,6 +909,27 @@ namespace GoodShepherd.Forms
                 }
             
 
+            }
+            private void sPeopleDataRep()
+            {
+                try
+                {
+                    System.Data.SqlClient.SqlCommand vCommand = new  System.Data.SqlClient.SqlCommand();
+                    vCommand.CommandText = "select  * from dbo.VIW_GetPeopleData";
+                    SortedList vSqlStatment = new SortedList();
+                    vSqlStatment.Add("DT_PeopleData", vCommand);
+                    FRM_reportViewer vfrm = new FRM_reportViewer(vSqlStatment, new DS_PeopleData(), new REP_PeopleData());
+                    //vfrm.MdiParent = this.MdiParent;
+                    vfrm.Show();
+
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    ExceptionHandler.HandleException(ex.Message, this.Name, "sPeopleDataRep");
+                }
             }
         #endregion
 

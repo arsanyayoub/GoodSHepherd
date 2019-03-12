@@ -319,37 +319,31 @@ namespace GoodShepherd
                 {
                     SqlConnection sqlConnection1 = new SqlConnection(BasicClass.vConectionString);
                     SqlCommand vSqlCommand = new SqlCommand();
-                    SqlDataReader vSQLReader;
                     vSqlCommand.Connection = sqlConnection1;
                     
 
                     //to fill any field by null value if not selected
                     string vdeptId;
                     if (CMX_Role.Value == null)   {vdeptId = "NULL";}     else{vdeptId = "'" + CMX_Role.Value.ToString().Trim() + "'";}
+                    Byte[] imgBytes = null;
 
-                    if (TXT_PicPath.Text == "")
+                    if (TXT_PicPath.Text != "")
                     {
-                        vSqlCommand.CommandText = "INSERT INTO [TBL_User]" + "(  [UserName]                             ,         [Password]                    ,           [InventoryName]            , [Department]  , LastUpdate,             MachineName                ,                    ProcessID                      ) " + "\n" +
-                                                  "VALUES                 " + "( '" + this.TXT_UserName.Text.Trim() + "','" + this.TXT_Password.Text.Trim() + "','" + this.CMX_ChurchName.Value + "'," + vdeptId + ", getDate() ,'" + Environment.MachineName.Trim() + "','" + Process.GetCurrentProcess().Id.ToString() + "') ";
-                        sqlConnection1.Open();
-                    }
-                    else
-                    {
-                        Byte[] imgBytes = null;
+
                         ImageConverter imgConverter = new ImageConverter();
                         imgBytes = (System.Byte[])imgConverter.ConvertTo(picPictureBox.Image, Type.GetType("System.Byte[]"));
- 
-
-                        vSqlCommand.CommandText = "INSERT INTO [TBL_User]" + "(        [Code]         ,            [UserName]                 ,         [Password]                    ,           [InventoryName]            ,           [Department]            ,[Picture], LastUpdate,             MachineName                ,                    ProcessID                      ) " + "\n" +
-                                                  "VALUES                 " + "( '" + vCurrentCode + "','" + this.TXT_UserName.Text.Trim() + "','" + this.TXT_Password.Text.Trim() + "','" + this.CMX_ChurchName.Value + "'," + vdeptId + ",  @image , getDate() ,'" + Environment.MachineName.Trim() + "','" + Process.GetCurrentProcess().Id.ToString() + "') ";
-                        sqlConnection1.Open();
-
-                        vSqlCommand.Parameters.Add(new SqlParameter("@image", imgBytes));  
+                                               
                     }
-                    
-                    vSQLReader = vSqlCommand.ExecuteReader();
 
-                    vSQLReader.Close();
+                    vSqlCommand.CommandText = "INSERT INTO [TBL_User]" + "([UserName]                 ,         [Password]                    ,           [Church_ID]             ,[Picture], LastUpdate,             MachineName                ,                    ProcessID                      ) " + "\n" +
+                                                  "OUTPUT INSERTED.IDUser" + "\n" + 
+                                                  "VALUES                 " + "('" + this.TXT_UserName.Text.Trim() + "','" + this.TXT_Password.Text.Trim() + "','" + this.CMX_ChurchName.Value + "',  @image , getDate() ,'" + Environment.MachineName.Trim() + "','" + Process.GetCurrentProcess().Id.ToString() + "') ";
+                    sqlConnection1.Open();
+
+                    vSqlCommand.Parameters.Add(new SqlParameter("@image", imgBytes));
+                    Int64 newId = (Int64)vSqlCommand.ExecuteScalar();
+                    TXT_UserID.Text = newId.ToString();
+                    vCurrentCode = newId.ToString();
                     sqlConnection1.Close();
                     sSaveSystemModules();
                     return true;
@@ -387,18 +381,26 @@ namespace GoodShepherd
                         "  UserName         ='" + Strings.Trim(TXT_UserName.Text)           + "'" + "\n" +
                         " ,Password         ='" + Strings.Trim(TXT_Password.Text)           + "'" + "\n" +
                         " ,Church_ID        ='" + CMX_ChurchName.Value + "'" + "\n" +
-                        " ,Role_ID       ='" + CMX_Role.Value + "'" + "\n" +
-                        //" ,Picture          =   @image                                          " + "\n" +
+                        " ,Picture          =   @image                                          " + "\n" +
                         " ,LastUpdate       =   GetDate()                                       " + "\n" +
                         " ,ProcessID        ='" + Process.GetCurrentProcess().Id.ToString() + "'" + "\n" +
                         " ,MachineName      ='" + Strings.Trim(System.Environment.MachineName) + "'";
 
 
                     vSqlCommand.CommandText = vPersonStatment + " Where IDUser ='" + vCurrentCode + "'";
+                    Byte[] imgBytes = null;
 
+                    if (TXT_PicPath.Text != "")
+                    {
+
+                        ImageConverter imgConverter = new ImageConverter();
+                        imgBytes = (System.Byte[])imgConverter.ConvertTo(picPictureBox.Image, Type.GetType("System.Byte[]"));
+
+                    }
+                    vSqlCommand.Parameters.Add(new SqlParameter("@image", imgBytes));
                     sqlConnection1.Open();
 
-                    //vSqlCommand.Parameters.Add(new SqlParameter("@image", imageBt));
+                   
 
                     vSQLReader = vSqlCommand.ExecuteReader();
 
@@ -425,7 +427,7 @@ namespace GoodShepherd
                     SqlDataReader vSQLReader;
                     vSqlCommand.Connection = sqlConnection1;
 
-                    vSqlCommand.CommandText = "  Delete from [TBL_User]  Where Code ='" + vCurrentCode + "'";
+                    vSqlCommand.CommandText = "  Delete from [TBL_User]  Where IDUser ='" + vCurrentCode + "'";
 
                     sqlConnection1.Open();
                     
@@ -595,14 +597,14 @@ namespace GoodShepherd
                         return false;
                     }
                    
-                    if (CMX_Role.Text == "")
-                    {
-                        STS_Message.Items["Msg"].Text = "من فضلك اختار القسم";
-                        STS_Message.Items["Msg"].ForeColor = Color.Red;
-                        Timer_MSgCleaner.Start();
-                        CMX_Role.Focus();
-                        return false;
-                    }
+                    //////if (CMX_Role.Text == "")
+                    //////{
+                    //////    STS_Message.Items["Msg"].Text = "من فضلك اختار القسم";
+                    //////    STS_Message.Items["Msg"].ForeColor = Color.Red;
+                    //////    Timer_MSgCleaner.Start();
+                    //////    CMX_Role.Focus();
+                    //////    return false;
+                    //////}
                    
                 }
                 catch (Exception ex)
@@ -1206,59 +1208,63 @@ namespace GoodShepherd
                 try
                 {
                     GRD_Forms.PerformAction(UltraGridAction.ExitEditMode);
-                    long rowsAffected = 0;
-                    string vIsEnabled = "";
-                    string vQuery = "";
-                    string vUpdate = "";
-                    string vInsert = "";
-                    string vDelete = "";
-                    string vSysStatment = "";
-                    foreach (UltraGridRow vCurrRow in GRD_Forms.Rows)
+
+                    if (GRD_Forms.Rows.Count > 0)
                     {
-                        if (vCurrRow.Cells["IsEnabled"].Value.ToString() == "True")
-                            vIsEnabled = "Y";
-                        else if (vCurrRow.Cells["IsEnabled"].Value.ToString() == "False")
-                            vIsEnabled = "N";
-                        if (vCurrRow.Cells["AllowQuery"].Value.ToString() == "True")
-                            vQuery = "Y";
-                        else if (vCurrRow.Cells["AllowQuery"].Value.ToString() == "False")
-                            vQuery = "N";
-                        if (vCurrRow.Cells["AllowInsert"].Value.ToString() == "True")
-                            vInsert = "Y";
-                        else if (vCurrRow.Cells["AllowInsert"].Value.ToString() == "False")
-                            vInsert = "N";
-                        if (vCurrRow.Cells["AllowUpdate"].Value.ToString() == "True")
-                            vUpdate = "Y";
-                        else if (vCurrRow.Cells["AllowUpdate"].Value.ToString() == "False")
-                            vUpdate = "N";
-                        if (vCurrRow.Cells["AllowDelete"].Value.ToString() == "True")
-                            vDelete = "Y";
-                        else if (vCurrRow.Cells["AllowDelete"].Value.ToString() == "False")
-                            vDelete = "N";
-
-                        if (vCurrRow.Cells["DML"].Value == "I")
+                        long rowsAffected = 0;
+                        string vIsEnabled = "";
+                        string vQuery = "";
+                        string vUpdate = "";
+                        string vInsert = "";
+                        string vDelete = "";
+                        string vSysStatment = "";
+                        foreach (UltraGridRow vCurrRow in GRD_Forms.Rows)
                         {
-                            vSysStatment += "INSERT INTO [User_System_Forms]" + "                 ([SYS_FRM_Code]                        , [USR_ID]                                  ,      [IsEnabled]         ,     [AllowQuery]      ,  [AllowInsert]    ,   [AllowUpdate]    ,   [AllowDelete]  ) VALUES" + "\n" +
-                                                                            " ('" + (vCurrRow.Cells["Code"].Value.ToString()) + "','" + (TXT_UserID.Text.ToString()) + "','" + vIsEnabled + "','" + vQuery + "','" + vInsert + "'  ,'" + vUpdate + "'   ,'" + vDelete + "' )";
-                           
+                            if (vCurrRow.Cells["IsEnabled"].Value.ToString() == "True")
+                                vIsEnabled = "Y";
+                            else if (vCurrRow.Cells["IsEnabled"].Value.ToString() == "False")
+                                vIsEnabled = "N";
+                            if (vCurrRow.Cells["AllowQuery"].Value.ToString() == "True")
+                                vQuery = "Y";
+                            else if (vCurrRow.Cells["AllowQuery"].Value.ToString() == "False")
+                                vQuery = "N";
+                            if (vCurrRow.Cells["AllowInsert"].Value.ToString() == "True")
+                                vInsert = "Y";
+                            else if (vCurrRow.Cells["AllowInsert"].Value.ToString() == "False")
+                                vInsert = "N";
+                            if (vCurrRow.Cells["AllowUpdate"].Value.ToString() == "True")
+                                vUpdate = "Y";
+                            else if (vCurrRow.Cells["AllowUpdate"].Value.ToString() == "False")
+                                vUpdate = "N";
+                            if (vCurrRow.Cells["AllowDelete"].Value.ToString() == "True")
+                                vDelete = "Y";
+                            else if (vCurrRow.Cells["AllowDelete"].Value.ToString() == "False")
+                                vDelete = "N";
+
+                            if (vCurrRow.Cells["DML"].Value == "I")
+                            {
+                                vSysStatment += "INSERT INTO [User_System_Forms]" + "                 ([SYS_FRM_Code]                        , [USR_ID]                                  ,      [IsEnabled]         ,     [AllowQuery]      ,  [AllowInsert]    ,   [AllowUpdate]    ,   [AllowDelete]  ) VALUES" + "\n" +
+                                                                                " ('" + (vCurrRow.Cells["Code"].Value.ToString()) + "','" + (TXT_UserID.Text.ToString()) + "','" + vIsEnabled + "','" + vQuery + "','" + vInsert + "'  ,'" + vUpdate + "'   ,'" + vDelete + "' )";
 
 
+
+                            }
+                            else if (vCurrRow.Cells["DML"].Value == "U")
+                            {
+                                vSysStatment += " UPDATE [User_System_Forms] SET " + "        [IsEnabled] = '" + vIsEnabled + "'" + "       ,[AllowQuery] = '" + vQuery + "'" + "       ,[AllowInsert] = '" + vInsert + "'" + "       ,[AllowUpdate] = '" + vUpdate + "'" + "       ,[AllowDelete] = '" + vDelete + "'" + " WHERE  [SYS_FRM_Code] = '" + (vCurrRow.Cells["Code"].Value.ToString()) + "' " + " And    [USR_ID] = '" + TXT_UserID.Text.ToString() + "'";
+                                
+                            }
+                            
                         }
-                        else if (vCurrRow.Cells["DML"].Value == "U")
+                        rowsAffected = BasicClass.fDMLData(vSysStatment, this.Name);
+                        if (rowsAffected > 0)
                         {
-                            vSysStatment += " UPDATE [User_System_Forms] SET " + "        [IsEnabled] = '" + vIsEnabled + "'" + "       ,[AllowQuery] = '" + vQuery + "'" + "       ,[AllowInsert] = '" + vInsert + "'" + "       ,[AllowUpdate] = '" + vUpdate + "'" + "       ,[AllowDelete] = '" + vDelete + "'" + " WHERE  [SYS_FRM_Code] = '" + (vCurrRow.Cells["Code"].Value.ToString()) + "' " + " And    [USR_ID] = '" + TXT_UserID.Text.ToString() + "'";
-                         
 
-                        }
-
-                      
-
+                        }    
                     }
-                    rowsAffected = BasicClass.fDMLData(vSysStatment, this.Name);
-                    if (rowsAffected > 0)
-                    {
 
-                    }
+
+                   
                 }
                 catch (Exception ex)
                 {

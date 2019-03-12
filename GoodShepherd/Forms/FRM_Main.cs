@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using GoodShepherd.Forms;
 using Telerik.WinControls.UI;
+using MEMN;
 
 namespace GoodShepherd
 {
@@ -32,6 +33,7 @@ namespace GoodShepherd
         public FRM_Meetings        Meeting_FRM        ;
         public FRM_DBBackupRestore DBBackupRestore_FRM;
         public FRM_User            User_FRM           ;
+        public FRM_Reports Reports_FRM;
 
         private void EXP_MainItems_ItemClick(object sender, Infragistics.Win.UltraWinExplorerBar.ItemEventArgs e)
         {
@@ -75,7 +77,19 @@ namespace GoodShepherd
                     case "Serv":
 
                         break;
+                    case "Reports":
 
+                        //Fill tab
+                        Reports_FRM = new FRM_Reports();
+                        Reports_FRM.TopLevel = false;
+                        Reports_FRM.FormBorderStyle = FormBorderStyle.None;
+                        Reports_FRM.Dock = DockStyle.Fill;
+                        Reports_FRM.Visible = true;
+
+                        PAG_Rep.Controls.Clear();
+                        PAG_Rep.Controls.Add(Reports_FRM);
+                        Reports_FRM.ShowDialog();
+                        break;
                     case "Edu":
                     
                         //Fill tab

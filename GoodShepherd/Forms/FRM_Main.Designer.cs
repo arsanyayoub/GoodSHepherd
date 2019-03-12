@@ -67,6 +67,7 @@
             Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem6 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
@@ -153,11 +154,6 @@
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool19 = new Infragistics.Win.UltraWinToolbars.ButtonTool("ButtonTool4");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool20 = new Infragistics.Win.UltraWinToolbars.ButtonTool("ButtonTool5");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("Them");
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab11 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab12 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab13 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab14 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MainForm));
@@ -178,6 +174,19 @@
             Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab16 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            this.PAG_City = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Chur = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Serv = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Edu = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Pers = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Meet = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Aten = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Visit = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Rep = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.TAB_Report = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage2 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.PAG_BacResDB = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.PAG_Users = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.inboxControlStyler1 = new Infragistics.Win.AppStyling.Runtime.InboxControlStyler(this.components);
             this.ultraTabbedMdiManager1 = new Infragistics.Win.UltraWinTabbedMdi.UltraTabbedMdiManager(this.components);
             this.ultraGridExcelExporter1 = new Infragistics.Win.UltraWinGrid.ExcelExport.UltraGridExcelExporter(this.components);
@@ -196,37 +205,104 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
-            this.PAG_Users = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_BacResDB = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Rep = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.TAB_Report = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
-            this.ultraTabPageControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.ultraTabPageControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.ultraTabSharedControlsPage2 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
-            this.PAG_Visit = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Aten = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Meet = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Pers = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Edu = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Serv = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_Chur = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
-            this.PAG_City = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
             this.TAB_Main = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.PAG_Rep.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TAB_Report)).BeginInit();
+            this.TAB_Report.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inboxControlStyler1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EXP_MainItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraToolbarsManager1)).BeginInit();
-            this.PAG_Rep.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TAB_Report)).BeginInit();
-            this.TAB_Report.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TAB_Main)).BeginInit();
             this.TAB_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
+            // 
+            // PAG_City
+            // 
+            this.PAG_City.Location = new System.Drawing.Point(3, 24);
+            this.PAG_City.Name = "PAG_City";
+            this.PAG_City.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Chur
+            // 
+            this.PAG_Chur.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Chur.Name = "PAG_Chur";
+            this.PAG_Chur.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Serv
+            // 
+            this.PAG_Serv.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Serv.Name = "PAG_Serv";
+            this.PAG_Serv.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Edu
+            // 
+            this.PAG_Edu.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Edu.Name = "PAG_Edu";
+            this.PAG_Edu.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Pers
+            // 
+            this.PAG_Pers.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Pers.Name = "PAG_Pers";
+            this.PAG_Pers.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Meet
+            // 
+            this.PAG_Meet.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Meet.Name = "PAG_Meet";
+            this.PAG_Meet.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Aten
+            // 
+            this.PAG_Aten.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Aten.Name = "PAG_Aten";
+            this.PAG_Aten.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Visit
+            // 
+            this.PAG_Visit.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Visit.Name = "PAG_Visit";
+            this.PAG_Visit.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Rep
+            // 
+            this.PAG_Rep.Controls.Add(this.TAB_Report);
+            this.PAG_Rep.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Rep.Name = "PAG_Rep";
+            this.PAG_Rep.Size = new System.Drawing.Size(913, 409);
+            // 
+            // TAB_Report
+            // 
+            this.TAB_Report.CloseButtonLocation = Infragistics.Win.UltraWinTabs.TabCloseButtonLocation.HeaderArea;
+            this.TAB_Report.Controls.Add(this.ultraTabSharedControlsPage2);
+            this.TAB_Report.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TAB_Report.Location = new System.Drawing.Point(0, 0);
+            this.TAB_Report.Name = "TAB_Report";
+            this.TAB_Report.SharedControlsPage = this.ultraTabSharedControlsPage2;
+            this.TAB_Report.Size = new System.Drawing.Size(913, 409);
+            this.TAB_Report.TabIndex = 0;
+            this.TAB_Report.TabLayoutStyle = Infragistics.Win.UltraWinTabs.TabLayoutStyle.SingleRowSizeToFit;
+            // 
+            // ultraTabSharedControlsPage2
+            // 
+            this.ultraTabSharedControlsPage2.Location = new System.Drawing.Point(3, 20);
+            this.ultraTabSharedControlsPage2.Name = "ultraTabSharedControlsPage2";
+            this.ultraTabSharedControlsPage2.Size = new System.Drawing.Size(909, 386);
+            // 
+            // PAG_BacResDB
+            // 
+            this.PAG_BacResDB.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_BacResDB.Name = "PAG_BacResDB";
+            this.PAG_BacResDB.Size = new System.Drawing.Size(913, 409);
+            // 
+            // PAG_Users
+            // 
+            this.PAG_Users.Location = new System.Drawing.Point(-10000, -10000);
+            this.PAG_Users.Name = "PAG_Users";
+            this.PAG_Users.Size = new System.Drawing.Size(913, 409);
             // 
             // ultraTabbedMdiManager1
             // 
@@ -321,10 +397,13 @@
             appearance31.Image = ((object)(resources.GetObject("appearance31.Image")));
             ultraExplorerBarItem5.Settings.AppearancesSmall.Appearance = appearance31;
             ultraExplorerBarItem5.Text = "الصلاحيات";
+            ultraExplorerBarItem6.Key = "Reports";
+            ultraExplorerBarItem6.Text = "التقارير";
             ultraExplorerBarGroup13.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem1,
             ultraExplorerBarItem4,
-            ultraExplorerBarItem5});
+            ultraExplorerBarItem5,
+            ultraExplorerBarItem6});
             ultraExplorerBarGroup13.Key = "ResourceCenter";
             appearance32.Image = ((object)(resources.GetObject("appearance32.Image")));
             ultraExplorerBarGroup13.Settings.AppearancesSmall.HeaderAppearance = appearance32;
@@ -671,7 +750,7 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Left.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Left.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.InitialResizeAreaExtent = 8;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.Location = new System.Drawing.Point(0, 55);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Left";
@@ -683,7 +762,7 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Right.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Right.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.InitialResizeAreaExtent = 8;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Location = new System.Drawing.Point(1127, 55);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Right";
@@ -695,7 +774,7 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top;
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Top.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Top.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Location = new System.Drawing.Point(0, 0);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Top";
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Size = new System.Drawing.Size(1135, 55);
@@ -706,148 +785,12 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom;
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.InitialResizeAreaExtent = 8;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Location = new System.Drawing.Point(0, 491);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Bottom";
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Size = new System.Drawing.Size(1135, 8);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.ToolbarsManager = this.ultraToolbarsManager1;
-            // 
-            // PAG_Users
-            // 
-            this.PAG_Users.Location = new System.Drawing.Point(3, 24);
-            this.PAG_Users.Name = "PAG_Users";
-            this.PAG_Users.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_BacResDB
-            // 
-            this.PAG_BacResDB.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_BacResDB.Name = "PAG_BacResDB";
-            this.PAG_BacResDB.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Rep
-            // 
-            this.PAG_Rep.Controls.Add(this.TAB_Report);
-            this.PAG_Rep.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Rep.Name = "PAG_Rep";
-            this.PAG_Rep.Size = new System.Drawing.Size(913, 409);
-            // 
-            // TAB_Report
-            // 
-            this.TAB_Report.CloseButtonLocation = Infragistics.Win.UltraWinTabs.TabCloseButtonLocation.HeaderArea;
-            this.TAB_Report.Controls.Add(this.ultraTabSharedControlsPage2);
-            this.TAB_Report.Controls.Add(this.ultraTabPageControl1);
-            this.TAB_Report.Controls.Add(this.ultraTabPageControl2);
-            this.TAB_Report.Controls.Add(this.ultraTabPageControl3);
-            this.TAB_Report.Controls.Add(this.ultraTabPageControl4);
-            this.TAB_Report.Controls.Add(this.ultraTabPageControl5);
-            this.TAB_Report.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TAB_Report.Location = new System.Drawing.Point(0, 0);
-            this.TAB_Report.Name = "TAB_Report";
-            this.TAB_Report.SharedControlsPage = this.ultraTabSharedControlsPage2;
-            this.TAB_Report.Size = new System.Drawing.Size(913, 409);
-            this.TAB_Report.TabIndex = 0;
-            this.TAB_Report.TabLayoutStyle = Infragistics.Win.UltraWinTabs.TabLayoutStyle.SingleRowSizeToFit;
-            ultraTab10.TabPage = this.ultraTabPageControl1;
-            ultraTab10.Text = "Rep1";
-            ultraTab11.TabPage = this.ultraTabPageControl2;
-            ultraTab11.Text = "Rep2";
-            ultraTab12.TabPage = this.ultraTabPageControl3;
-            ultraTab12.Text = "Rep3";
-            ultraTab13.TabPage = this.ultraTabPageControl4;
-            ultraTab13.Text = "Rep4";
-            ultraTab14.TabPage = this.ultraTabPageControl5;
-            ultraTab14.Text = "Rep5";
-            this.TAB_Report.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
-            ultraTab10,
-            ultraTab11,
-            ultraTab12,
-            ultraTab13,
-            ultraTab14});
-            // 
-            // ultraTabPageControl5
-            // 
-            this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl5.Name = "ultraTabPageControl5";
-            this.ultraTabPageControl5.Size = new System.Drawing.Size(909, 382);
-            // 
-            // ultraTabPageControl4
-            // 
-            this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(909, 382);
-            // 
-            // ultraTabPageControl3
-            // 
-            this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(909, 382);
-            // 
-            // ultraTabPageControl2
-            // 
-            this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(909, 382);
-            // 
-            // ultraTabPageControl1
-            // 
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(3, 24);
-            this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(909, 382);
-            // 
-            // ultraTabSharedControlsPage2
-            // 
-            this.ultraTabSharedControlsPage2.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabSharedControlsPage2.Name = "ultraTabSharedControlsPage2";
-            this.ultraTabSharedControlsPage2.Size = new System.Drawing.Size(909, 382);
-            // 
-            // PAG_Visit
-            // 
-            this.PAG_Visit.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Visit.Name = "PAG_Visit";
-            this.PAG_Visit.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Aten
-            // 
-            this.PAG_Aten.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Aten.Name = "PAG_Aten";
-            this.PAG_Aten.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Meet
-            // 
-            this.PAG_Meet.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Meet.Name = "PAG_Meet";
-            this.PAG_Meet.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Pers
-            // 
-            this.PAG_Pers.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Pers.Name = "PAG_Pers";
-            this.PAG_Pers.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Edu
-            // 
-            this.PAG_Edu.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Edu.Name = "PAG_Edu";
-            this.PAG_Edu.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Serv
-            // 
-            this.PAG_Serv.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Serv.Name = "PAG_Serv";
-            this.PAG_Serv.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_Chur
-            // 
-            this.PAG_Chur.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_Chur.Name = "PAG_Chur";
-            this.PAG_Chur.Size = new System.Drawing.Size(913, 409);
-            // 
-            // PAG_City
-            // 
-            this.PAG_City.Location = new System.Drawing.Point(-10000, -10000);
-            this.PAG_City.Name = "PAG_City";
-            this.PAG_City.Size = new System.Drawing.Size(913, 409);
             // 
             // ultraTabSharedControlsPage1
             // 
@@ -921,7 +864,7 @@
             ultraTab8.TabPage = this.PAG_Visit;
             ultraTab8.Text = "الافتقاد";
             ultraTab8.Visible = false;
-            ultraTab9.Key = "Rep";
+            ultraTab9.Key = "Reports";
             ultraTab9.TabPage = this.PAG_Rep;
             ultraTab9.Text = "التقارير";
             ultraTab9.Visible = false;
@@ -975,13 +918,13 @@
             this.ThemeName = "Office2010Black";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FRM_MainForm_Load);
+            this.PAG_Rep.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TAB_Report)).EndInit();
+            this.TAB_Report.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.inboxControlStyler1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EXP_MainItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraToolbarsManager1)).EndInit();
-            this.PAG_Rep.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TAB_Report)).EndInit();
-            this.TAB_Report.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TAB_Main)).EndInit();
             this.TAB_Main.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -1022,11 +965,6 @@
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl PAG_Rep;
         private Infragistics.Win.UltraWinTabControl.UltraTabControl TAB_Report;
         private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage2;
-        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl1;
-        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl2;
-        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl3;
-        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl4;
-        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl5;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl PAG_BacResDB;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl PAG_Users;
     }
