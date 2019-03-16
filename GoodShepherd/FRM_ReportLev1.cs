@@ -14,10 +14,12 @@ namespace GoodShepherd
 {
     public partial class FRM_ReportLev1 : Form
     {
-        public FRM_ReportLev1()
+
+        public string _repKey = "";
+        public FRM_ReportLev1(string repKey)
         {
             InitializeComponent();
-
+            _repKey = repKey;
             CMXLoad(CMX_CIty, "TBL_City", "id", "CityDesc");
             CMXLoad(CMX_Services, "TBL_Services","id", "Service");
             CMXLoad(CMX_Educ, "TBL_EducationLevel", "id", "EducLevel");
@@ -433,7 +435,32 @@ namespace GoodShepherd
                 ExceptionHandler.HandleException(ex.Message,this.Name, "HighestAttendanceReport");
             }
         }
-      
+        private void BTN_LoadByDate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (_repKey !=null)
+                {
+                    if (_repKey == "RepHighestAttendance")
+                    {
+                        HighestAttendanceReport(TXT_fromDate.Value, TXT_ToDate.Value);
+                    }
+                    else if (_repKey == "RepAttendanceInMonth")
+                    {
+                        AttendanceInMonthReport(CMX_MeetingMonth.Value);
+                    }
+                    else if (_repKey == "RepAttendanceInPeriod")
+                    {
+                        AttendanceInPeriodReport(TXT_fromDate.Value, TXT_ToDate.Value);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                ExceptionHandler.HandleException(ex.Message, this.Name, "BTN_LoadByDate_Click");
+            }
+        }
         #endregion
         #region Attendance in Month
         private void AttendanceInMonthReport(object pFromDate)
@@ -467,8 +494,6 @@ namespace GoodShepherd
                 "FROM				  TBL_Meetings														" + "\n" +
                 "LEFT JOIN			  TBL_Meetings_Details												" + "\n" +
                 "ON					  TBL_Meetings.ID = TBL_Meetings_Details.Meetings_ID				" + "\n" +
-                "AND        (MONTH(TBL_Meetings.TDate) >= " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
-                "AND        (MONTH(TBL_Meetings.TDate) <= '2' Or '2' Is Null )							" + "\n" +
                 "LEFT JOIN			  TBL_MainPerson													" + "\n" +
                 "ON					  TBL_MainPerson.ID = TBL_Meetings_Details.Pers_ID					" + "\n" +
                 "LEFT JOIN			  TBL_Area															" + "\n" +
@@ -476,6 +501,8 @@ namespace GoodShepherd
                 "LEFT JOIN			  TBL_Street														" + "\n" +
                 "ON					  TBL_Street.ID		 = TBL_MainPerson.Street_ID						" + "\n" +
                 "WHERE		1=1																			" + "\n" +
+                "AND        (MONTH(TBL_Meetings.TDate) >= " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
+                "AND        (MONTH(TBL_Meetings.TDate) <= " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
                 "																						";
                 SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
                 SqlDataAdapter da = new SqlDataAdapter();
@@ -503,21 +530,6 @@ namespace GoodShepherd
                 ExceptionHandler.HandleException(ex.Message, this.Name, "HighestAttendanceReport");
             }
         }
-        #endregion
-        private void BTN_LoadByDate_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                HighestAttendanceReport(TXT_fromDate.Value, TXT_ToDate.Value);
-            }
-            catch (Exception ex)
-            {
-                
-                ExceptionHandler.HandleException(ex.Message,this.Name , "BTN_LoadByDate_Click");
-            }
-        }
-        #endregion
-
         private void BTN_MeetingMonth_Click(object sender, EventArgs e)
         {
             try
@@ -530,6 +542,91 @@ namespace GoodShepherd
                 ExceptionHandler.HandleException(ex.Message, this.Name, "BTN_MeetingMonth_Click");
             }
         }
+        #endregion
+        #region Attendance in Period
+        private void AttendanceInPeriodReport(object pFromDate, object pToDate)
+        {
+            try
+            {
+                string vFromDate;
+                string vToDate;
+                if (pFromDate != null)
+                {
+
+                    vFromDate = "'" + pFromDate.ToString() + "'";
+                }
+                else
+                {
+                    vFromDate = "NULL";
+                }
+
+
+                if (pToDate != null)
+                {
+
+                    vToDate = "'" + pToDate.ToString() + "'";
+                }
+                else
+                {
+                    vToDate = "NULL";
+                }
+
+
+                string statement = "";
+                statement = "" + "\n" +
+                 "SELECT	Distinct	 	TBL_Meetings_Details.Pers_ID									" + "\n" +
+                 "					  , TBL_Meetings.TDate												" + "\n" +
+                 "					  ,  TBL_MainPerson.Name											" + "\n" +
+                 "					  ,TBL_MainPerson.Mobile											" + "\n" +
+                 "					  ,TBL_Area.AreaDesc												" + "\n" +
+                 "					  ,TBL_Street.StreetDesc											" + "\n" +
+                 "					  ,TBL_MainPerson.Phone												" + "\n" +
+                 "					  ,TBL_MainPerson.FloorNum											" + "\n" +
+                 "					  ,TBL_MainPerson.BuildingNum										" + "\n" +
+                 "FROM				  TBL_Meetings														" + "\n" +
+                 "LEFT JOIN			  TBL_Meetings_Details												" + "\n" +
+                 "ON					  TBL_Meetings.ID = TBL_Meetings_Details.Meetings_ID				" + "\n" +
+                 "LEFT JOIN			  TBL_MainPerson													" + "\n" +
+                 "ON				  TBL_MainPerson.ID = TBL_Meetings_Details.Pers_ID					" + "\n" +
+                 "LEFT JOIN			  TBL_Area															" + "\n" +
+                 "ON				  TBL_Area.ID		 = TBL_MainPerson.Area_ID						" + "\n" +
+                 "LEFT JOIN			  TBL_Street														" + "\n" +
+                 "ON				  TBL_Street.ID		 = TBL_MainPerson.Street_ID						" + "\n" +
+                 "WHERE		1=1																			" + "\n" +
+                 "AND                 (MONTH(TBL_Meetings.TDate) >= " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
+                 "AND                 (MONTH(TBL_Meetings.TDate) <= " + vToDate + " Or " + vToDate + " Is Null )	" + "\n" +
+                 "																						";
+                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
+                SqlDataAdapter da = new SqlDataAdapter();
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = statement;
+                da.SelectCommand = cmd;
+                Datasets.DS_Meetings ds = new Datasets.DS_Meetings();
+
+                conn.Open();
+                da.Fill(ds.Tables[0]);
+                conn.Close();
+
+                ReportDocument reportDocument = new AttendanceInMonth();
+                reportDocument.Load("AttendanceInMonth.rpt");
+                reportDocument.SetDataSource(ds);
+                reportDocument.SetParameterValue("Adress", "المواظبة فى فترة ");
+
+                CR.ReportSource = reportDocument;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                ExceptionHandler.HandleException(ex.Message, this.Name, "AttendanceInPeriodReport");
+            }
+        }
+        #endregion
+     
+        #endregion
+
+      
 
 
 

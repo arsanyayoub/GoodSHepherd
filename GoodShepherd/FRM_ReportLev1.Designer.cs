@@ -33,6 +33,42 @@
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem4 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem5 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem6 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem13 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem14 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem15 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem16 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem17 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem18 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem19 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem56 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem57 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem32 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem33 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem34 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem35 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem36 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem37 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem38 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem39 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem40 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem41 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem42 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem43 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem44 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem45 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem46 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem47 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem48 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem49 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem50 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem51 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem52 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem53 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem54 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem55 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
@@ -94,46 +130,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ReportLev1));
             Infragistics.Win.ValueListItem valueListItem3 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem32 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem33 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem34 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem35 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem36 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem37 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem38 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem39 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem40 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem41 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem42 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem43 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem44 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem45 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem46 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem47 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem48 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem49 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem50 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem51 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem52 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem53 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem54 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem55 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem4 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem5 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem6 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem13 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem14 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem15 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem16 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem17 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem18 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem19 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem56 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem57 = new Infragistics.Win.ValueListItem();
             this.ultraExpandableGroupBox1 = new Infragistics.Win.Misc.UltraExpandableGroupBox();
             this.ultraExpandableGroupBoxPanel2 = new Infragistics.Win.Misc.UltraExpandableGroupBoxPanel();
             this.GRP_Attendance = new Infragistics.Win.Misc.UltraExpandableGroupBox();
             this.ultraExpandableGroupBoxPanel4 = new Infragistics.Win.Misc.UltraExpandableGroupBoxPanel();
+            this.BTN_MeetingMonth = new Infragistics.Win.Misc.UltraButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.CMX_MeetingMonth = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.TXT_ToDate = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TXT_fromDate = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.BTN_LoadByDate = new Infragistics.Win.Misc.UltraButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.GRP_Details = new Infragistics.Win.Misc.UltraExpandableGroupBox();
             this.ultraExpandableGroupBoxPanel1 = new Infragistics.Win.Misc.UltraExpandableGroupBoxPanel();
             this.BtnWork = new Infragistics.Win.Misc.UltraButton();
@@ -192,20 +200,15 @@
             this.vIWChurchBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vIW_ChurchTableAdapter = new GoodShepherd.GoodShepherdDataSetTableAdapters.VIW_ChurchTableAdapter();
             this.vIW_GetPeopleData1TableAdapter = new GoodShepherd.GoodShepherdDataSetTableAdapters.VIW_GetPeopleData1TableAdapter();
-            this.TXT_ToDate = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TXT_fromDate = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.BTN_LoadByDate = new Infragistics.Win.Misc.UltraButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.CMX_MeetingMonth = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.label7 = new System.Windows.Forms.Label();
-            this.BTN_MeetingMonth = new Infragistics.Win.Misc.UltraButton();
             ((System.ComponentModel.ISupportInitialize)(this.ultraExpandableGroupBox1)).BeginInit();
             this.ultraExpandableGroupBox1.SuspendLayout();
             this.ultraExpandableGroupBoxPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRP_Attendance)).BeginInit();
             this.GRP_Attendance.SuspendLayout();
             this.ultraExpandableGroupBoxPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CMX_MeetingMonth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_ToDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_fromDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GRP_Details)).BeginInit();
             this.GRP_Details.SuspendLayout();
             this.ultraExpandableGroupBoxPanel1.SuspendLayout();
@@ -231,9 +234,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.vIWGetPeopleData1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXT_ToDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXT_fromDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CMX_MeetingMonth)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraExpandableGroupBox1
@@ -307,6 +307,196 @@
             this.ultraExpandableGroupBoxPanel4.Name = "ultraExpandableGroupBoxPanel4";
             this.ultraExpandableGroupBoxPanel4.Size = new System.Drawing.Size(271, 480);
             this.ultraExpandableGroupBoxPanel4.TabIndex = 0;
+            // 
+            // BTN_MeetingMonth
+            // 
+            this.BTN_MeetingMonth.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2013Button;
+            this.BTN_MeetingMonth.Location = new System.Drawing.Point(0, 95);
+            this.BTN_MeetingMonth.Name = "BTN_MeetingMonth";
+            this.BTN_MeetingMonth.Size = new System.Drawing.Size(69, 23);
+            this.BTN_MeetingMonth.TabIndex = 17;
+            this.BTN_MeetingMonth.Text = "Load ";
+            this.BTN_MeetingMonth.Click += new System.EventHandler(this.BTN_LoadByDate_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(218, 100);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 15);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "فى شهر";
+            // 
+            // CMX_MeetingMonth
+            // 
+            this.CMX_MeetingMonth.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
+            valueListItem4.DataValue = 1;
+            valueListItem4.DisplayText = "يناير";
+            valueListItem5.DataValue = 2;
+            valueListItem5.DisplayText = "فبراير";
+            valueListItem6.DataValue = 3;
+            valueListItem6.DisplayText = "مارس";
+            valueListItem13.DataValue = 4;
+            valueListItem13.DisplayText = "ابريل";
+            valueListItem14.DataValue = 5;
+            valueListItem14.DisplayText = "مايو";
+            valueListItem15.DataValue = 6;
+            valueListItem15.DisplayText = "يونيو";
+            valueListItem16.DataValue = 7;
+            valueListItem16.DisplayText = "يوليو";
+            valueListItem17.DataValue = 8;
+            valueListItem17.DisplayText = "اغسطس";
+            valueListItem18.DataValue = 9;
+            valueListItem18.DisplayText = "سبمتمبر";
+            valueListItem19.DataValue = 10;
+            valueListItem19.DisplayText = "اكتوبر";
+            valueListItem56.DataValue = 11;
+            valueListItem56.DisplayText = "نوفمبر";
+            valueListItem57.DataValue = 12;
+            valueListItem57.DisplayText = "ديسمبر";
+            this.CMX_MeetingMonth.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            valueListItem4,
+            valueListItem5,
+            valueListItem6,
+            valueListItem13,
+            valueListItem14,
+            valueListItem15,
+            valueListItem16,
+            valueListItem17,
+            valueListItem18,
+            valueListItem19,
+            valueListItem56,
+            valueListItem57});
+            this.CMX_MeetingMonth.Location = new System.Drawing.Point(87, 97);
+            this.CMX_MeetingMonth.Name = "CMX_MeetingMonth";
+            this.CMX_MeetingMonth.Size = new System.Drawing.Size(110, 21);
+            this.CMX_MeetingMonth.TabIndex = 15;
+            // 
+            // TXT_ToDate
+            // 
+            this.TXT_ToDate.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
+            valueListItem32.DataValue = 1;
+            valueListItem32.DisplayText = "يناير";
+            valueListItem33.DataValue = 2;
+            valueListItem33.DisplayText = "فبراير";
+            valueListItem34.DataValue = 3;
+            valueListItem34.DisplayText = "مارس";
+            valueListItem35.DataValue = 4;
+            valueListItem35.DisplayText = "ابريل";
+            valueListItem36.DataValue = 5;
+            valueListItem36.DisplayText = "مايو";
+            valueListItem37.DataValue = 6;
+            valueListItem37.DisplayText = "يونيو";
+            valueListItem38.DataValue = 7;
+            valueListItem38.DisplayText = "يوليو";
+            valueListItem39.DataValue = 8;
+            valueListItem39.DisplayText = "اغسطس";
+            valueListItem40.DataValue = 9;
+            valueListItem40.DisplayText = "سبمتمبر";
+            valueListItem41.DataValue = 10;
+            valueListItem41.DisplayText = "اكتوبر";
+            valueListItem42.DataValue = 11;
+            valueListItem42.DisplayText = "نوفمبر";
+            valueListItem43.DataValue = 12;
+            valueListItem43.DisplayText = "ديسمبر";
+            this.TXT_ToDate.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            valueListItem32,
+            valueListItem33,
+            valueListItem34,
+            valueListItem35,
+            valueListItem36,
+            valueListItem37,
+            valueListItem38,
+            valueListItem39,
+            valueListItem40,
+            valueListItem41,
+            valueListItem42,
+            valueListItem43});
+            this.TXT_ToDate.Location = new System.Drawing.Point(87, 34);
+            this.TXT_ToDate.Name = "TXT_ToDate";
+            this.TXT_ToDate.Size = new System.Drawing.Size(110, 21);
+            this.TXT_ToDate.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(221, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "الى تاريخ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TXT_fromDate
+            // 
+            this.TXT_fromDate.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
+            valueListItem44.DataValue = 1;
+            valueListItem44.DisplayText = "يناير";
+            valueListItem45.DataValue = 2;
+            valueListItem45.DisplayText = "فبراير";
+            valueListItem46.DataValue = 3;
+            valueListItem46.DisplayText = "مارس";
+            valueListItem47.DataValue = 4;
+            valueListItem47.DisplayText = "ابريل";
+            valueListItem48.DataValue = 5;
+            valueListItem48.DisplayText = "مايو";
+            valueListItem49.DataValue = 6;
+            valueListItem49.DisplayText = "يونيو";
+            valueListItem50.DataValue = 7;
+            valueListItem50.DisplayText = "يوليو";
+            valueListItem51.DataValue = 8;
+            valueListItem51.DisplayText = "اغسطس";
+            valueListItem52.DataValue = 9;
+            valueListItem52.DisplayText = "سبمتمبر";
+            valueListItem53.DataValue = 10;
+            valueListItem53.DisplayText = "اكتوبر";
+            valueListItem54.DataValue = 11;
+            valueListItem54.DisplayText = "نوفمبر";
+            valueListItem55.DataValue = 12;
+            valueListItem55.DisplayText = "ديسمبر";
+            this.TXT_fromDate.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            valueListItem44,
+            valueListItem45,
+            valueListItem46,
+            valueListItem47,
+            valueListItem48,
+            valueListItem49,
+            valueListItem50,
+            valueListItem51,
+            valueListItem52,
+            valueListItem53,
+            valueListItem54,
+            valueListItem55});
+            this.TXT_fromDate.Location = new System.Drawing.Point(87, 2);
+            this.TXT_fromDate.Name = "TXT_fromDate";
+            this.TXT_fromDate.Size = new System.Drawing.Size(110, 21);
+            this.TXT_fromDate.TabIndex = 14;
+            // 
+            // BTN_LoadByDate
+            // 
+            this.BTN_LoadByDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2013Button;
+            this.BTN_LoadByDate.Location = new System.Drawing.Point(4, 33);
+            this.BTN_LoadByDate.Name = "BTN_LoadByDate";
+            this.BTN_LoadByDate.Size = new System.Drawing.Size(69, 23);
+            this.BTN_LoadByDate.TabIndex = 12;
+            this.BTN_LoadByDate.Text = "Load ";
+            this.BTN_LoadByDate.Click += new System.EventHandler(this.BTN_LoadByDate_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(218, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "من تاريخ ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // GRP_Details
             // 
@@ -1128,196 +1318,6 @@
             // 
             this.vIW_GetPeopleData1TableAdapter.ClearBeforeFill = true;
             // 
-            // TXT_ToDate
-            // 
-            this.TXT_ToDate.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
-            valueListItem32.DataValue = 1;
-            valueListItem32.DisplayText = "يناير";
-            valueListItem33.DataValue = 2;
-            valueListItem33.DisplayText = "فبراير";
-            valueListItem34.DataValue = 3;
-            valueListItem34.DisplayText = "مارس";
-            valueListItem35.DataValue = 4;
-            valueListItem35.DisplayText = "ابريل";
-            valueListItem36.DataValue = 5;
-            valueListItem36.DisplayText = "مايو";
-            valueListItem37.DataValue = 6;
-            valueListItem37.DisplayText = "يونيو";
-            valueListItem38.DataValue = 7;
-            valueListItem38.DisplayText = "يوليو";
-            valueListItem39.DataValue = 8;
-            valueListItem39.DisplayText = "اغسطس";
-            valueListItem40.DataValue = 9;
-            valueListItem40.DisplayText = "سبمتمبر";
-            valueListItem41.DataValue = 10;
-            valueListItem41.DisplayText = "اكتوبر";
-            valueListItem42.DataValue = 11;
-            valueListItem42.DisplayText = "نوفمبر";
-            valueListItem43.DataValue = 12;
-            valueListItem43.DisplayText = "ديسمبر";
-            this.TXT_ToDate.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem32,
-            valueListItem33,
-            valueListItem34,
-            valueListItem35,
-            valueListItem36,
-            valueListItem37,
-            valueListItem38,
-            valueListItem39,
-            valueListItem40,
-            valueListItem41,
-            valueListItem42,
-            valueListItem43});
-            this.TXT_ToDate.Location = new System.Drawing.Point(87, 34);
-            this.TXT_ToDate.Name = "TXT_ToDate";
-            this.TXT_ToDate.Size = new System.Drawing.Size(110, 21);
-            this.TXT_ToDate.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(221, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "الى تاريخ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TXT_fromDate
-            // 
-            this.TXT_fromDate.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
-            valueListItem44.DataValue = 1;
-            valueListItem44.DisplayText = "يناير";
-            valueListItem45.DataValue = 2;
-            valueListItem45.DisplayText = "فبراير";
-            valueListItem46.DataValue = 3;
-            valueListItem46.DisplayText = "مارس";
-            valueListItem47.DataValue = 4;
-            valueListItem47.DisplayText = "ابريل";
-            valueListItem48.DataValue = 5;
-            valueListItem48.DisplayText = "مايو";
-            valueListItem49.DataValue = 6;
-            valueListItem49.DisplayText = "يونيو";
-            valueListItem50.DataValue = 7;
-            valueListItem50.DisplayText = "يوليو";
-            valueListItem51.DataValue = 8;
-            valueListItem51.DisplayText = "اغسطس";
-            valueListItem52.DataValue = 9;
-            valueListItem52.DisplayText = "سبمتمبر";
-            valueListItem53.DataValue = 10;
-            valueListItem53.DisplayText = "اكتوبر";
-            valueListItem54.DataValue = 11;
-            valueListItem54.DisplayText = "نوفمبر";
-            valueListItem55.DataValue = 12;
-            valueListItem55.DisplayText = "ديسمبر";
-            this.TXT_fromDate.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem44,
-            valueListItem45,
-            valueListItem46,
-            valueListItem47,
-            valueListItem48,
-            valueListItem49,
-            valueListItem50,
-            valueListItem51,
-            valueListItem52,
-            valueListItem53,
-            valueListItem54,
-            valueListItem55});
-            this.TXT_fromDate.Location = new System.Drawing.Point(87, 2);
-            this.TXT_fromDate.Name = "TXT_fromDate";
-            this.TXT_fromDate.Size = new System.Drawing.Size(110, 21);
-            this.TXT_fromDate.TabIndex = 14;
-            // 
-            // BTN_LoadByDate
-            // 
-            this.BTN_LoadByDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2013Button;
-            this.BTN_LoadByDate.Location = new System.Drawing.Point(4, 33);
-            this.BTN_LoadByDate.Name = "BTN_LoadByDate";
-            this.BTN_LoadByDate.Size = new System.Drawing.Size(69, 23);
-            this.BTN_LoadByDate.TabIndex = 12;
-            this.BTN_LoadByDate.Text = "Load ";
-            this.BTN_LoadByDate.Click += new System.EventHandler(this.BTN_LoadByDate_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(218, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "من تاريخ ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CMX_MeetingMonth
-            // 
-            this.CMX_MeetingMonth.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
-            valueListItem4.DataValue = 1;
-            valueListItem4.DisplayText = "يناير";
-            valueListItem5.DataValue = 2;
-            valueListItem5.DisplayText = "فبراير";
-            valueListItem6.DataValue = 3;
-            valueListItem6.DisplayText = "مارس";
-            valueListItem13.DataValue = 4;
-            valueListItem13.DisplayText = "ابريل";
-            valueListItem14.DataValue = 5;
-            valueListItem14.DisplayText = "مايو";
-            valueListItem15.DataValue = 6;
-            valueListItem15.DisplayText = "يونيو";
-            valueListItem16.DataValue = 7;
-            valueListItem16.DisplayText = "يوليو";
-            valueListItem17.DataValue = 8;
-            valueListItem17.DisplayText = "اغسطس";
-            valueListItem18.DataValue = 9;
-            valueListItem18.DisplayText = "سبمتمبر";
-            valueListItem19.DataValue = 10;
-            valueListItem19.DisplayText = "اكتوبر";
-            valueListItem56.DataValue = 11;
-            valueListItem56.DisplayText = "نوفمبر";
-            valueListItem57.DataValue = 12;
-            valueListItem57.DisplayText = "ديسمبر";
-            this.CMX_MeetingMonth.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem4,
-            valueListItem5,
-            valueListItem6,
-            valueListItem13,
-            valueListItem14,
-            valueListItem15,
-            valueListItem16,
-            valueListItem17,
-            valueListItem18,
-            valueListItem19,
-            valueListItem56,
-            valueListItem57});
-            this.CMX_MeetingMonth.Location = new System.Drawing.Point(87, 97);
-            this.CMX_MeetingMonth.Name = "CMX_MeetingMonth";
-            this.CMX_MeetingMonth.Size = new System.Drawing.Size(110, 21);
-            this.CMX_MeetingMonth.TabIndex = 15;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(218, 100);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 15);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "فى شهر";
-            // 
-            // BTN_MeetingMonth
-            // 
-            this.BTN_MeetingMonth.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2013Button;
-            this.BTN_MeetingMonth.Location = new System.Drawing.Point(0, 95);
-            this.BTN_MeetingMonth.Name = "BTN_MeetingMonth";
-            this.BTN_MeetingMonth.Size = new System.Drawing.Size(69, 23);
-            this.BTN_MeetingMonth.TabIndex = 17;
-            this.BTN_MeetingMonth.Text = "Load ";
-            this.BTN_MeetingMonth.Click += new System.EventHandler(this.BTN_MeetingMonth_Click);
-            // 
             // FRM_ReportLev1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1335,6 +1335,9 @@
             this.GRP_Attendance.ResumeLayout(false);
             this.ultraExpandableGroupBoxPanel4.ResumeLayout(false);
             this.ultraExpandableGroupBoxPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CMX_MeetingMonth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_ToDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_fromDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GRP_Details)).EndInit();
             this.GRP_Details.ResumeLayout(false);
             this.ultraExpandableGroupBoxPanel1.ResumeLayout(false);
@@ -1361,9 +1364,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.vIWGetPeopleData1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXT_ToDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXT_fromDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CMX_MeetingMonth)).EndInit();
             this.ResumeLayout(false);
 
         }
