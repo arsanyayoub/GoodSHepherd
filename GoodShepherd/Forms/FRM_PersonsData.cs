@@ -914,13 +914,13 @@ namespace GoodShepherd.Forms
             {
                 try
                 {
-                    System.Data.SqlClient.SqlCommand vCommand = new  System.Data.SqlClient.SqlCommand();
-                    vCommand.CommandText = "select  * from dbo.VIW_GetPeopleData";
-                    SortedList vSqlStatment = new SortedList();
-                    vSqlStatment.Add("DT_PeopleData", vCommand);
-                    FRM_reportViewer vfrm = new FRM_reportViewer(vSqlStatment, new DS_PeopleData(), new REP_PeopleData());
-                    //vfrm.MdiParent = this.MdiParent;
-                    vfrm.Show();
+                    //System.Data.SqlClient.SqlCommand vCommand = new  System.Data.SqlClient.SqlCommand();
+                    //vCommand.CommandText = "select  * from dbo.VIW_GetPeopleData";
+                    //SortedList vSqlStatment = new SortedList();
+                    //vSqlStatment.Add("DT_PeopleData", vCommand);
+                    //FRM_reportViewer vfrm = new FRM_reportViewer(vSqlStatment, new DS_PeopleData(), new REP_PeopleData());
+                    ////vfrm.MdiParent = this.MdiParent;
+                    //vfrm.Show();
 
 
 

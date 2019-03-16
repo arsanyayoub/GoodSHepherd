@@ -104,3 +104,31 @@ Parameter name: dataTable
 	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_reportViewer
 		The Error Is Object reference not set to an instance of an object.
 ============================================================================
+
+
+15/03/2019  =  11:38 ص
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_User
+	THE SUB NAME THAT HAS OCCURED THE ERROR: UpdateExist
+		The Error Is The parameterized query '(@image nvarchar(4000))INSERT INTO [TBL_User]([UserName]        ' expects the parameter '@image', which was not supplied.
+============================================================================
+
+
+15/03/2019  =  11:46 ص
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_User
+	THE SUB NAME THAT HAS OCCURED THE ERROR: UpdateExist
+		The Error Is Operand type clash: nvarchar is incompatible with image
+============================================================================
+
+
+15/03/2019  =  05:06 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: HighestAttendanceReport
+		The Error Is Incorrect syntax near '1'.
+============================================================================
+
+
+15/03/2019  =  05:07 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: HighestAttendanceReport
+		The Error Is Incorrect syntax near '1'.
+============================================================================

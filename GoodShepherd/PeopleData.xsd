@@ -9,11 +9,12 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIW_GetPeopleData1TableAdapter" GeneratorDataComponentClassName="VIW_GetPeopleData1TableAdapter" Name="VIW_GetPeopleData1" UserDataComponentName="VIW_GetPeopleData1TableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
-SELECT        TOP (1000) ChurchName, Church_ID, ID_City, City, ID_Area, AreaDesc, ID_EducYear, EducYear, ID_Str, StreetDesc, ID_Pers, Name, Gender, Mobile, BirthDate, ID_Collage, Collage, ID_Depart, Department
+SELECT        TOP (1000) ChurchName, Church_ID, ID_City, City, ID_Area, AreaDesc, ID_EducYear, EducYear, ID_Str, StreetDesc, ID_Pers, Name, Gender, Mobile, BirthDate, ID_Collage, Collage, ID_Depart, Department, BuildingNum, 
+                         FloorNum, Phone, PersonType, FrName_PersID, Service_ID, Service, PersType_ID, EducLevel_ID, EducLevel, Statuse, IsWorking, Expr1, AgeIntYears
 FROM            VIW_GetPeopleData</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -40,17 +41,166 @@ FROM            VIW_GetPeopleData</CommandText>
               <Mapping SourceColumn="Collage" DataSetColumn="Collage" />
               <Mapping SourceColumn="ID_Depart" DataSetColumn="ID_Depart" />
               <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="BuildingNum" DataSetColumn="BuildingNum" />
+              <Mapping SourceColumn="FloorNum" DataSetColumn="FloorNum" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="PersonType" DataSetColumn="PersonType" />
+              <Mapping SourceColumn="FrName_PersID" DataSetColumn="FrName_PersID" />
+              <Mapping SourceColumn="Service_ID" DataSetColumn="Service_ID" />
+              <Mapping SourceColumn="Service" DataSetColumn="Service" />
+              <Mapping SourceColumn="PersType_ID" DataSetColumn="PersType_ID" />
+              <Mapping SourceColumn="EducLevel_ID" DataSetColumn="EducLevel_ID" />
+              <Mapping SourceColumn="EducLevel" DataSetColumn="EducLevel" />
+              <Mapping SourceColumn="Statuse" DataSetColumn="Statuse" />
+              <Mapping SourceColumn="IsWorking" DataSetColumn="IsWorking" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="AgeIntYears" DataSetColumn="AgeIntYears" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByChurchID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByChurchID" GeneratorSourceName="FillByChurchID" GetMethodModifier="Public" GetMethodName="GetDataByChurchID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByChurchID" UserSourceName="FillByChurchID">
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByAge" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAge" GeneratorSourceName="FillByAge" GetMethodModifier="Public" GetMethodName="GetDataByAge" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAge" UserSourceName="FillByAge">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
-SELECT        TOP (1000) ChurchName, Church_ID, ID_City, City, ID_Area, AreaDesc, ID_EducYear, EducYear, ID_Str, StreetDesc, ID_Pers, Name, Gender, Mobile, BirthDate, ID_Collage, Collage, ID_Depart, Department
-FROM [dbo].[VIW_GetPeopleData]
-WHERE Church_ID=@Church_ID</CommandText>
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (AgeIntYears = @Age) AND (Church_ID = @Church) ORDER BY Name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Age" ColumnName="AgeIntYears" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@Age" Precision="0" Scale="0" Size="1024" SourceColumn="AgeIntYears" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByArea" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByArea" GeneratorSourceName="FillByArea" GetMethodModifier="Public" GetMethodName="GetDataByArea" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByArea" UserSourceName="FillByArea">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (ID_Area = @Area) ORDER BY AreaDesc</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Area" ColumnName="ID_Area" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Area" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="ID_Area" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByChurch" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByChurch" GeneratorSourceName="FillByChurch" GetMethodModifier="Public" GetMethodName="GetDataByChurch" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByChurch" UserSourceName="FillByChurch">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (Church_ID = @Church)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByChurchID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByChurchID" GeneratorSourceName="FillByChurchID" GetMethodModifier="Public" GetMethodName="GetDataByChurchID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByChurchID" UserSourceName="FillByChurchID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT TOP (1000) AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (Church_ID = @Church_ID)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="Church_ID" ColumnName="Church_ID" DataSourceName="dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church_ID" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByCity" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByCity" GeneratorSourceName="FillByCity" GetMethodModifier="Public" GetMethodName="GetDataByCity" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByCity" UserSourceName="FillByCity">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (ID_City = @City) ORDER BY AreaDesc</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="City" ColumnName="ID_City" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@City" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="ID_City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByEduc" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByEduc" GeneratorSourceName="FillByEduc" GetMethodModifier="Public" GetMethodName="GetDataByEduc" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByEduc" UserSourceName="FillByEduc">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (EducLevel_ID = @Educ)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Educ" ColumnName="EducLevel_ID" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@Educ" Precision="0" Scale="0" Size="1024" SourceColumn="EducLevel_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByFrPers" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByFrPers" GeneratorSourceName="FillByFrPers" GetMethodModifier="Public" GetMethodName="GetDataByFrPers" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByFrPers" UserSourceName="FillByFrPers">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (FrName_PersID = @FrName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FrName" ColumnName="FrName_PersID" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@FrName" Precision="0" Scale="0" Size="1024" SourceColumn="FrName_PersID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByIsWork" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIsWork" GeneratorSourceName="FillByIsWork" GetMethodModifier="Public" GetMethodName="GetDataByIsWork" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIsWork" UserSourceName="FillByIsWork">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (IsWorking = @Work) AND (Church_ID = @Church)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Work" ColumnName="IsWorking" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@Work" Precision="0" Scale="0" Size="1024" SourceColumn="IsWorking" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByMonth" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByMonth" GeneratorSourceName="FillByMonth" GetMethodModifier="Public" GetMethodName="GetDataByMonth" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByMonth" UserSourceName="FillByMonth">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (MONTH(BirthDate) = @Month) AND (Church_ID = @Church) ORDER BY Name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Month" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="Decimal" Direction="Input" ParameterName="@Month" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByPartAge" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByPartAge" GeneratorSourceName="FillByPartAge" GetMethodModifier="Public" GetMethodName="GetDataByPartAge" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByPartAge" UserSourceName="FillByPartAge">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (AgeIntYears BETWEEN @From AND @To) AND (Church_ID = @Church) ORDER BY AgeIntYears</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="From" ColumnName="AgeIntYears" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@From" Precision="0" Scale="0" Size="1024" SourceColumn="AgeIntYears" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="To" ColumnName="AgeIntYears" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@To" Precision="0" Scale="0" Size="1024" SourceColumn="AgeIntYears" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByPartMonth" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByPartMonth" GeneratorSourceName="FillByPartMonth" GetMethodModifier="Public" GetMethodName="GetDataByPartMonth" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByPartMonth" UserSourceName="FillByPartMonth">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (MONTH(BirthDate) BETWEEN @From AND @To) AND (Church_ID = @Church) ORDER BY MONTH(BirthDate)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="From" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="Decimal" Direction="Input" ParameterName="@From" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="To" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="Decimal" Direction="Input" ParameterName="@To" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByService" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByService" GeneratorSourceName="FillByService" GetMethodModifier="Public" GetMethodName="GetDataByService" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByService" UserSourceName="FillByService">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (Church_ID = @Church) AND (Service_ID = @Service)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Church" ColumnName="Church_ID" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Church" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Church_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Service" ColumnName="Service_ID" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@Service" Precision="0" Scale="0" Size="1024" SourceColumn="Service_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByStatuse" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByStatuse" GeneratorSourceName="FillByStatuse" GetMethodModifier="Public" GetMethodName="GetDataByStatuse" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByStatuse" UserSourceName="FillByStatuse">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (Statuse = @Statuse)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Statuse" ColumnName="Statuse" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@Statuse" Precision="0" Scale="0" Size="1024" SourceColumn="Statuse" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GoodShepherdConnectionString (Settings)" DbObjectName="GoodShepherd.dbo.VIW_GetPeopleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByStreet" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByStreet" GeneratorSourceName="FillByStreet" GetMethodModifier="Public" GetMethodName="GetDataByStreet" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByStreet" UserSourceName="FillByStreet">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (ID_Str = @Street) ORDER BY BuildingNum, FloorNum, Name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Street" ColumnName="ID_Str" DataSourceName="GoodShepherd.dbo.VIW_GetPeopleData" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Street" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="ID_Str" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
@@ -170,6 +320,74 @@ WHERE Church_ID=@Church_ID</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="BuildingNum" msprop:Generator_ColumnVarNameInTable="columnBuildingNum" msprop:Generator_ColumnPropNameInRow="BuildingNum" msprop:Generator_ColumnPropNameInTable="BuildingNumColumn" msprop:Generator_UserColumnName="BuildingNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FloorNum" msprop:Generator_ColumnVarNameInTable="columnFloorNum" msprop:Generator_ColumnPropNameInRow="FloorNum" msprop:Generator_ColumnPropNameInTable="FloorNumColumn" msprop:Generator_UserColumnName="FloorNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonType" msprop:Generator_ColumnVarNameInTable="columnPersonType" msprop:Generator_ColumnPropNameInRow="PersonType" msprop:Generator_ColumnPropNameInTable="PersonTypeColumn" msprop:Generator_UserColumnName="PersonType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FrName_PersID" msprop:Generator_ColumnVarNameInTable="columnFrName_PersID" msprop:Generator_ColumnPropNameInRow="FrName_PersID" msprop:Generator_ColumnPropNameInTable="FrName_PersIDColumn" msprop:Generator_UserColumnName="FrName_PersID" type="xs:long" minOccurs="0" />
+              <xs:element name="Service_ID" msprop:Generator_ColumnVarNameInTable="columnService_ID" msprop:Generator_ColumnPropNameInRow="Service_ID" msprop:Generator_ColumnPropNameInTable="Service_IDColumn" msprop:Generator_UserColumnName="Service_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Service" msprop:Generator_ColumnVarNameInTable="columnService" msprop:Generator_ColumnPropNameInRow="Service" msprop:Generator_ColumnPropNameInTable="ServiceColumn" msprop:Generator_UserColumnName="Service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersType_ID" msprop:Generator_ColumnVarNameInTable="columnPersType_ID" msprop:Generator_ColumnPropNameInRow="PersType_ID" msprop:Generator_ColumnPropNameInTable="PersType_IDColumn" msprop:Generator_UserColumnName="PersType_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EducLevel_ID" msprop:Generator_ColumnVarNameInTable="columnEducLevel_ID" msprop:Generator_ColumnPropNameInRow="EducLevel_ID" msprop:Generator_ColumnPropNameInTable="EducLevel_IDColumn" msprop:Generator_UserColumnName="EducLevel_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EducLevel" msprop:Generator_ColumnVarNameInTable="columnEducLevel" msprop:Generator_ColumnPropNameInRow="EducLevel" msprop:Generator_ColumnPropNameInTable="EducLevelColumn" msprop:Generator_UserColumnName="EducLevel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Statuse" msprop:Generator_ColumnVarNameInTable="columnStatuse" msprop:Generator_ColumnPropNameInRow="Statuse" msprop:Generator_ColumnPropNameInTable="StatuseColumn" msprop:Generator_UserColumnName="Statuse" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsWorking" msprop:Generator_ColumnVarNameInTable="columnIsWorking" msprop:Generator_ColumnPropNameInRow="IsWorking" msprop:Generator_ColumnPropNameInTable="IsWorkingColumn" msprop:Generator_UserColumnName="IsWorking" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AgeIntYears" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAgeIntYears" msprop:Generator_ColumnPropNameInRow="AgeIntYears" msprop:Generator_ColumnPropNameInTable="AgeIntYearsColumn" msprop:Generator_UserColumnName="AgeIntYears" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -208,7 +426,6 @@ WHERE Church_ID=@Church_ID</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              
             </xs:sequence>
           </xs:complexType>
         </xs:element>

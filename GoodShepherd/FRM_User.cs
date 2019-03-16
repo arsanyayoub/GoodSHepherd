@@ -299,6 +299,17 @@ namespace GoodShepherd
 
                     //Provide file path in txtImagePath text box.
                     TXT_PicPath.Text = dlg.FileName;
+
+                    if (vFormMode.Trim().ToUpper() == "NI")
+                    {
+                        vFormMode = "I";
+                    }
+                    else if (vFormMode.Trim().ToUpper() == "N")
+                    {
+                        vFormMode = "U";
+                    }
+
+
                 }
             }
 
@@ -307,6 +318,14 @@ namespace GoodShepherd
             {
                 picPictureBox.Image = null;
                 TXT_PicPath.Text = "";
+                if (vFormMode.Trim().ToUpper() == "NI")
+                {
+                    vFormMode = "I";
+                }
+                else if (vFormMode.Trim().ToUpper() == "N")
+                {
+                    vFormMode = "U";
+                }
             }
         #endregion
 
@@ -338,9 +357,21 @@ namespace GoodShepherd
                     vSqlCommand.CommandText = "INSERT INTO [TBL_User]" + "([UserName]                 ,         [Password]                    ,           [Church_ID]             ,[Picture], LastUpdate,             MachineName                ,                    ProcessID                      ) " + "\n" +
                                                   "OUTPUT INSERTED.IDUser" + "\n" + 
                                                   "VALUES                 " + "('" + this.TXT_UserName.Text.Trim() + "','" + this.TXT_Password.Text.Trim() + "','" + this.CMX_ChurchName.Value + "',  @image , getDate() ,'" + Environment.MachineName.Trim() + "','" + Process.GetCurrentProcess().Id.ToString() + "') ";
-                    sqlConnection1.Open();
+                  
 
-                    vSqlCommand.Parameters.Add(new SqlParameter("@image", imgBytes));
+                   
+
+                    if (imgBytes != null)
+                    {
+                        vSqlCommand.Parameters.AddWithValue("@image", imgBytes);
+                    }
+                    else
+                    {
+                        SqlParameter imageParameter = new SqlParameter("@image", SqlDbType.Image);
+                        imageParameter.Value = DBNull.Value;
+                        vSqlCommand.Parameters.Add(imageParameter);
+                    }
+                    sqlConnection1.Open();  
                     Int64 newId = (Int64)vSqlCommand.ExecuteScalar();
                     TXT_UserID.Text = newId.ToString();
                     vCurrentCode = newId.ToString();
@@ -397,7 +428,16 @@ namespace GoodShepherd
                         imgBytes = (System.Byte[])imgConverter.ConvertTo(picPictureBox.Image, Type.GetType("System.Byte[]"));
 
                     }
-                    vSqlCommand.Parameters.Add(new SqlParameter("@image", imgBytes));
+                    if (imgBytes != null)
+                    {
+                        vSqlCommand.Parameters.AddWithValue("@image", imgBytes);
+                    }
+                    else
+                    {
+                        SqlParameter imageParameter = new SqlParameter("@image", SqlDbType.Image);
+                        imageParameter.Value = DBNull.Value;
+                        vSqlCommand.Parameters.Add(imageParameter);
+                    }
                     sqlConnection1.Open();
 
                    

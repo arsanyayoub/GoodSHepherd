@@ -17,7 +17,7 @@ using GoodShepherd;
 public class BasicClass
 {
 
-    public static string vConectionString = "Data Source=.;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
+    public static string vConectionString = "";//"Data Source=.;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
 
    // public static string vConectionString =""; //"Data Source=EimeCinter\\EimeSRV;Initial Catalog=StudentExam;User Id=sa;Password=P@$$w0rd2017;";
 

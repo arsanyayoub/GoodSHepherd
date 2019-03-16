@@ -1,4 +1,3 @@
-D:\GoodShepherdA Finalll\GoodShepherd\obj\Debug\MEMN.FRM_Reports.resources
 D:\GoodShepherdA Finalll\GoodShepherd\obj\Debug\GoodShepherd.Forms.FRM_DBBackupRestore.resources
 D:\GoodShepherdA Finalll\GoodShepherd\obj\Debug\GoodShepherd.FRM_DBConfiguration.resources
 D:\GoodShepherdA Finalll\GoodShepherd\obj\Debug\GoodShepherd.FRM_ImportFromExcel.resources
@@ -39,3 +38,4 @@ D:\GoodShepherdA Finalll\GoodShepherd\bin\Debug\TelerikCommon.dll
 D:\GoodShepherdA Finalll\GoodShepherd\bin\Debug\UIAutomationProvider.dll
 D:\GoodShepherdA Finalll\GoodShepherd\bin\Debug\Telerik.WinControls.UI.xml
 D:\GoodShepherdA Finalll\GoodShepherd\obj\Debug\GoodShepherd.csprojResolveAssemblyReference.cache
+D:\GoodShepherdA Finalll\GoodShepherd\obj\Debug\GoodShepherd.FRM_ReportLev1.resources
