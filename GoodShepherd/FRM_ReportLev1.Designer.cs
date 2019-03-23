@@ -135,13 +135,13 @@
             this.GRP_Attendance = new Infragistics.Win.Misc.UltraExpandableGroupBox();
             this.ultraExpandableGroupBoxPanel4 = new Infragistics.Win.Misc.UltraExpandableGroupBoxPanel();
             this.BTN_MeetingMonth = new Infragistics.Win.Misc.UltraButton();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_Meetingmonth = new System.Windows.Forms.Label();
             this.CMX_MeetingMonth = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.TXT_ToDate = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_toDate = new System.Windows.Forms.Label();
             this.TXT_fromDate = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.BTN_LoadByDate = new Infragistics.Win.Misc.UltraButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.BTN_LoadMeetingByDate = new Infragistics.Win.Misc.UltraButton();
+            this.lbl_fromDate = new System.Windows.Forms.Label();
             this.GRP_Details = new Infragistics.Win.Misc.UltraExpandableGroupBox();
             this.ultraExpandableGroupBoxPanel1 = new Infragistics.Win.Misc.UltraExpandableGroupBoxPanel();
             this.BtnWork = new Infragistics.Win.Misc.UltraButton();
@@ -295,13 +295,13 @@
             // ultraExpandableGroupBoxPanel4
             // 
             this.ultraExpandableGroupBoxPanel4.Controls.Add(this.BTN_MeetingMonth);
-            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.label7);
+            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.lbl_Meetingmonth);
             this.ultraExpandableGroupBoxPanel4.Controls.Add(this.CMX_MeetingMonth);
             this.ultraExpandableGroupBoxPanel4.Controls.Add(this.TXT_ToDate);
-            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.label1);
+            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.lbl_toDate);
             this.ultraExpandableGroupBoxPanel4.Controls.Add(this.TXT_fromDate);
-            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.BTN_LoadByDate);
-            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.label3);
+            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.BTN_LoadMeetingByDate);
+            this.ultraExpandableGroupBoxPanel4.Controls.Add(this.lbl_fromDate);
             this.ultraExpandableGroupBoxPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ultraExpandableGroupBoxPanel4.Location = new System.Drawing.Point(3, 19);
             this.ultraExpandableGroupBoxPanel4.Name = "ultraExpandableGroupBoxPanel4";
@@ -318,16 +318,16 @@
             this.BTN_MeetingMonth.Text = "Load ";
             this.BTN_MeetingMonth.Click += new System.EventHandler(this.BTN_LoadByDate_Click);
             // 
-            // label7
+            // lbl_Meetingmonth
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(218, 100);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 15);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "فى شهر";
+            this.lbl_Meetingmonth.AutoSize = true;
+            this.lbl_Meetingmonth.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Meetingmonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Meetingmonth.Location = new System.Drawing.Point(218, 100);
+            this.lbl_Meetingmonth.Name = "lbl_Meetingmonth";
+            this.lbl_Meetingmonth.Size = new System.Drawing.Size(38, 15);
+            this.lbl_Meetingmonth.TabIndex = 16;
+            this.lbl_Meetingmonth.Text = "فى شهر";
             // 
             // CMX_MeetingMonth
             // 
@@ -419,17 +419,17 @@
             this.TXT_ToDate.Size = new System.Drawing.Size(110, 21);
             this.TXT_ToDate.TabIndex = 13;
             // 
-            // label1
+            // lbl_toDate
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(221, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "الى تاريخ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_toDate.AutoSize = true;
+            this.lbl_toDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_toDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_toDate.Location = new System.Drawing.Point(221, 34);
+            this.lbl_toDate.Name = "lbl_toDate";
+            this.lbl_toDate.Size = new System.Drawing.Size(45, 15);
+            this.lbl_toDate.TabIndex = 10;
+            this.lbl_toDate.Text = "الى تاريخ";
+            this.lbl_toDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TXT_fromDate
             // 
@@ -476,27 +476,27 @@
             this.TXT_fromDate.Size = new System.Drawing.Size(110, 21);
             this.TXT_fromDate.TabIndex = 14;
             // 
-            // BTN_LoadByDate
+            // BTN_LoadMeetingByDate
             // 
-            this.BTN_LoadByDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2013Button;
-            this.BTN_LoadByDate.Location = new System.Drawing.Point(4, 33);
-            this.BTN_LoadByDate.Name = "BTN_LoadByDate";
-            this.BTN_LoadByDate.Size = new System.Drawing.Size(69, 23);
-            this.BTN_LoadByDate.TabIndex = 12;
-            this.BTN_LoadByDate.Text = "Load ";
-            this.BTN_LoadByDate.Click += new System.EventHandler(this.BTN_LoadByDate_Click);
+            this.BTN_LoadMeetingByDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2013Button;
+            this.BTN_LoadMeetingByDate.Location = new System.Drawing.Point(4, 33);
+            this.BTN_LoadMeetingByDate.Name = "BTN_LoadMeetingByDate";
+            this.BTN_LoadMeetingByDate.Size = new System.Drawing.Size(69, 23);
+            this.BTN_LoadMeetingByDate.TabIndex = 12;
+            this.BTN_LoadMeetingByDate.Text = "Load ";
+            this.BTN_LoadMeetingByDate.Click += new System.EventHandler(this.BTN_LoadByDate_Click);
             // 
-            // label3
+            // lbl_fromDate
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(218, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "من تاريخ ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_fromDate.AutoSize = true;
+            this.lbl_fromDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_fromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fromDate.Location = new System.Drawing.Point(218, 5);
+            this.lbl_fromDate.Name = "lbl_fromDate";
+            this.lbl_fromDate.Size = new System.Drawing.Size(46, 15);
+            this.lbl_fromDate.TabIndex = 11;
+            this.lbl_fromDate.Text = "من تاريخ ";
+            this.lbl_fromDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // GRP_Details
             // 
@@ -1433,12 +1433,12 @@
         private Infragistics.Win.UltraWinEditors.UltraOptionSet OPT_RepType;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer CR;
         private Infragistics.Win.UltraWinEditors.UltraComboEditor TXT_ToDate;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_toDate;
         private Infragistics.Win.UltraWinEditors.UltraComboEditor TXT_fromDate;
-        private Infragistics.Win.Misc.UltraButton BTN_LoadByDate;
-        private System.Windows.Forms.Label label3;
+        private Infragistics.Win.Misc.UltraButton BTN_LoadMeetingByDate;
+        private System.Windows.Forms.Label lbl_fromDate;
         private Infragistics.Win.Misc.UltraButton BTN_MeetingMonth;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_Meetingmonth;
         private Infragistics.Win.UltraWinEditors.UltraComboEditor CMX_MeetingMonth;
     }
 }

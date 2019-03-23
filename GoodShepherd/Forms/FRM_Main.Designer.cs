@@ -71,18 +71,21 @@
             Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem3 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem18 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem19 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem6 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem20 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem18 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem19 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem20 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
@@ -94,6 +97,11 @@
             Infragistics.Win.Appearance appearance50 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance51 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance52 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance53 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance54 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance56 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance57 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MainForm));
@@ -114,31 +122,31 @@
             Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab16 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance53 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool33 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnPrint");
             Infragistics.Win.UltraWinToolbars.PopupMenuTool popupMenuTool3 = new Infragistics.Win.UltraWinToolbars.PopupMenuTool("btnRunReport");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool35 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnExit");
             Infragistics.Win.UltraWinToolbars.PopupMenuTool popupMenuTool1 = new Infragistics.Win.UltraWinToolbars.PopupMenuTool("pmtOptions");
             Infragistics.Win.UltraWinToolbars.PopupControlContainerTool popupControlContainerTool1 = new Infragistics.Win.UltraWinToolbars.PopupControlContainerTool("pccAbout");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("Themes");
-            Infragistics.Win.Appearance appearance54 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance56 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance57 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ComboBoxTool comboBoxTool7 = new Infragistics.Win.UltraWinToolbars.ComboBoxTool("ComboBoxTool4");
             Infragistics.Win.Appearance appearance59 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance60 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance61 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance62 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnNewCustomer");
             Infragistics.Win.Appearance appearance63 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ComboBoxTool comboBoxTool7 = new Infragistics.Win.UltraWinToolbars.ComboBoxTool("ComboBoxTool4");
             Infragistics.Win.Appearance appearance64 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance65 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance66 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance67 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnNewCustomer");
+            Infragistics.Win.Appearance appearance68 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance69 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool8 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnEdit");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool9 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnDuplicate");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool10 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnDelete");
-            Infragistics.Win.Appearance appearance65 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance66 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance70 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance71 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool11 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnMerge");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnDetectDuplicates");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool16 = new Infragistics.Win.UltraWinToolbars.ButtonTool("btnSendEmail");
@@ -169,7 +177,7 @@
             Infragistics.Win.UltraWinToolbars.ListToolItem listToolItem2 = new Infragistics.Win.UltraWinToolbars.ListToolItem("Bottom");
             Infragistics.Win.UltraWinToolbars.ListToolItem listToolItem3 = new Infragistics.Win.UltraWinToolbars.ListToolItem("Off");
             Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool38 = new Infragistics.Win.UltraWinToolbars.ButtonTool("ButtonTool1");
-            Infragistics.Win.Appearance appearance67 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance72 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinToolbars.ComboBoxTool comboBoxTool4 = new Infragistics.Win.UltraWinToolbars.ComboBoxTool("ComboBoxTool1");
             Infragistics.Win.ValueList valueList1 = new Infragistics.Win.ValueList(0);
             Infragistics.Win.UltraWinToolbars.ComboBoxTool comboBoxTool5 = new Infragistics.Win.UltraWinToolbars.ComboBoxTool("ComboBoxTool2");
@@ -229,67 +237,67 @@
             // 
             this.PAG_City.Location = new System.Drawing.Point(3, 24);
             this.PAG_City.Name = "PAG_City";
-            this.PAG_City.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_City.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Chur
             // 
             this.PAG_Chur.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Chur.Name = "PAG_Chur";
-            this.PAG_Chur.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Chur.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Serv
             // 
             this.PAG_Serv.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Serv.Name = "PAG_Serv";
-            this.PAG_Serv.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Serv.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Edu
             // 
             this.PAG_Edu.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Edu.Name = "PAG_Edu";
-            this.PAG_Edu.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Edu.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Pers
             // 
             this.PAG_Pers.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Pers.Name = "PAG_Pers";
-            this.PAG_Pers.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Pers.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Meet
             // 
             this.PAG_Meet.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Meet.Name = "PAG_Meet";
-            this.PAG_Meet.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Meet.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Aten
             // 
             this.PAG_Aten.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Aten.Name = "PAG_Aten";
-            this.PAG_Aten.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Aten.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Visit
             // 
             this.PAG_Visit.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Visit.Name = "PAG_Visit";
-            this.PAG_Visit.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Visit.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Rep
             // 
             this.PAG_Rep.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Rep.Name = "PAG_Rep";
-            this.PAG_Rep.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Rep.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_BacResDB
             // 
             this.PAG_BacResDB.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_BacResDB.Name = "PAG_BacResDB";
-            this.PAG_BacResDB.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_BacResDB.Size = new System.Drawing.Size(1148, 682);
             // 
             // PAG_Users
             // 
             this.PAG_Users.Location = new System.Drawing.Point(-10000, -10000);
             this.PAG_Users.Name = "PAG_Users";
-            this.PAG_Users.Size = new System.Drawing.Size(1140, 409);
+            this.PAG_Users.Size = new System.Drawing.Size(1148, 682);
             // 
             // ultraTabbedMdiManager1
             // 
@@ -392,38 +400,57 @@
             appearance33.Image = global::GoodShepherd.Properties.Resources.if_ok_46824;
             ultraExplorerBarItem3.Settings.AppearancesSmall.Appearance = appearance33;
             ultraExplorerBarItem3.Text = "المواظبة فى فترة";
+            ultraExplorerBarItem4.Key = "RepNoAttendanceInPeriod";
+            appearance34.Image = global::GoodShepherd.Properties.Resources.if_ok_46824;
+            ultraExplorerBarItem4.Settings.AppearancesSmall.Appearance = appearance34;
+            ultraExplorerBarItem4.Text = "لم يحضر فى فترة";
+            ultraExplorerBarItem5.Key = "RepNoAttendanceInMonth";
+            appearance35.Image = global::GoodShepherd.Properties.Resources.if_ok_46824;
+            ultraExplorerBarItem5.Settings.AppearancesSmall.Appearance = appearance35;
+            ultraExplorerBarItem5.Text = "لم يحضر خلال شهر";
+            ultraExplorerBarItem6.Key = "RepMonthBirthdates";
+            appearance36.Image = global::GoodShepherd.Properties.Resources.if_ok_46824;
+            ultraExplorerBarItem6.Settings.AppearancesSmall.Appearance = appearance36;
+            ultraExplorerBarItem6.Text = "اعياد ميلاد الشهر";
             ultraExplorerBarGroup6.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem16,
             ultraExplorerBarItem17,
             ultraExplorerBarItem1,
             ultraExplorerBarItem2,
-            ultraExplorerBarItem3});
+            ultraExplorerBarItem3,
+            ultraExplorerBarItem4,
+            ultraExplorerBarItem5,
+            ultraExplorerBarItem6});
+            appearance37.Image = global::GoodShepherd.Properties.Resources.iconfinder_382_economy_finance_money_information_reports_data_economy_media_4170662;
+            ultraExplorerBarGroup6.ItemSettings.AppearancesSmall.Appearance = appearance37;
             ultraExplorerBarGroup6.Key = "Report";
-            appearance34.Image = global::GoodShepherd.Properties.Resources.if_ok_46824;
-            ultraExplorerBarGroup6.Settings.AppearancesSmall.Appearance = appearance34;
+            appearance38.Image = global::GoodShepherd.Properties.Resources.if_ok_46824;
+            ultraExplorerBarGroup6.Settings.AppearancesSmall.Appearance = appearance38;
+            appearance39.Image = global::GoodShepherd.Properties.Resources.iconfinder_Rounded_21_2024654;
+            ultraExplorerBarGroup6.Settings.AppearancesSmall.HeaderAppearance = appearance39;
             ultraExplorerBarGroup6.Text = "التقارير";
             ultraExplorerBarItem18.Key = "BacResDB";
-            appearance35.Image = ((object)(resources.GetObject("appearance35.Image")));
-            ultraExplorerBarItem18.Settings.AppearancesSmall.Appearance = appearance35;
+            appearance40.Image = ((object)(resources.GetObject("appearance40.Image")));
+            ultraExplorerBarItem18.Settings.AppearancesSmall.Appearance = appearance40;
             ultraExplorerBarItem18.Text = "تامين واسترجاع البيانات";
             ultraExplorerBarItem19.Key = "Users";
-            appearance36.Image = ((object)(resources.GetObject("appearance36.Image")));
-            ultraExplorerBarItem19.Settings.AppearancesSmall.Appearance = appearance36;
+            appearance41.Image = ((object)(resources.GetObject("appearance41.Image")));
+            ultraExplorerBarItem19.Settings.AppearancesSmall.Appearance = appearance41;
             ultraExplorerBarItem19.Text = "المستخدمين";
-            appearance37.Image = ((object)(resources.GetObject("appearance37.Image")));
-            ultraExplorerBarItem20.Settings.AppearancesSmall.Appearance = appearance37;
+            appearance42.Image = ((object)(resources.GetObject("appearance42.Image")));
+            ultraExplorerBarItem20.Settings.AppearancesSmall.Appearance = appearance42;
             ultraExplorerBarItem20.Text = "الصلاحيات";
             ultraExplorerBarGroup7.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem18,
             ultraExplorerBarItem19,
             ultraExplorerBarItem20});
             ultraExplorerBarGroup7.Key = "ResourceCenter";
-            appearance38.Image = ((object)(resources.GetObject("appearance38.Image")));
-            ultraExplorerBarGroup7.Settings.AppearancesSmall.HeaderAppearance = appearance38;
-            appearance39.Image = ((object)(resources.GetObject("appearance39.Image")));
-            ultraExplorerBarGroup7.Settings.AppearancesSmall.NavigationPaneHeaderAppearance = appearance39;
-            appearance40.Image = ((object)(resources.GetObject("appearance40.Image")));
-            ultraExplorerBarGroup7.Settings.AppearancesSmall.SelectedHeaderAppearance = appearance40;
+            appearance43.Image = ((object)(resources.GetObject("appearance43.Image")));
+            ultraExplorerBarGroup7.Settings.AppearancesSmall.HeaderAppearance = appearance43;
+            appearance44.Image = ((object)(resources.GetObject("appearance44.Image")));
+            ultraExplorerBarGroup7.Settings.AppearancesSmall.NavigationPaneHeaderAppearance = appearance44;
+            appearance45.Image = ((object)(resources.GetObject("appearance45.Image")));
+            ultraExplorerBarGroup7.Settings.AppearancesSmall.SelectedHeaderAppearance = appearance45;
             ultraExplorerBarGroup7.Text = "خصائص البرنامج";
             this.EXP_MainItems.Groups.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup[] {
             ultraExplorerBarGroup2,
@@ -432,56 +459,56 @@
             ultraExplorerBarGroup5,
             ultraExplorerBarGroup6,
             ultraExplorerBarGroup7});
-            appearance41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.EXP_MainItems.GroupSettings.AppearancesLarge.Appearance = appearance41;
-            appearance42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.EXP_MainItems.GroupSettings.AppearancesLarge.HeaderAppearance = appearance42;
-            appearance43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            appearance43.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.ActiveHeaderAppearance = appearance43;
-            appearance44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.Appearance = appearance44;
-            appearance45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            appearance45.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance45.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.HeaderAppearance = appearance45;
-            appearance46.AlphaLevel = ((short)(170));
-            appearance46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.HeaderHotTrackAppearance = appearance46;
-            appearance47.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance47.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance47.ForeColor = System.Drawing.Color.Black;
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.NavigationPaneHeaderAppearance = appearance47;
-            appearance48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            appearance46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.EXP_MainItems.GroupSettings.AppearancesLarge.Appearance = appearance46;
+            appearance47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.EXP_MainItems.GroupSettings.AppearancesLarge.HeaderAppearance = appearance47;
+            appearance48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
             appearance48.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance48.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.SelectedAppearance = appearance48;
-            appearance49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            appearance49.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance49.ForeColor = System.Drawing.Color.White;
-            this.EXP_MainItems.GroupSettings.AppearancesSmall.SelectedHeaderAppearance = appearance49;
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.ActiveHeaderAppearance = appearance48;
+            appearance49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.Appearance = appearance49;
+            appearance50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            appearance50.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance50.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.HeaderAppearance = appearance50;
+            appearance51.AlphaLevel = ((short)(170));
+            appearance51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.HeaderHotTrackAppearance = appearance51;
+            appearance52.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance52.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance52.ForeColor = System.Drawing.Color.Black;
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.NavigationPaneHeaderAppearance = appearance52;
+            appearance53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            appearance53.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance53.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.SelectedAppearance = appearance53;
+            appearance54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            appearance54.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance54.ForeColor = System.Drawing.Color.White;
+            this.EXP_MainItems.GroupSettings.AppearancesSmall.SelectedHeaderAppearance = appearance54;
             this.EXP_MainItems.GroupSettings.BorderStyleItemArea = Infragistics.Win.UIElementBorderStyle.None;
             this.EXP_MainItems.GroupSettings.HeaderButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat;
             this.EXP_MainItems.GroupSettings.HotTracking = Infragistics.Win.DefaultableBoolean.True;
-            appearance50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
-            appearance50.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance50.ForeColor = System.Drawing.Color.White;
-            this.EXP_MainItems.ItemSettings.AppearancesSmall.ActiveAppearance = appearance50;
-            appearance51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            appearance51.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance51.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            this.EXP_MainItems.ItemSettings.AppearancesSmall.Appearance = appearance51;
-            appearance52.AlphaLevel = ((short)(191));
-            appearance52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
-            appearance52.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance52.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            this.EXP_MainItems.ItemSettings.AppearancesSmall.HotTrackAppearance = appearance52;
+            appearance55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
+            appearance55.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance55.ForeColor = System.Drawing.Color.White;
+            this.EXP_MainItems.ItemSettings.AppearancesSmall.ActiveAppearance = appearance55;
+            appearance56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            appearance56.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance56.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            this.EXP_MainItems.ItemSettings.AppearancesSmall.Appearance = appearance56;
+            appearance57.AlphaLevel = ((short)(191));
+            appearance57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
+            appearance57.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance57.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            this.EXP_MainItems.ItemSettings.AppearancesSmall.HotTrackAppearance = appearance57;
             this.EXP_MainItems.ItemSettings.Height = 29;
             this.EXP_MainItems.ItemSettings.HotTrackBorderStyle = Infragistics.Win.UIElementBorderStyle.None;
             this.EXP_MainItems.ItemSettings.HotTracking = Infragistics.Win.DefaultableBoolean.True;
             this.EXP_MainItems.ItemSettings.HotTrackStyle = Infragistics.Win.UltraWinExplorerBar.ItemHotTrackStyle.HighlightEntireItem;
             this.EXP_MainItems.ItemSettings.Indent = 25;
-            this.EXP_MainItems.Location = new System.Drawing.Point(1152, 55);
+            this.EXP_MainItems.Location = new System.Drawing.Point(1160, 55);
             this.EXP_MainItems.Margins.Bottom = 0;
             this.EXP_MainItems.Margins.Left = 0;
             this.EXP_MainItems.Margins.Right = 4;
@@ -491,7 +518,7 @@
             this.EXP_MainItems.NavigationPaneExpansionMode = Infragistics.Win.UltraWinExplorerBar.NavigationPaneExpansionMode.OnButtonClick;
             this.EXP_MainItems.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EXP_MainItems.SettingsKey = "frmOutlookCRM.ultraExplorerBar1";
-            this.EXP_MainItems.Size = new System.Drawing.Size(202, 436);
+            this.EXP_MainItems.Size = new System.Drawing.Size(202, 709);
             this.EXP_MainItems.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.OutlookNavigationPane;
             this.EXP_MainItems.TabIndex = 14;
             this.EXP_MainItems.UseLargeGroupHeaderImages = Infragistics.Win.DefaultableBoolean.False;
@@ -591,7 +618,7 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.InitialResizeAreaExtent = 8;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.Location = new System.Drawing.Point(0, 55);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Left";
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Left.Size = new System.Drawing.Size(8, 436);
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Left.Size = new System.Drawing.Size(8, 709);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Left.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _FRM_MainForm_Toolbars_Dock_Area_1_Right
@@ -601,9 +628,9 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.InitialResizeAreaExtent = 8;
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Location = new System.Drawing.Point(1354, 55);
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Location = new System.Drawing.Point(1362, 55);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Right";
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Size = new System.Drawing.Size(8, 436);
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Right.Size = new System.Drawing.Size(8, 709);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Right.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _FRM_MainForm_Toolbars_Dock_Area_1_Top
@@ -614,7 +641,7 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Location = new System.Drawing.Point(0, 0);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Top";
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Size = new System.Drawing.Size(1362, 55);
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Top.Size = new System.Drawing.Size(1370, 55);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Top.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // _FRM_MainForm_Toolbars_Dock_Area_1_Bottom
@@ -624,16 +651,16 @@
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.ForeColor = System.Drawing.Color.Black;
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.InitialResizeAreaExtent = 8;
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Location = new System.Drawing.Point(0, 491);
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Location = new System.Drawing.Point(0, 764);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Name = "_FRM_MainForm_Toolbars_Dock_Area_1_Bottom";
-            this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Size = new System.Drawing.Size(1362, 8);
+            this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.Size = new System.Drawing.Size(1370, 8);
             this._FRM_MainForm_Toolbars_Dock_Area_1_Bottom.ToolbarsManager = this.ultraToolbarsManager1;
             // 
             // ultraTabSharedControlsPage1
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(1140, 409);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(1148, 682);
             // 
             // TAB_Main
             // 
@@ -654,7 +681,7 @@
             this.TAB_Main.Location = new System.Drawing.Point(8, 55);
             this.TAB_Main.Name = "TAB_Main";
             this.TAB_Main.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.TAB_Main.Size = new System.Drawing.Size(1144, 436);
+            this.TAB_Main.Size = new System.Drawing.Size(1152, 709);
             this.TAB_Main.TabIndex = 20;
             this.TAB_Main.TabLayoutStyle = Infragistics.Win.UltraWinTabs.TabLayoutStyle.SingleRowSizeToFit;
             appearance1.Image = ((object)(resources.GetObject("appearance1.Image")));
@@ -739,8 +766,8 @@
             this.ultraToolbarsManager1.MenuAnimationStyle = Infragistics.Win.UltraWinToolbars.MenuAnimationStyle.Random;
             this.ultraToolbarsManager1.MiniToolbar.ToolRowCount = 1;
             this.ultraToolbarsManager1.Office2007UICompatibility = false;
-            appearance53.BackColor = System.Drawing.Color.Red;
-            this.ultraToolbarsManager1.Ribbon.ApplicationMenu2010.BackButtonAppearance = appearance53;
+            appearance58.BackColor = System.Drawing.Color.Red;
+            this.ultraToolbarsManager1.Ribbon.ApplicationMenu2010.BackButtonAppearance = appearance58;
             popupMenuTool1.InstanceProps.IsFirstInGroup = true;
             this.ultraToolbarsManager1.Ribbon.ApplicationMenu2010.NavigationMenu.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             buttonTool33,
@@ -749,54 +776,54 @@
             popupMenuTool1,
             popupControlContainerTool1,
             buttonTool1});
-            appearance54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            appearance54.FontData.SizeInPoints = 9F;
-            this.ultraToolbarsManager1.Ribbon.CaptionAreaAppearance = appearance54;
-            appearance55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            appearance55.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            this.ultraToolbarsManager1.Ribbon.FileMenuButtonAppearance = appearance55;
+            appearance59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            appearance59.FontData.SizeInPoints = 9F;
+            this.ultraToolbarsManager1.Ribbon.CaptionAreaAppearance = appearance59;
+            appearance60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            appearance60.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            this.ultraToolbarsManager1.Ribbon.FileMenuButtonAppearance = appearance60;
             this.ultraToolbarsManager1.Ribbon.FileMenuButtonCaption = "";
             this.ultraToolbarsManager1.Ribbon.FileMenuStyle = Infragistics.Win.UltraWinToolbars.FileMenuStyle.ApplicationMenu2010;
-            appearance56.FontData.SizeInPoints = 7.5F;
-            appearance56.ForeColor = System.Drawing.Color.White;
-            this.ultraToolbarsManager1.Ribbon.GroupSettings.CaptionAppearance = appearance56;
-            appearance57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(126)))), ((int)(((byte)(123)))));
-            appearance57.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance57.BorderAlpha = Infragistics.Win.Alpha.Opaque;
-            appearance57.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            appearance57.ForeColor = System.Drawing.Color.White;
-            this.ultraToolbarsManager1.Ribbon.GroupSettings.HotTrackAppearance = appearance57;
-            appearance58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(187)))), ((int)(((byte)(191)))));
-            this.ultraToolbarsManager1.Ribbon.GroupSettings.ToolAppearance = appearance58;
+            appearance61.FontData.SizeInPoints = 7.5F;
+            appearance61.ForeColor = System.Drawing.Color.White;
+            this.ultraToolbarsManager1.Ribbon.GroupSettings.CaptionAppearance = appearance61;
+            appearance62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(126)))), ((int)(((byte)(123)))));
+            appearance62.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance62.BorderAlpha = Infragistics.Win.Alpha.Opaque;
+            appearance62.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            appearance62.ForeColor = System.Drawing.Color.White;
+            this.ultraToolbarsManager1.Ribbon.GroupSettings.HotTrackAppearance = appearance62;
+            appearance63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(187)))), ((int)(((byte)(191)))));
+            this.ultraToolbarsManager1.Ribbon.GroupSettings.ToolAppearance = appearance63;
             this.ultraToolbarsManager1.Ribbon.QuickAccessToolbar.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
             comboBoxTool7});
             this.ultraToolbarsManager1.Ribbon.QuickAccessToolbar.Visible = false;
-            appearance59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            this.ultraToolbarsManager1.Ribbon.TabAreaAppearance = appearance59;
-            appearance60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(84)))), ((int)(((byte)(94)))));
-            appearance60.BackGradientStyle = Infragistics.Win.GradientStyle.None;
-            appearance60.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance60.ForeColor = System.Drawing.Color.White;
-            this.ultraToolbarsManager1.Ribbon.TabSettings.Appearance = appearance60;
-            appearance61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(84)))), ((int)(((byte)(94)))));
-            appearance61.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            this.ultraToolbarsManager1.Ribbon.TabSettings.SelectedTabItemAppearance = appearance61;
-            appearance62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            this.ultraToolbarsManager1.Ribbon.TabSettings.TabItemAppearance = appearance62;
+            appearance64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            this.ultraToolbarsManager1.Ribbon.TabAreaAppearance = appearance64;
+            appearance65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(84)))), ((int)(((byte)(94)))));
+            appearance65.BackGradientStyle = Infragistics.Win.GradientStyle.None;
+            appearance65.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance65.ForeColor = System.Drawing.Color.White;
+            this.ultraToolbarsManager1.Ribbon.TabSettings.Appearance = appearance65;
+            appearance66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(84)))), ((int)(((byte)(94)))));
+            appearance66.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            this.ultraToolbarsManager1.Ribbon.TabSettings.SelectedTabItemAppearance = appearance66;
+            appearance67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            this.ultraToolbarsManager1.Ribbon.TabSettings.TabItemAppearance = appearance67;
             this.ultraToolbarsManager1.Ribbon.Visible = true;
             this.ultraToolbarsManager1.ShowFullMenusDelay = 500;
-            appearance63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            buttonTool7.SharedPropsInternal.AppearancesSmall.AppearanceOnRibbonGroup = appearance63;
-            appearance64.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
-            buttonTool7.SharedPropsInternal.AppearancesSmall.HotTrackAppearanceOnRibbonGroup = appearance64;
+            appearance68.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            buttonTool7.SharedPropsInternal.AppearancesSmall.AppearanceOnRibbonGroup = appearance68;
+            appearance69.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(168)))), ((int)(((byte)(152)))));
+            buttonTool7.SharedPropsInternal.AppearancesSmall.HotTrackAppearanceOnRibbonGroup = appearance69;
             buttonTool7.SharedPropsInternal.Caption = "New Customer";
             buttonTool7.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
             buttonTool8.SharedPropsInternal.Caption = "Edit";
             buttonTool9.SharedPropsInternal.Caption = "Duplicate";
-            appearance65.Image = ((object)(resources.GetObject("appearance65.Image")));
-            buttonTool10.SharedPropsInternal.AppearancesSmall.Appearance = appearance65;
-            appearance66.Image = ((object)(resources.GetObject("appearance66.Image")));
-            buttonTool10.SharedPropsInternal.AppearancesSmall.HotTrackAppearance = appearance66;
+            appearance70.Image = ((object)(resources.GetObject("appearance70.Image")));
+            buttonTool10.SharedPropsInternal.AppearancesSmall.Appearance = appearance70;
+            appearance71.Image = ((object)(resources.GetObject("appearance71.Image")));
+            buttonTool10.SharedPropsInternal.AppearancesSmall.HotTrackAppearance = appearance71;
             buttonTool10.SharedPropsInternal.Caption = "Delete";
             buttonTool11.SharedPropsInternal.Caption = "Merge";
             buttonTool12.SharedPropsInternal.Caption = "Detect Duplicates";
@@ -842,8 +869,8 @@
             listTool2.ListToolItemsInternal.Add(listToolItem1);
             listTool2.ListToolItemsInternal.Add(listToolItem2);
             listTool2.ListToolItemsInternal.Add(listToolItem3);
-            appearance67.Image = ((object)(resources.GetObject("appearance67.Image")));
-            buttonTool38.SharedPropsInternal.AppearancesLarge.Appearance = appearance67;
+            appearance72.Image = ((object)(resources.GetObject("appearance72.Image")));
+            buttonTool38.SharedPropsInternal.AppearancesLarge.Appearance = appearance72;
             buttonTool38.SharedPropsInternal.Caption = "ButtonTool1";
             comboBoxTool4.SharedPropsInternal.Caption = "ComboBoxTool1";
             comboBoxTool4.ValueList = valueList1;

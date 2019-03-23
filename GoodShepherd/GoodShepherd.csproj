@@ -366,8 +366,20 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Reports\MonthbirthDates.cs">
+      <DependentUpon>MonthbirthDates.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\ReportHighestAttendance.cs">
       <DependentUpon>ReportHighestAttendance.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportNoAttendanceInMonth.cs">
+      <DependentUpon>ReportNoAttendanceInMonth.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <SubType>Component</SubType>
@@ -448,15 +460,19 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>AttendanceInMonth.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MonthbirthDates.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MonthbirthDates.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportHighestAttendance.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportHighestAttendance.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\RportAdress.rpt">
+    <EmbeddedResource Include="Reports\ReportNoAttendanceInMonth.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RportAdress1.cs</LastGenOutput>
+      <LastGenOutput>ReportNoAttendanceInMonth.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RportAdress.rpt">
+    <EmbeddedResource Include="Reports\RportAdress.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RportAdress1.cs</LastGenOutput>
     </EmbeddedResource>
@@ -568,6 +584,8 @@
     <Content Include="Resources\1448741181_previous.png" />
     <Content Include="Resources\1468179640_emblem-library.png" />
     <Content Include="Resources\1468181667_file_add.png" />
+    <None Include="Resources\iconfinder_Rounded-21_2024654.png" />
+    <None Include="Resources\iconfinder_382_economy_finance_money_information_reports_data_economy_media_4170662.png" />
     <None Include="Resources\if_ok_46824.png" />
     <None Include="Resources\Users.png" />
     <None Include="Resources\Last.png" />

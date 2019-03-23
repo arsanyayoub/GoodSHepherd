@@ -319,6 +319,16 @@ namespace GoodShepherd.Datasets {
             
             private global::System.Data.DataColumn columnAddress;
             
+            private global::System.Data.DataColumn columnFloorNum;
+            
+            private global::System.Data.DataColumn columnBuildingNum;
+            
+            private global::System.Data.DataColumn columnPhone;
+            
+            private global::System.Data.DataColumn columnPersType_ID;
+            
+            private global::System.Data.DataColumn columnPersonType;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DT_PeopleDataTable() {
@@ -514,6 +524,46 @@ namespace GoodShepherd.Datasets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FloorNumColumn {
+                get {
+                    return this.columnFloorNum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BuildingNumColumn {
+                get {
+                    return this.columnBuildingNum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PhoneColumn {
+                get {
+                    return this.columnPhone;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PersType_IDColumn {
+                get {
+                    return this.columnPersType_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PersonTypeColumn {
+                get {
+                    return this.columnPersonType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -569,7 +619,12 @@ namespace GoodShepherd.Datasets {
                         string Collage, 
                         string ID_Depart, 
                         string Department, 
-                        string Address) {
+                        string Address, 
+                        string FloorNum, 
+                        string BuildingNum, 
+                        string Phone, 
+                        string PersType_ID, 
+                        string PersonType) {
                 DT_PeopleRow rowDT_PeopleRow = ((DT_PeopleRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ChurchName,
@@ -591,7 +646,12 @@ namespace GoodShepherd.Datasets {
                         Collage,
                         ID_Depart,
                         Department,
-                        Address};
+                        Address,
+                        FloorNum,
+                        BuildingNum,
+                        Phone,
+                        PersType_ID,
+                        PersonType};
                 rowDT_PeopleRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDT_PeopleRow);
                 return rowDT_PeopleRow;
@@ -634,6 +694,11 @@ namespace GoodShepherd.Datasets {
                 this.columnID_Depart = base.Columns["ID_Depart"];
                 this.columnDepartment = base.Columns["Department"];
                 this.columnAddress = base.Columns["Address"];
+                this.columnFloorNum = base.Columns["FloorNum"];
+                this.columnBuildingNum = base.Columns["BuildingNum"];
+                this.columnPhone = base.Columns["Phone"];
+                this.columnPersType_ID = base.Columns["PersType_ID"];
+                this.columnPersonType = base.Columns["PersonType"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -679,6 +744,16 @@ namespace GoodShepherd.Datasets {
                 base.Columns.Add(this.columnDepartment);
                 this.columnAddress = new global::System.Data.DataColumn("Address", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAddress);
+                this.columnFloorNum = new global::System.Data.DataColumn("FloorNum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFloorNum);
+                this.columnBuildingNum = new global::System.Data.DataColumn("BuildingNum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBuildingNum);
+                this.columnPhone = new global::System.Data.DataColumn("Phone", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhone);
+                this.columnPersType_ID = new global::System.Data.DataColumn("PersType_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPersType_ID);
+                this.columnPersonType = new global::System.Data.DataColumn("PersonType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPersonType);
                 this.columnID_City.Caption = " Church_ID";
                 this.columnCity.Caption = " Church_ID";
                 this.columnID_Area.Caption = " Church_ID";
@@ -1155,6 +1230,86 @@ namespace GoodShepherd.Datasets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FloorNum {
+                get {
+                    try {
+                        return ((string)(this[this.tableDT_People.FloorNumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FloorNum\' in table \'DT_People\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDT_People.FloorNumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string BuildingNum {
+                get {
+                    try {
+                        return ((string)(this[this.tableDT_People.BuildingNumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BuildingNum\' in table \'DT_People\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDT_People.BuildingNumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Phone {
+                get {
+                    try {
+                        return ((string)(this[this.tableDT_People.PhoneColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Phone\' in table \'DT_People\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDT_People.PhoneColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PersType_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableDT_People.PersType_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PersType_ID\' in table \'DT_People\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDT_People.PersType_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PersonType {
+                get {
+                    try {
+                        return ((string)(this[this.tableDT_People.PersonTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PersonType\' in table \'DT_People\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDT_People.PersonTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsChurchNameNull() {
                 return this.IsNull(this.tableDT_People.ChurchNameColumn);
             }
@@ -1391,6 +1546,66 @@ namespace GoodShepherd.Datasets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAddressNull() {
                 this[this.tableDT_People.AddressColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFloorNumNull() {
+                return this.IsNull(this.tableDT_People.FloorNumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFloorNumNull() {
+                this[this.tableDT_People.FloorNumColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBuildingNumNull() {
+                return this.IsNull(this.tableDT_People.BuildingNumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBuildingNumNull() {
+                this[this.tableDT_People.BuildingNumColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPhoneNull() {
+                return this.IsNull(this.tableDT_People.PhoneColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPhoneNull() {
+                this[this.tableDT_People.PhoneColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPersType_IDNull() {
+                return this.IsNull(this.tableDT_People.PersType_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPersType_IDNull() {
+                this[this.tableDT_People.PersType_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPersonTypeNull() {
+                return this.IsNull(this.tableDT_People.PersonTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPersonTypeNull() {
+                this[this.tableDT_People.PersonTypeColumn] = global::System.Convert.DBNull;
             }
         }
         

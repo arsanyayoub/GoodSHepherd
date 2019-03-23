@@ -143,6 +143,27 @@ namespace GoodShepherd.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_382_economy_finance_money_information_reports_data_economy_media_4170662 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_382_economy_finance_money_information_reports_data_economy_media_41706" +
+                        "62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Rounded_21_2024654 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Rounded-21_2024654", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_excel_272697 {
             get {
                 object obj = ResourceManager.GetObject("if_excel_272697", resourceCulture);

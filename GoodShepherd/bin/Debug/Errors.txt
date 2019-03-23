@@ -132,3 +132,45 @@ Parameter name: dataTable
 	THE SUB NAME THAT HAS OCCURED THE ERROR: HighestAttendanceReport
 		The Error Is Incorrect syntax near '1'.
 ============================================================================
+
+
+23/03/2019  =  12:30 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: NoAttendanceInPeriodReport
+		The Error Is Invalid column name 'BuildingNu'.
+============================================================================
+
+
+23/03/2019  =  01:00 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: HighestAttendanceReport
+		The Error Is Incorrect syntax near the keyword 'Desc'.
+============================================================================
+
+
+23/03/2019  =  01:32 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: NoAttendanceInMonthReport
+		The Error Is The multi-part identifier "TBL_Meetings.TDate" could not be bound.
+============================================================================
+
+
+23/03/2019  =  01:33 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: NoAttendanceInMonthReport
+		The Error Is The multi-part identifier "TBL_Meetings.TDate" could not be bound.
+============================================================================
+
+
+23/03/2019  =  01:34 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: NoAttendanceInMonthReport
+		The Error Is Invalid column name 'BirthTDate'.
+============================================================================
+
+
+23/03/2019  =  01:36 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: NoAttendanceInMonthReport
+		The Error Is Failed to enable constraints. One or more rows contain values violating non-null, unique, or foreign-key constraints.
+============================================================================
