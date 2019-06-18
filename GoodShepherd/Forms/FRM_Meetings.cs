@@ -651,7 +651,11 @@ namespace GoodShepherd.Forms
                 }
                 else
                 {
-                    vDayStart = "NULL";
+                    //vDayStart = "NULL";
+                    DateTime time = DateTime.Parse(DateTime.Now.TimeOfDay.ToString());
+                    string format = "hh:mm";
+                    // DateTime dt = DateTime.Parse(TXT_Date.Text);
+                    vDayStart = "'" + time.ToString(format) + "'";
                 }
                 if (vFormMode == "N")
                 {

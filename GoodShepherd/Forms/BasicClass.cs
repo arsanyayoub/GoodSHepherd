@@ -47,15 +47,16 @@ public class BasicClass
             //vDecryptedText = vRegVer.GetValue(pRegKey).ToString();
             ////vDecryptedText = "rz6hrkSLFbceHYh20294wkDXx+u/olCta5b6TAodMy2rlcBvg4nFgIFb9cN4KzGOi0FbTfjz0sir1ZQDx6TYTB0wTdmbqCcdzN14gEFfWWk3rtptHHFSB1A5EvCJVDgEmdT4fa64KSM2U1C7pUIcZrjzqcdcLaFCTFr/DjUXQS8=";
             //vConectionString = sDecrypt(vDecryptedText);
-
-            //vConectionString = "Data Source=EIME00/EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";
+           vConectionString = "Data Source=ARCI;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
+           //vConectionString = "Data Source=EIME00/EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";
            //vConectionString = "Data Source=Lenovo-PC\\SQL2014;Initial Catalog=GoodShepherd;User Id=sa;Password=3112005;";
-            vConectionString = "Data Source=.;Initial Catalog=GoodShepherd;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
-			System.Data.SqlClient.SqlConnection vSqlConnection = new System.Data.SqlClient.SqlConnection(vConectionString);
+           	System.Data.SqlClient.SqlConnection vSqlConnection = new System.Data.SqlClient.SqlConnection(vConectionString);
 			Microsoft.SqlServer.Management.Common.ServerConnection vConn = new Microsoft.SqlServer.Management.Common.ServerConnection(vSqlConnection);
 			vConn.Connect();
 			vConn.Disconnect();
 			vSuccess = true;
+           // MessageBox.Show("Passed !!!!!!!!!!!!!!");
+            GoodShepherd.Properties.Settings.Default["GoodShepherdConnectionString"] = BasicClass.vConectionString;
 		} catch (Exception ex) {
             FRM_DBConfiguration vFrm = new FRM_DBConfiguration();
             vFrm.vRegKey = pRegKey;
@@ -69,6 +70,7 @@ public class BasicClass
             {
                 vSuccess = false;
             }
+            MessageBox.Show(ex.Message);
 		}
 	}
 	#endregion
@@ -82,8 +84,10 @@ public class BasicClass
 		if (vSuccess == false) {
 			return;
 		}
+       // MessageBox.Show(vConectionString);
 		vSqlConn = new SqlConnection(vConectionString);
         GoodShepherd.Properties.Settings.Default.Properties["GoodShepherdConnectionString"].IsReadOnly = false;
+        
         GoodShepherd.Properties.Settings.Default.Properties["GoodShepherdConnectionString"].DefaultValue = vConectionString;
       
 		//Dim vConfig_rd As New Configuration.AppSettingsReader

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
     <PublishUrlHistory>E:\Final Prpject\|publish\|C:\Users\Maichael\Desktop\Final\|C:\Users\Maichael\Desktop\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <InstallUrlHistory>\\arci-PC\Final Prpject\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
@@ -16,5 +16,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <ReferencePath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\;C:\Program Files (x86)\Telerik\RadControls for WinForms Q1 2012\Bin\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
   </PropertyGroup>
 </Project>

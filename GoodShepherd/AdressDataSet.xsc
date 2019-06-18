@@ -9,11 +9,9 @@
     <TableUISetting Name="TBL_Services">
       <ColumnUISettings>
         <ColumnUISetting Name="Church_ID">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="UltraCombo" Type="Infragistics.Win.UltraWinGrid.UltraCombo" AssemblyName="Infragistics4.Win.UltraWinGrid.v16.2, Version=16.2.20162.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Frameworks=".NETFramework,Version=v4.0" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>

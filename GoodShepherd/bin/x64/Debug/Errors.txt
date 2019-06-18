@@ -714,3 +714,24 @@ Changed database context to 'master'.
 	THE SUB NAME THAT HAS OCCURED THE ERROR: UpdateExist
 		The Error Is Invalid column name 'Code'.
 ============================================================================
+
+
+19/04/2019  =  07:21 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BtnLoadStreet_Click
+		The Error Is Unable to find the report in the manifest resources. Please build the project, and try again.
+============================================================================
+
+
+19/04/2019  =  07:22 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BtnLoadStreet_Click
+		The Error Is Unable to find the report in the manifest resources. Please build the project, and try again.
+============================================================================
+
+
+19/04/2019  =  07:42 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BtnLoadStreet_Click
+		The Error Is Unable to find the report in the manifest resources. Please build the project, and try again.
+============================================================================

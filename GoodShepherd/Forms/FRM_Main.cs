@@ -33,16 +33,16 @@ namespace GoodShepherd
         public FRM_DBBackupRestore DBBackupRestore_FRM;
         public FRM_User            User_FRM           ;
         public FRM_ReportLev1      Report1_FRM        ;
-
+        public FRM_ReportAttendance      ReportAttendance_FRM;
         private void EXP_MainItems_ItemClick(object sender, Infragistics.Win.UltraWinExplorerBar.ItemEventArgs e)
         {
             //if this tab not visible 
 
-            if (e.Item.Key.ToString().Contains("Rep"))
+            if (e.Item.Key.ToString() == "RepByPeopleData")
             {
-                if (TAB_Main.Tabs["Rep"].Visible == false)
+                if (TAB_Main.Tabs["RepByPeopleData"].Visible == false)
                 {
-                    TAB_Main.Tabs["Rep"].Visible = true;
+                    TAB_Main.Tabs["RepByPeopleData"].Visible = true;
                 }
                             //Fill tab
                             Report1_FRM = new FRM_ReportLev1(e.Item.Key);
@@ -54,7 +54,24 @@ namespace GoodShepherd
                             PAG_Rep.Controls.Clear();
                             PAG_Rep.Controls.Add(Report1_FRM);
 
-                            }
+            }
+            else if (e.Item.Key.ToString() == "RepByAttendance")
+            {
+                if (TAB_Main.Tabs["RepByAttendance"].Visible == false)
+                {
+                    TAB_Main.Tabs["RepByAttendance"].Visible = true;
+                }
+                            //Fill tab
+                            ReportAttendance_FRM = new FRM_ReportAttendance();
+                            ReportAttendance_FRM.TopLevel = false;
+                            ReportAttendance_FRM.FormBorderStyle = FormBorderStyle.None;
+                            ReportAttendance_FRM.Dock = DockStyle.Fill;
+                            ReportAttendance_FRM.Visible = true;
+
+                            PAGE_RepByAttendance.Controls.Clear();
+                            PAGE_RepByAttendance.Controls.Add(ReportAttendance_FRM);
+
+            }
             else
             {
                 if (TAB_Main.Tabs[e.Item.Key].Visible == false)
@@ -173,10 +190,10 @@ namespace GoodShepherd
 
                     }
                 }
-                //Go to tab
-                TAB_Main.SelectedTab = TAB_Main.Tabs[e.Item.Key];
+                
             }
-           
+            //Go to tab
+            TAB_Main.SelectedTab = TAB_Main.Tabs[e.Item.Key];
             
         }
 

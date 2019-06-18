@@ -20,66 +20,10 @@ namespace GoodShepherd
         {
             InitializeComponent();
             _repKey = repKey;
-            CMXLoad(CMX_CIty, "TBL_City", "id", "CityDesc");
-            CMXLoad(CMX_Services, "TBL_Services","id", "Service");
-            CMXLoad(CMX_Educ, "TBL_EducationLevel", "id", "EducLevel");
-            TXT_fromDate.Visible = false;
-            TXT_ToDate.Visible = false;
-            lbl_fromDate.Visible = false;
-            lbl_toDate.Visible = false;
-            BTN_LoadMeetingByDate.Visible = false;
-
-            lbl_Meetingmonth.Visible = false;
-            CMX_MeetingMonth.Visible = false;
-            BTN_MeetingMonth.Visible = false;
-            if (_repKey != null)
-            {
-                if (_repKey == "RepHighestAttendance")
-                {
-                    TXT_fromDate.Visible = true;
-                    TXT_ToDate.Visible = true;
-                    lbl_fromDate.Visible = true;
-                    lbl_toDate.Visible = true;
-                    BTN_LoadMeetingByDate.Visible = true;
-                  
-                }
-                else if (_repKey == "RepAttendanceInMonth")
-                {
-                    lbl_Meetingmonth.Visible = true;
-                    CMX_MeetingMonth.Visible = true;
-                    BTN_MeetingMonth.Visible = true;
-                }
-                else if (_repKey == "RepAttendanceInPeriod")
-                {
-                    TXT_fromDate.Visible = true;
-                    TXT_ToDate.Visible = true;
-                    lbl_fromDate.Visible = true;
-                    lbl_toDate.Visible = true;
-                    BTN_LoadMeetingByDate.Visible = true;
-                    
-                }
-                else if (_repKey == "RepNoAttendanceInMonth")
-                {
-                    lbl_Meetingmonth.Visible = true;
-                    CMX_MeetingMonth.Visible = true;
-                    BTN_MeetingMonth.Visible = true;
-                }
-                else if (_repKey == "RepNoAttendanceInPeriod")
-                {
-                    TXT_fromDate.Visible = true;
-                    TXT_ToDate.Visible = true;
-                    lbl_fromDate.Visible = true;
-                    lbl_toDate.Visible = true;
-                    BTN_LoadMeetingByDate.Visible = true;
-                }
-                else if (_repKey == "RepMonthBirthdates")
-                {
-                    lbl_Meetingmonth.Visible = true;
-                    CMX_MeetingMonth.Visible = true;
-                    BTN_MeetingMonth.Visible = true;
-                }
-            }
-
+            CMXLoad(CMX_CIty, "TBL_City", "id", "CityDesc" , "");
+           // CMXLoad(CMX_Services, "TBL_Services", "id", "Service", "WHERE Church_ID = " + BasicClass.vChurchID.ToString());
+            CMXLoad(CMX_Educ, "TBL_EducationLevel", "id", "EducLevel" , "");
+            
         }
 
 
@@ -94,9 +38,11 @@ namespace GoodShepherd
         DataTable DT = new DataTable();
         DataSet DS = new DataSet();
         private void CMXLoad(Infragistics.Win.UltraWinEditors.UltraComboEditor CMXFill,
-                     string TableName, string ColumnValue, string ColumnDisplay)
+                     string TableName, string ColumnValue, string ColumnDisplay  , string pWhere)
         {
-            string query = "select  "+ ColumnValue+","+ ColumnDisplay + " from "+ TableName+" ORDER BY "+ ColumnDisplay + "";
+            string query = "select  "+ ColumnValue+","+ ColumnDisplay + " from "+ TableName+ "\n"  +
+                pWhere + "\n" +
+                " ORDER BY "+ ColumnDisplay + "";
             DA = new SqlDataAdapter(query, Con);
             Con.Open();
             DS = new DataSet();
@@ -142,26 +88,7 @@ namespace GoodShepherd
             }
             else CMXFillValidation(CMX_Street, CMX_Area, "TBL_Street", "id", "StreetDesc", "Area_id");
         }
-        private void ComboChruch_ValueChanged(object sender, EventArgs e)
-        {
-            if (CMX_Chruch.SelectedItem == null)
-            {
-                CMX_FatherName.Clear();
-                CMX_FatherName.Items.Clear();
-            }
-            else
-            {
-                string query = "select Id , Name from TBL_MainPerson where PersType_ID = 1 and Church_id="+ CMX_Chruch .Value+ " ORDER BY Name ";
-                DA = new SqlDataAdapter(query, Con);
-                Con.Open();
-                DS = new DataSet();
-                DA.Fill(DS, " TBL_MainPerson");
-                CMX_FatherName.DataSource = DS.Tables[" TBL_MainPerson"];
-                CMX_FatherName.DisplayMember = "Name";
-                CMX_FatherName.ValueMember = "Id";
-                Con.Close();
-            }
-        }
+       
         private void ComboEduc_ValueChanged(object sender, EventArgs e)
         {
             if(CMX_Educ.SelectedItem==null)
@@ -183,8 +110,8 @@ namespace GoodShepherd
                 this.vIW_GetPeopleData1TableAdapter.FillByCity(this.goodShepherdDataSet.VIW_GetPeopleData1,Convert.ToInt32(CMX_CIty.Value));
 
                 //creating a new Report (FBCReport.rpt)
-                ReportDocument RPT_City = new RportAdress();
-                RPT_City.Load("RportAdress.rpt");
+                ReportDocument RPT_City = new ReportPeopleData();
+                RPT_City.Load("ReportPeopleData.rpt");
                 RPT_City.SetDataSource(goodShepherdDataSet);
                 RPT_City.SetParameterValue("Adress", "بمحافظة : " + CMX_CIty.Text);
                 
@@ -194,6 +121,9 @@ namespace GoodShepherd
         }
         private void BtnLoadArea_Click(object sender, EventArgs e)
         {
+            try
+            {
+                
             if (CMX_Area.SelectedItem == null) LBL_Area.ForeColor = Color.Red;
             else
             {
@@ -201,33 +131,47 @@ namespace GoodShepherd
                 this.vIW_GetPeopleData1TableAdapter.FillByArea(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Area.Value));
 
                 //creating a new Report (FBCReport.rpt)
-                ReportDocument reportDocument = new RportAdress();
-                reportDocument.Load("RportAdress.rpt");
+                ReportDocument reportDocument = new ReportPeopleData();
+                reportDocument.Load("ReportPeopleData.rpt");
                 reportDocument.SetDataSource(goodShepherdDataSet);
                 reportDocument.SetParameterValue("Adress", "بمنطقة : " + CMX_Area.Text);
                 
                 CR.ReportSource = reportDocument;
                 //CR.Refresh();
             }
+            }
+            catch (Exception ex)
+            {
+                
+                ExceptionHandler.HandleException(ex.Message,this.Name,"BtnLoadArea_Click");
+            }
         }
         private void BtnLoadStreet_Click(object sender, EventArgs e)
         {
-            if (CMX_Street.SelectedItem == null) LblStreet.ForeColor = Color.Red;
-            else
+            try
             {
-                
-                LblStreet.ForeColor = Color.Black;
-                this.vIW_GetPeopleData1TableAdapter.FillByStreet(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Street.Value));
+                if (CMX_Street.SelectedItem == null) LblStreet.ForeColor = Color.Red;
+                else
+                {
 
-                //creating a new Report (FBCReport.rpt)
-                ReportDocument reportDocument = new RportAdress();
-                reportDocument.Load("RportAdress.rpt");
+                    LblStreet.ForeColor = Color.Black;
+                    this.vIW_GetPeopleData1TableAdapter.FillByStreet(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Street.Value));
 
-                reportDocument.SetDataSource(goodShepherdDataSet);
-                reportDocument.SetParameterValue("Adress", CMX_Street.Text);
-                
-                CR.ReportSource = reportDocument;
-                //CR.Refresh();
+                    //creating a new Report (FBCReport.rpt)
+                    ReportDocument reportDocument = new ReportPeopleData();
+                    reportDocument.Load("ReportPeopleData.rpt");
+
+                    reportDocument.SetDataSource(goodShepherdDataSet);
+                    reportDocument.SetParameterValue("Adress", CMX_Street.Text);
+
+                    CR.ReportSource = reportDocument;
+                    //CR.Refresh();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                ExceptionHandler.HandleException(ex.Message, this.Name, "BtnLoadStreet_Click");
             }
         }
         private void BtnLoadFather_Click(object sender, EventArgs e)
@@ -239,15 +183,12 @@ namespace GoodShepherd
                 this.vIW_GetPeopleData1TableAdapter.FillByFrPers(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_FatherName.Value));
 
                 //creating a new Report (FBCReport.rpt)
-                ReportDocument reportDocument = new RportAdress();
-                reportDocument.Load("RportAdress.rpt");
+                ReportDocument reportDocument = new ReportPeopleData();
+                reportDocument.Load("ReportPeopleData.rpt");
+                reportDocument.SetDataSource(goodShepherdDataSet);
+                reportDocument.SetParameterValue("Adress", "اب اعتراف  : " + CMX_FatherName.Text);
 
-                //ReportChurch.SetDataSource(goodShepherdDataSet);
-                //ReportChurch.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportChurch.SetParameterValue("City", CMX_CIty.Text);
-                //ReportChurch.SetParameterValue("Church", CMX_Chruch.Text);
-                //ReportChurch.SetParameterValue("FRName","أب كاهن :"+ CMX_FatherName.Text);
-                //CR.ReportSource = ReportChurch;
+                CR.ReportSource = reportDocument;
             }
         }
         private void BtnChurch_Click(object sender, EventArgs e)
@@ -255,28 +196,78 @@ namespace GoodShepherd
             if (CMX_Chruch.SelectedItem == null) LblChurch.ForeColor = Color.Red;
             else
             {
-                //LblChurch.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByChurch (this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Chruch.Value));
-                //ReportChurch.SetDataSource(goodShepherdDataSet);
-                //ReportChurch.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportChurch.SetParameterValue("City", CMX_CIty.Text);
-                //ReportChurch.SetParameterValue("Church", CMX_Chruch.Text);
-                //ReportChurch.SetParameterValue("FRName", "");
-                //CR.ReportSource = ReportChurch;
+                LblChurch.ForeColor = Color.Black;
+                this.vIW_GetPeopleData1TableAdapter.FillByFrChurch(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Chruch.Value));
+                //creating a new Report (FBCReport.rpt)
+                ReportDocument reportDocument = new ReportPeopleData();
+                reportDocument.Load("ReportPeopleData.rpt");
+                reportDocument.SetDataSource(goodShepherdDataSet);
+                reportDocument.SetParameterValue("Adress", "بكنيسة : " + CMX_Chruch.Text);
+
+                CR.ReportSource = reportDocument;
             }
         }
+        private void TXTs_BeforeDropDown(object sender, CancelEventArgs e)
+        {
+            try
+            {
+                string checkedName = ((Infragistics.Win.UltraWinEditors.UltraComboEditor)sender).Name;
+                if (checkedName == "CMX_Services")
+                {
+                    if (CMX_Chruch.SelectedItem != null)
+                    {
+                        CMXLoad(CMX_Services, "TBL_Services", "ID", "Service", "WHERE Church_ID = " + CMX_Chruch.SelectedItem.DataValue.ToString());
+                    }
+                    else
+                    {
+                        CMX_Services.Items.Clear();
+                    }
+
+                }
+                else if (checkedName == "CMX_FatherName")
+                {
+                     if (CMX_Chruch.SelectedItem != null)
+                    {
+                        CMXLoad(CMX_FatherName, "TBL_MainPerson", "Id", "Name", "where PersType_ID = 1 and Church_id="+ CMX_Chruch.Value.ToString());
+                    }
+                    else
+                    {
+                        CMX_FatherName.Items.Clear();
+                    }
+                }
+
+                else if (checkedName == "CMX_Chruch")
+                {
+                    if (BasicClass.vCityID > 0)
+                    {
+                        CMXLoad(CMX_Chruch, "TBL_Church", "ID", "ChurchName", "where City_ID=" + BasicClass.vCityID.ToString());
+                    }
+                    else
+                    {
+                        CMX_Chruch.Items.Clear();
+                    }
+                }                              
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.HandleException(ex.Message, this.Name, "TXT_City_BeforeDropDown");
+            }
+        }
+       
         private void BtnServices_Click(object sender, EventArgs e)
         {
             if (CMX_Services.SelectedItem == null) LblServices.ForeColor = Color.Red;
             else
             {
-                //LblServices.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByService(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Chruch.Value),Convert.ToInt32(CMX_Services.Value));
-                //ReportService.SetDataSource(goodShepherdDataSet);
-                //ReportService.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportService.SetParameterValue("City", CMX_CIty.Text);
-                //ReportService.SetParameterValue("Church", CMX_Chruch.Text);
-                //CR.ReportSource = ReportService;
+                LblServices.ForeColor = Color.Black;
+                this.vIW_GetPeopleData1TableAdapter.FillByService(this.goodShepherdDataSet.VIW_GetPeopleData1, BasicClass.vChurchID, Convert.ToInt32(CMX_Services.Value));
+                //creating a new Report (FBCReport.rpt)
+                ReportDocument reportDocument = new ReportPeopleData();
+                reportDocument.Load("ReportPeopleData.rpt");
+                reportDocument.SetDataSource(goodShepherdDataSet);
+                reportDocument.SetParameterValue("Adress", "بخدمة  : " + CMX_Services.Text);
+
+                CR.ReportSource = reportDocument;
             }
         }
         private void BtnEduc_Click(object sender, EventArgs e)
@@ -284,13 +275,14 @@ namespace GoodShepherd
             if (CMX_Educ.SelectedItem == null) LblEduc.ForeColor = Color.Red;
             else 
             {
-            //this.vIW_GetPeopleData1TableAdapter.FillByEduc(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Educ.Value));
-            //ReportEduc.SetDataSource(goodShepherdDataSet);
-            //ReportEduc.SetParameterValue("Adress", CMX_Area.Text);
-            //ReportEduc.SetParameterValue("City", CMX_CIty.Text);
-            //ReportEduc.SetParameterValue("Church", CMX_Chruch.Text);
-            //ReportEduc.SetParameterValue("EducationLevel", CMX_Educ.Text);
-            //CR.ReportSource = ReportEduc;
+            this.vIW_GetPeopleData1TableAdapter.FillByEduc(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_Educ.Value));
+            //creating a new Report (FBCReport.rpt)
+            ReportDocument reportDocument = new ReportPeopleData();
+            reportDocument.Load("ReportPeopleData.rpt");
+            reportDocument.SetDataSource(goodShepherdDataSet);
+            reportDocument.SetParameterValue("Adress", "بمرحلة  : " + CMX_Educ.Text);
+
+            CR.ReportSource = reportDocument;
             }
         }
         private void BtnLoadStatus_Click(object sender, EventArgs e)
@@ -298,87 +290,35 @@ namespace GoodShepherd
             if (CMX_Status.SelectedItem == null) LblStatus.ForeColor = Color.Red;
             else
             {
-                //LblStatus.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByStatuse(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToString(CMX_Status.Value));
-                //ReportStatuse1.SetDataSource(goodShepherdDataSet);
-                //ReportStatuse1.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportStatuse1.SetParameterValue("City", CMX_CIty.Text);
-                //ReportStatuse1.SetParameterValue("Church", CMX_Chruch.Text);
-                //CR.ReportSource = ReportStatuse1;
+                LblStatus.ForeColor = Color.Black;
+                this.vIW_GetPeopleData1TableAdapter.FillByStatuse(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToString(CMX_Status.Value));
+                //creating a new Report (FBCReport.rpt)
+                ReportDocument reportDocument = new ReportPeopleData();
+                reportDocument.Load("ReportPeopleData.rpt");
+                reportDocument.SetDataSource(goodShepherdDataSet);
+                reportDocument.SetParameterValue("Adress", "الحالة الاجتماعية   : " + CMX_Status.Text);
+
+                CR.ReportSource = reportDocument;
             }
         }
         private void BtnWork_Click(object sender, EventArgs e)
         {
             if (CMX_Work.SelectedItem == null) LblWork.ForeColor = Color.Red;
+            else if (CMX_CIty.SelectedItem == null) LblCity.ForeColor = Color.Red;  
             else
             {
-                //LblWork.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByIsWork(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToString(CMX_Work.Value), Convert.ToInt32(CMX_Chruch.Value));
-                //ReportWork1.SetDataSource(goodShepherdDataSet);
-                //ReportWork1.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportWork1.SetParameterValue("City", CMX_CIty.Text);
-                //ReportWork1.SetParameterValue("Church", CMX_Chruch.Text);
-                //CR.ReportSource = ReportWork1;
-            }
-        }
-        private void BtnLoadBirthMonth_Click(object sender, EventArgs e)
-        {
-            if (CMX_BirthMonth.SelectedItem == null) LblBirthMonth.ForeColor = Color.Red;
-            else
-            {
-                //LblBirthMonth.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByMonth(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_BirthMonth.Value), Convert.ToInt32(CMX_Chruch.Value));
-                //ReportMonth1.SetDataSource(goodShepherdDataSet);
-                //ReportMonth1.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportMonth1.SetParameterValue("City", CMX_CIty.Text);
-                //ReportMonth1.SetParameterValue("Church", CMX_Chruch.Text);
-                //CR.ReportSource = ReportMonth1;
-            }
-        }
+                LblWork.ForeColor = Color.Black;
+                this.vIW_GetPeopleData1TableAdapter.FillByIsWork(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToString(CMX_Work.Value), BasicClass.vCityID);
+                //creating a new Report (FBCReport.rpt)
+                ReportDocument reportDocument = new ReportPeopleData();
+                reportDocument.Load("ReportPeopleData.rpt");
+                reportDocument.SetDataSource(goodShepherdDataSet);
+                reportDocument.SetParameterValue("Adress", "حالة العمل : " + CMX_Work.Text);
 
-        private void BtnLoadPartBirthMonth_Click(object sender, EventArgs e)
-        {
-            if (CMX_FromBirthMonth.SelectedItem == null && CMX_ToBirthMonth.SelectedItem==null)
-            {
-                LblFromBirthMonth.ForeColor = Color.Red;
-                LblToBirthMonth.ForeColor = Color.Red;
-            }
-            else if(CMX_FromBirthMonth.SelectedItem == null && CMX_ToBirthMonth.SelectedItem != null)
-            {
-                LblFromBirthMonth.ForeColor = Color.Red;
-                LblToBirthMonth.ForeColor = Color.Black;
-            }
-            else if(CMX_FromBirthMonth.SelectedItem!= null && CMX_ToBirthMonth.SelectedItem == null)
-            {
-                LblFromBirthMonth.ForeColor = Color.Black;
-                LblToBirthMonth.ForeColor = Color.Red;
-            }
-            else
-            {
-                //LblFromBirthMonth.ForeColor = Color.Black;
-                //LblToBirthMonth.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByPartMonth(this.goodShepherdDataSet.VIW_GetPeopleData1, Convert.ToInt32(CMX_FromBirthMonth.Value), Convert.ToInt32(CMX_ToBirthMonth.Value), Convert.ToInt32(CMX_Chruch.Value));
-                //ReportMonth1.SetDataSource(goodShepherdDataSet);
-                //ReportMonth1.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportMonth1.SetParameterValue("City", CMX_CIty.Text);
-                //ReportMonth1.SetParameterValue("Church", CMX_Chruch.Text);
-                //CR.ReportSource = ReportMonth1;
+                CR.ReportSource = reportDocument;
             }
         }
-        private void BtnLoadAge_Click(object sender, EventArgs e)
-        {
-            if (CMX_Age.Value == null) LblAge.ForeColor = Color.Red;
-            else
-            {
-                //LblAge.ForeColor = Color.Black;
-                //this.vIW_GetPeopleData1TableAdapter.FillByAge(this.goodShepherdDataSet.VIW_GetPeopleData1,  Convert.ToInt32(CMX_Age.Value), Convert.ToInt32(CMX_Chruch.Value));
-                //ReportMonth1.SetDataSource(goodShepherdDataSet);
-                //ReportMonth1.SetParameterValue("Adress", CMX_Area.Text);
-                //ReportMonth1.SetParameterValue("City", CMX_CIty.Text);
-                //ReportMonth1.SetParameterValue("Church", CMX_Chruch.Text);
-                //CR.ReportSource = ReportMonth1;
-            }
-        }
+       
         private void BtnLoadPartAge_Click(object sender, EventArgs e)
         {
                 //LblFromBirthMonth.ForeColor = Color.Black;
@@ -390,563 +330,147 @@ namespace GoodShepherd
                 //ReportMonth1.SetParameterValue("Church", CMX_Chruch.Text);
                 //CR.ReportSource = ReportMonth1;
         }
-        private void OPT_RepType_ValueChanged(object sender, EventArgs e)
-        {
-            switch (OPT_RepType.Value.ToString())
-	        {
-                case   "1" :
-                    GRP_Details.Visible = true;
-                    GRP_Attendance.Visible = false;
-                break;
 
-                case "2":
-                    GRP_Details.Visible = false;
-                    GRP_Attendance.Visible = true;
-                break;
-	        }
-        }
-
-        #region Meetings Reports
-        #region Report HighestAttendance
-        private void HighestAttendanceReport(object pFromDate, object pToDate)
+        private void EXP_MainItems_ItemClick(object sender, Infragistics.Win.UltraWinExplorerBar.ItemEventArgs e)
         {
             try
             {
-               string vFromDate;
-                string vToDate ;
-                 DateTime    vDate;
-            if (pFromDate !=null)  
-                {
-                    
-                    vFromDate = "'" + pFromDate.ToString() + "'";
-                }
-            else
-	            {
-                    vFromDate = "NULL";
-	            }
+                LblCity.Visible = false;
+                CMX_CIty.Visible = false;
+                BtnLoadCity.Visible = false;
 
-            if (pToDate != null)
-            {
-                vToDate = "'" + pToDate.ToString() + "'";
-            }
-            else
-            {
-                vToDate = "NULL";
-            }
+
+                LBL_Area.Visible = false;
+                CMX_Area.Visible = false;
+                BtnLoadArea.Visible = false;
+
+                LblStreet.Visible = false;
+                CMX_Street.Visible = false;
+                BtnLoadStreet.Visible = false;
+
+
+                LblChurch.Visible = false;
+                CMX_Chruch.Visible = false;
+                BtnLoadFrChurch.Visible = false;
+                LblFather.Visible = false;
+                CMX_FatherName.Visible = false;
+                BtnLoadFather.Visible = false;
+                LblServices.Visible = false;
+                CMX_Services.Visible = false;
+                BtnLoadServices.Visible = false;
+
+                LblEduc.Visible = false;
+                CMX_Educ.Visible = false;
+                BtnLoadEduc.Visible = false;
+                LblStatus.Visible = false;
+                CMX_Status.Visible = false;
+                BtnLoadStatus.Visible = false;
+
+                LblWork.Visible = false;
+                CMX_Work.Visible = false;
+                BtnWork.Visible = false;
+                switch (e.Item.Key)
+                {
+                    case "RepPeopleDataByCity":
+                        LblCity.Visible = true;
+                        CMX_CIty.Visible = true;
+                        BtnLoadCity.Visible = true;
+
+
+                        LBL_Area.Visible = true;
+                        CMX_Area.Visible = true;
+                        BtnLoadArea.Visible = true;
+
+                        LblStreet.Visible = true;
+                        CMX_Street.Visible = true;
+                        BtnLoadStreet.Visible = true;
+                        
+                        break;
+                    case "RepPeopleDataByArea":
+                        LblCity.Visible = true;
+                        CMX_CIty.Visible = true;
+                        BtnLoadCity.Visible = true;
+
+
+                        LBL_Area.Visible = true;
+                        CMX_Area.Visible = true;
+                        BtnLoadArea.Visible = true;
+
+                        LblStreet.Visible = true;
+                        CMX_Street.Visible = true;
+                        BtnLoadStreet.Visible = true;
+                        break;
+                    case "RepPeopleDataByStreet":
+                        LblCity.Visible = true;
+                        CMX_CIty.Visible = true;
+                        BtnLoadCity.Visible = true;
+
+
+                        LBL_Area.Visible = true;
+                        CMX_Area.Visible = true;
+                        BtnLoadArea.Visible = true;
+
+                        LblStreet.Visible = true;
+                        CMX_Street.Visible = true;
+                        BtnLoadStreet.Visible = true;
+                        break;
+                    case "RepPeopleDataByGodFather":
+                        LblChurch.Visible = true;
+                        CMX_Chruch.Visible = true;
+                        //BtnLoadFrChurch.Visible = true;
+                        LblFather.Visible = true;
+                        CMX_FatherName.Visible = true;
+                        BtnLoadFather.Visible = true;
+                        break;
+                    case "RepPeopleDataByFatherChurch":
+                          LblChurch.Visible = true;
+                        CMX_Chruch.Visible = true;
+                        //BtnLoadFrChurch.Visible = true;
+                        LblFather.Visible = true;
+                        CMX_FatherName.Visible = true;
+                        BtnLoadFather.Visible = true;
+                        break;
+                    case "RepPeopleDataByService":
+                        LblChurch.Visible = true;
+                        CMX_Chruch.Visible = true;
+                        //BtnLoadFrChurch.Visible = true;
+                        LblServices.Visible = true;
+                        CMX_Services.Visible = true;
+                        BtnLoadServices.Visible = true;
+
+
+                        break;
+                    case "RepPeopleDataByEduLevel":
+                        
+                            LblEduc.Visible = true;
+                            CMX_Educ.Visible = true;
+                            BtnLoadEduc.Visible = true;
+                        break;
+                    case "RepPeopleDataByStatus":
+                        LblStatus.Visible = true;
+                            CMX_Status.Visible = true;
+                            BtnLoadStatus.Visible = true;
+                        break;
+                    case "RepPeopleDataByWorkStatus":
+                         LblCity.Visible = true;
+                        CMX_CIty.Visible = true;
+                        BtnLoadCity.Visible = true;
+
+                        LblWork.Visible = true;
+                            CMX_Work.Visible = true;
+                            BtnWork.Visible = true;
+                        break;
                 
-                string statement = "";
-                statement = "" + "\n" +
-                "SELECT				  TBL_MainPerson.Name													" + "\n" +
-                "					  ,TBL_MainPerson.Mobile												" + "\n" +
-                "					  ,TBL_Area.AreaDesc													" + "\n" +
-                "					  ,TBL_Street.StreetDesc												" + "\n" +
-                "					  ,TBL_MainPerson.Phone													" + "\n" +
-                "					  ,TBL_MainPerson.FloorNum												" + "\n" +
-                "					  ,TBL_MainPerson.BuildingNum											" + "\n" +
-                "					  ,ISNULL(COUNT(TBL_Meetings_Details.Pers_ID),0)  AS AttendanceNumber	" + "\n" +
-                "					  ,TBL_City.CityDesc  As City                       					" + "\n" +
-                "FROM				  TBL_MainPerson														" + "\n" +
-                "LEFT JOIN			  TBL_Meetings_Details													" + "\n" +
-                "ON					  TBL_MainPerson.ID = TBL_Meetings_Details.Pers_ID						" + "\n" +
-                "LEFT JOIN            TBL_Meetings															" + "\n" +
-                "ON					  TBL_Meetings.ID = TBL_Meetings_Details.Meetings_ID					" + "\n" +
-                "AND        (MONTH(TBL_Meetings.TDate) >= " + vFromDate + " Or " + vFromDate + " Is Null ) " + "\n" +
-                "AND        (MONTH(TBL_Meetings.TDate) <= " + vToDate + " Or " + vToDate + " Is Null ) " + "\n" +
-                "LEFT JOIN			  TBL_Area															    " + "\n" +
-                "ON					  TBL_Area.ID		 = TBL_MainPerson.Area_ID							" + "\n" +
-                "LEFT JOIN			  TBL_City														    " + "\n" +
-                "ON					  TBL_City.ID		 = TBL_MainPerson.City_ID							" + "\n" +
-                "LEFT JOIN			  TBL_Street															" + "\n" +
-                "ON					  TBL_Street.ID		 = TBL_MainPerson.Street_ID							" + "\n" +
-                "WHERE					1= 1																" + "\n" +
-                "GROUP BY			   TBL_MainPerson.Name													" + "\n" +
-                "					  ,TBL_MainPerson.Mobile												" + "\n" +
-                "					  ,TBL_Area.AreaDesc													" + "\n" +
-                "					  ,TBL_Street.StreetDesc 												" + "\n" +
-                "					  ,TBL_MainPerson.Phone													" + "\n" +
-                "					  ,TBL_MainPerson.FloorNum												" + "\n" +
-                "					  ,TBL_MainPerson.BuildingNum	,TBL_City.CityDesc      				" + "\n" +
-                " ORDER BY 8 Desc																			";
-
-                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
-                SqlDataAdapter da = new SqlDataAdapter();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = statement;
-                da.SelectCommand = cmd;
-                Datasets.DS_Meetings ds = new Datasets.DS_Meetings();
-
-                conn.Open();
-                da.Fill(ds.Tables[0]);
-                conn.Close();
-
-                ReportDocument reportDocument = new ReportHighestAttendance();
-                reportDocument.Load("ReportHighestAttendance.rpt");
-                reportDocument.SetDataSource(ds);
-                reportDocument.SetParameterValue("Adress", "اعلى نسبة حضور ");
-
-                CR.ReportSource = reportDocument;
-
-
+                }
             }
             catch (Exception ex)
             {
                 
-                ExceptionHandler.HandleException(ex.Message,this.Name, "HighestAttendanceReport");
+                ExceptionHandler.HandleException(ex.Message,this.Name ,  "EXP_MainItems_ItemClick");
             }
         }
-        private void BTN_LoadByDate_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (_repKey !=null)
-                {
-                    if (_repKey == "RepHighestAttendance")
-                    {
-                        HighestAttendanceReport(TXT_fromDate.Value, TXT_ToDate.Value);
-                    }
-                    else if (_repKey == "RepAttendanceInMonth")
-                    {
-                        AttendanceInMonthReport(CMX_MeetingMonth.Value);
-                    }
-                    else if (_repKey == "RepAttendanceInPeriod")
-                    {
-                        AttendanceInPeriodReport(TXT_fromDate.Value, TXT_ToDate.Value);
-                    }
-                    else if (_repKey == "RepNoAttendanceInMonth")
-                    {
-                        NoAttendanceInMonthReport(CMX_MeetingMonth.Value);
-                    }
-                    else if (_repKey == "RepNoAttendanceInPeriod")
-                    {
-                        NoAttendanceInPeriodReport(TXT_fromDate.Value, TXT_ToDate.Value);
-                    }
-                    else if (_repKey == "RepMonthBirthdates")
-                    {
-                        MonthBirthdatesReport(TXT_fromDate.Value);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
 
-                ExceptionHandler.HandleException(ex.Message, this.Name, "BTN_LoadByDate_Click");
-            }
-        }
-        #endregion
-        #region Attendance in Month
-        private void AttendanceInMonthReport(object pFromDate)
-        {
-            try
-            {
-                string vFromDate;
-                if (pFromDate != null)
-                {
-
-                    vFromDate = "'" + pFromDate.ToString() + "'";
-                }
-                else
-                {
-                    vFromDate = "NULL";
-                }
-
-                
-
-                string statement = "";
-               statement = "" + "\n" +
-                "SELECT	Distinct	 	TBL_Meetings_Details.Pers_ID									" + "\n" +
-                "					  , TBL_Meetings.TDate												" + "\n" +
-                "					  , TBL_Meetings.Title 	,TBL_Meetings_Details.AttendanceTime	" + "\n" +
-                "				       ,TBL_city	.CityDesc	AS City								" + "\n" +
-                "					  , TBL_MainPerson.Name											" + "\n" +
-                "					  ,TBL_MainPerson.Mobile											" + "\n" +
-                "					  ,TBL_Area.AreaDesc												" + "\n" +
-                "					  ,TBL_Street.StreetDesc											" + "\n" +
-                "					  ,TBL_MainPerson.Phone												" + "\n" +
-                "					  ,TBL_MainPerson.FloorNum											" + "\n" +
-                "					  ,TBL_MainPerson.BuildingNum	,	TBL_DayTypes.[Desc] As DayType    " + "\n" +
-                "FROM				  TBL_Meetings														" + "\n" +
-                "LEFT JOIN			  TBL_Meetings_Details												" + "\n" +
-                "ON					  TBL_Meetings.ID = TBL_Meetings_Details.Meetings_ID				" + "\n" +
-                "Left JOIN			dbo.TBL_DayTypes														" + "\n" +
-                "ON					dbo.TBL_Meetings.ID					= dbo.TBL_DayTypes.ID				" + "\n" +
-                "LEFT JOIN			  TBL_MainPerson													" + "\n" +
-                "ON					  TBL_MainPerson.ID = TBL_Meetings_Details.Pers_ID					" + "\n" +
-                "Left JOIN      TBL_City																		" + "\n" +
-                "ON				TBL_MainPerson.City_ID = TBL_City.ID											" + "\n" +
-                "LEFT JOIN			  TBL_Area															" + "\n" +
-                "ON					  TBL_Area.ID		 = TBL_MainPerson.Area_ID						" + "\n" +
-                "LEFT JOIN			  TBL_Street														" + "\n" +
-                "ON					  TBL_Street.ID		 = TBL_MainPerson.Street_ID						" + "\n" +
-                "WHERE		1=1																			" + "\n" +
-                "AND        (MONTH(TBL_Meetings.TDate) = " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
-                "																						";
-                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
-                SqlDataAdapter da = new SqlDataAdapter();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = statement;
-                da.SelectCommand = cmd;
-                Datasets.DS_Meetings ds = new Datasets.DS_Meetings();
-
-                conn.Open();
-                da.Fill(ds.Tables[0]);
-                conn.Close();
-
-                ReportDocument reportDocument = new AttendanceInMonth();
-                reportDocument.Load("AttendanceInMonth.rpt");
-                reportDocument.SetDataSource(ds);
-                reportDocument.SetParameterValue("Adress", "المواظبة فى شهر ");
-
-                CR.ReportSource = reportDocument;
-
-
-            }
-            catch (Exception ex)
-            {
-
-                ExceptionHandler.HandleException(ex.Message, this.Name, "HighestAttendanceReport");
-            }
-        }
-        private void BTN_MeetingMonth_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (_repKey != null)
-                {
-                    if (_repKey == "RepAttendanceInMonth")
-                    {
-                        AttendanceInMonthReport(CMX_MeetingMonth.Value);
-                    }
-                   
-                    else if (_repKey == "RepNoAttendanceInMonth")
-                    {
-                        NoAttendanceInMonthReport(CMX_MeetingMonth.Value);
-                    }
-                    else if (_repKey == "RepMonthBirthdates")
-                    {
-                        MonthBirthdatesReport(CMX_MeetingMonth.Value);
-                    }
-                   
-                }
-            }
-            catch (Exception ex)
-            {
-
-                ExceptionHandler.HandleException(ex.Message, this.Name, "BTN_MeetingMonth_Click");
-            }
-        }
-        #endregion
-        #region Attendance in Period
-        private void AttendanceInPeriodReport(object pFromDate, object pToDate)
-        {
-            try
-            {
-                string vFromDate;
-                string vToDate;
-                if (pFromDate != null)
-                {
-
-                    vFromDate = "'" + pFromDate.ToString() + "'";
-                }
-                else
-                {
-                    vFromDate = "NULL";
-                }
-
-
-                if (pToDate != null)
-                {
-
-                    vToDate = "'" + pToDate.ToString() + "'";
-                }
-                else
-                {
-                    vToDate = "NULL";
-                }
-
-
-                string statement = "";
-                statement = "" + "\n" +
-                 "SELECT	Distinct	 	TBL_Meetings_Details.Pers_ID									" + "\n" +
-                 "					  , TBL_Meetings.TDate												" + "\n" +
-                 "					  , TBL_Meetings.Title ,TBL_Meetings_Details.AttendanceTime			" + "\n" +
-                 "				       ,TBL_city	.CityDesc	AS City								" + "\n" +
-                 "					  ,  TBL_MainPerson.Name											" + "\n" +
-                 "					  ,TBL_MainPerson.Mobile											" + "\n" +
-                 "					  ,TBL_Area.AreaDesc												" + "\n" +
-                 "					  ,TBL_Street.StreetDesc											" + "\n" +
-                 "					  ,TBL_MainPerson.Phone												" + "\n" +
-                 "					  ,TBL_MainPerson.FloorNum											" + "\n" +
-                 "					  ,TBL_MainPerson.BuildingNum,	TBL_DayTypes.[Desc] As DayType    " + "\n" +
-                 "FROM				  TBL_Meetings														" + "\n" +
-                 "LEFT JOIN			  TBL_Meetings_Details												" + "\n" +
-                 "ON					  TBL_Meetings.ID = TBL_Meetings_Details.Meetings_ID			" + "\n" +
-                 "Left JOIN			dbo.TBL_DayTypes													" + "\n" +
-                 "ON					dbo.TBL_Meetings.ID					= dbo.TBL_DayTypes.ID		" + "\n" +
-                 "LEFT JOIN			  TBL_MainPerson													" + "\n" +
-                 "ON				  TBL_MainPerson.ID = TBL_Meetings_Details.Pers_ID					" + "\n" +
-                 "Left JOIN           TBL_City															" + "\n" +
-                "ON				      TBL_MainPerson.City_ID = TBL_City.ID								" + "\n" +
-                 "LEFT JOIN			  TBL_Area															" + "\n" +
-                 "ON				  TBL_Area.ID		 = TBL_MainPerson.Area_ID						" + "\n" +
-                 "LEFT JOIN			  TBL_Street														" + "\n" +
-                 "ON				  TBL_Street.ID		 = TBL_MainPerson.Street_ID						" + "\n" +
-                 "WHERE		1=1																			" + "\n" +
-                 "AND                 (MONTH(TBL_Meetings.TDate) >= " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
-                 "AND                 (MONTH(TBL_Meetings.TDate) <= " + vToDate + " Or " + vToDate + " Is Null )	" + "\n" +
-                 "																						";
-                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
-                SqlDataAdapter da = new SqlDataAdapter();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = statement;
-                da.SelectCommand = cmd;
-                Datasets.DS_Meetings ds = new Datasets.DS_Meetings();
-
-                conn.Open();
-                da.Fill(ds.Tables[0]);
-                conn.Close();
-
-                ReportDocument reportDocument = new AttendanceInMonth();
-                reportDocument.Load("AttendanceInMonth.rpt");
-                reportDocument.SetDataSource(ds);
-                reportDocument.SetParameterValue("Adress", "المواظبة فى فترة ");
-
-                CR.ReportSource = reportDocument;
-
-
-            }
-            catch (Exception ex)
-            {
-
-                ExceptionHandler.HandleException(ex.Message, this.Name, "AttendanceInPeriodReport");
-            }
-        }
-        #endregion
-        #region No Attendance in Month
-        private void NoAttendanceInMonthReport(object pFromDate)
-        {
-            try
-            {
-                string vFromDate;
-                if (pFromDate != null)
-                {
-
-                    vFromDate = "'" + pFromDate.ToString() + "'";
-                }
-                else
-                {
-                    vFromDate = "NULL";
-                }
-
-
-
-                string statement = "";
-                statement = "" + "\n" +
-                        "SELECT			 TBL_MainPerson.ID																" + "\n" +		
-                        "				,TBL_MainPerson.Name , TBL_MainPerson.Mobile									" + "\n" +
-                        "				,TBL_city	.CityDesc	AS City														" + "\n" +
-                        "				,TBL_Area.AreaDesc																" + "\n" +
-                        "				,TBL_Church.ChurchName															" + "\n" +
-                        "				, TBL_MainPerson.BirthDate														" + "\n" +
-                        "				,TBL_Street.StreetDesc	  														" + "\n" +
-                        "				,TBL_MainPerson.BuildingNum														" + "\n" +
-                        "				,TBL_MainPerson.FloorNum  														" + "\n" +
-                        "FROM			TBL_MainPerson			  														" + "\n" +
-                        "INNER JOIN      TBL_Church																		" + "\n" +	 
-                        "ON				TBL_Church.ID = TBL_MainPerson.Church_ID										" + "\n" +	
-                        "INNER JOIN      TBL_City																		" + "\n" +
-                        "ON				TBL_MainPerson.City_ID = TBL_City.ID											" + "\n" +
-                        "INNER JOIN      TBL_Area																		" + "\n" +
-                        "ON				TBL_Area.ID = TBL_MainPerson.Area_ID											" + "\n" +
-                        "INNER JOIN      TBL_Street																		" + "\n" +
-                        "ON				TBL_Street.ID = TBL_MainPerson.Street_ID										" + "\n" +
-                        "WHERE TBL_MainPerson.ID																		" + "\n" +
-                        "NOT IN (																						" + "\n" +
-                        "SELECT			Pers_ID																			" + "\n" +
-                        "from			TBL_Meetings																	" + "\n" +
-                        "INNER JOIN		TBL_Meetings_Details															" + "\n" +
-                        "ON				TBL_Meetings.ID	 = TBL_Meetings_Details.Meetings_ID								" + "\n" +
-                        "WHERE        (MONTH(TBL_Meetings.TDate) = " + vFromDate + " Or " + vFromDate + " Is Null )	" + "\n" +
-                        ")"  ;
-                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
-                SqlDataAdapter da = new SqlDataAdapter();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = statement;
-                da.SelectCommand = cmd;
-                Datasets.DS_Meetings ds = new Datasets.DS_Meetings();
-
-                conn.Open();
-                da.Fill(ds.Tables[0]);
-                conn.Close();
-
-                ReportDocument reportDocument = new ReportNoAttendanceInMonth();
-                reportDocument.Load("AttendanceInMonth.rpt");
-                reportDocument.SetDataSource(ds);
-                reportDocument.SetParameterValue("Adress", "لم يحضر فى شهر ");
-
-                CR.ReportSource = reportDocument;
-
-
-            }
-            catch (Exception ex)
-            {
-
-                ExceptionHandler.HandleException(ex.Message, this.Name, "NoAttendanceInMonthReport");
-            }
-        }
        
-        #endregion
-        #region No Attendance in Period
-        private void NoAttendanceInPeriodReport(object pFromDate , object pToDate)
-        {
-            try
-            {
-                string vFromDate ="";
-                string vToDate="";
-                if (pFromDate != null)
-                {
-
-                    vFromDate = "'" + pFromDate.ToString() + "'";
-                }
-                else
-                {
-                    vFromDate = "NULL";
-                }
-
-
-                if (pToDate != null)
-                {
-
-                    vToDate = "'" + pToDate.ToString() + "'";
-                }
-                else
-                {
-                    vToDate = "NULL";
-                }
-
-
-                string statement = "";
-                statement = "" + "\n" +
-                        "SELECT			 TBL_MainPerson.ID																" + "\n" +		
-                        "				,TBL_MainPerson.Name , TBL_MainPerson.Mobile									" + "\n" +
-                        "				,TBL_city	.CityDesc	 AS City														" + "\n" +
-                        "				,TBL_Area.AreaDesc																" + "\n" +
-                        "				,TBL_Church.ChurchName															" + "\n" +
-                        "				, TBL_MainPerson.BirthDate														" + "\n" +
-                        "				,TBL_Street.StreetDesc	  														" + "\n" +
-                        "				,TBL_MainPerson.BuildingNum														" + "\n" +
-                        "				,TBL_MainPerson.FloorNum  														" + "\n" +
-                        "FROM			TBL_MainPerson			  														" + "\n" +
-                        "INNER JOIN      TBL_Church																		" + "\n" +	 
-                        "ON				TBL_Church.ID = TBL_MainPerson.Church_ID										" + "\n" +	
-                        "INNER JOIN      TBL_City																		" + "\n" +
-                        "ON				TBL_MainPerson.City_ID = TBL_City.ID											" + "\n" +
-                        "INNER JOIN      TBL_Area																		" + "\n" +
-                        "ON				TBL_Area.ID = TBL_MainPerson.Area_ID											" + "\n" +
-                        "INNER JOIN      TBL_Street																		" + "\n" +
-                        "ON				TBL_Street.ID = TBL_MainPerson.Street_ID										" + "\n" +
-                        "WHERE TBL_MainPerson.ID																		" + "\n" +
-                        "NOT IN (																						" + "\n" +
-                        "SELECT			Pers_ID																			" + "\n" +
-                        "from			TBL_Meetings																	" + "\n" +
-                        "INNER JOIN		TBL_Meetings_Details															" + "\n" +
-                        "ON				TBL_Meetings.ID	 = TBL_Meetings_Details.Meetings_ID								" + "\n" +
-                        "WHERE        (MONTH(TBL_Meetings.TDate) >= " + vFromDate + " Or " + vFromDate + " Is Null ) " + "\n" +
-                        "AND        (MONTH(TBL_Meetings.TDate) <= " + vToDate + " Or " + vToDate + " Is Null ) " + "\n" +
-                        "		)																				";
-                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
-                SqlDataAdapter da = new SqlDataAdapter();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = statement;
-                da.SelectCommand = cmd;
-                Datasets.DS_Meetings ds = new Datasets.DS_Meetings();
-
-                conn.Open();
-                da.Fill(ds.Tables[0]);
-                conn.Close();
-
-                ReportDocument reportDocument = new ReportNoAttendanceInMonth();
-                reportDocument.Load("ReportNoAttendanceInMonth.rpt");
-                reportDocument.SetDataSource(ds);
-                reportDocument.SetParameterValue("Adress", "لم يحضر فى فترة ");
-
-                CR.ReportSource = reportDocument;
-
-
-            }
-            catch (Exception ex)
-            {
-
-                ExceptionHandler.HandleException(ex.Message, this.Name, "NoAttendanceInPeriodReport");
-            }
-        }
-
-        #endregion
-        #region Month birthdates
-        private void MonthBirthdatesReport(object pFromDate)
-        {
-            try
-            {
-                string vFromDate;
-                if (pFromDate != null)
-                {
-
-                    vFromDate = "'" + pFromDate.ToString() + "'";
-                }
-                else
-                {
-                    vFromDate = "NULL";
-                }
-
-
-
-                string statement = "";
-                statement = "" + "\n" +
-                        "SELECT AgeIntYears													" + "\n" +
-                        ", AreaDesc															" + "\n" +
-                        ", BirthDate														" + "\n" +
-                        ", BuildingNum														" + "\n" +
-                        ", ChurchName														" + "\n" +
-                        ", Church_ID														" + "\n" +
-                        ", City, FloorNum, Mobile, Name, PersType_ID, PersonType, Phone		" + "\n" +
-                        ", Statuse															" + "\n" +
-                        ", StreetDesc														" + "\n" +
-                        "FROM VIW_GetPeopleData												" + "\n" + 
-                        "WHERE        (MONTH(BirthDate) = " + vFromDate + " Or " + vFromDate + " Is Null )	" ;
-                SqlConnection conn = new SqlConnection(BasicClass.vConectionString);
-                SqlDataAdapter da = new SqlDataAdapter();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = statement;
-                da.SelectCommand = cmd;
-                Datasets.DS_PeopleData ds = new Datasets.DS_PeopleData();
-                ds.EnforceConstraints = false;
-                conn.Open();
-                da.Fill(ds.Tables[0]);
-                conn.Close();
-
-                ReportDocument reportDocument = new MonthbirthDates();
-                reportDocument.Load("MonthbirthDates.rpt");
-                reportDocument.SetDataSource(ds);
-                reportDocument.SetParameterValue("Adress", "اعياد ميلاد الشهر");
-
-                CR.ReportSource = reportDocument;
-
-
-            }
-            catch (Exception ex)
-            {
-
-                ExceptionHandler.HandleException(ex.Message, this.Name, "NoAttendanceInMonthReport");
-            }
-        }
-
-        #endregion
-        #endregion
-
       
-
-
-
-
-
     }
 }

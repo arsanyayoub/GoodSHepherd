@@ -14,6 +14,7 @@ using System.Diagnostics;
 using System.Collections;
 using GoodShepherd.Reports;
 using GoodShepherd.Datasets;
+using Infragistics.Win.UltraWinEditors;
 
 namespace GoodShepherd.Forms
 {
@@ -260,7 +261,8 @@ namespace GoodShepherd.Forms
                 vSqlCommand.Connection = sqlConnection1;
                 vSqlCommand.CommandText = "\n" +
                                    "SELECT       ID, ChurchName" + "\n" +
-                                   "FROM         dbo.TBL_Church";
+                                   "FROM         dbo.TBL_Church" + "\n" +
+                                   "WHERE     (City_ID =" + BasicClass.vCityID + ")";
                 sqlConnection1.Open();
                 vSQLReader = vSqlCommand.ExecuteReader();
                 while (vSQLReader.Read())
@@ -293,7 +295,8 @@ namespace GoodShepherd.Forms
                 vSqlCommand.Connection = sqlConnection1;
                 vSqlCommand.CommandText = "\n" +
                                    "SELECT       ID, ChurchName" + "\n" +
-                                   "FROM         dbo.TBL_Church";
+                                   "FROM         dbo.TBL_Church" + "\n" +
+                                   "WHERE     (City_ID =" + BasicClass.vCityID + ")";
                 sqlConnection1.Open();
                 vSQLReader = vSqlCommand.ExecuteReader();
                 while (vSQLReader.Read())
@@ -314,7 +317,7 @@ namespace GoodShepherd.Forms
                 ExceptionHandler.HandleException(ex.Message, this.Name, "sFillChurch");
             }
         }
-        private void sFillService()
+        private void sFillService(string pChurchId)
         {
             SqlConnection sqlConnection1 = new SqlConnection(BasicClass.vConectionString);
             SqlCommand vSqlCommand = new SqlCommand();
@@ -326,7 +329,8 @@ namespace GoodShepherd.Forms
                 vSqlCommand.Connection = sqlConnection1;
                 vSqlCommand.CommandText = "\n" +
                                    "SELECT       ID, Service" + "\n" +
-                                   "FROM         dbo.TBL_Services";
+                                   "FROM         dbo.TBL_Services" + "\n" +
+                                   "WHERE     (Church_ID =" + pChurchId + ")";
                 sqlConnection1.Open();
                 vSQLReader = vSqlCommand.ExecuteReader();
                 while (vSQLReader.Read())
@@ -347,7 +351,7 @@ namespace GoodShepherd.Forms
                 ExceptionHandler.HandleException(ex.Message, this.Name, "sFillChurch");
             }
         }
-        private void sFillServant()
+        private void sFillServant(string pChurchId)
         {
             SqlConnection sqlConnection1 = new SqlConnection(BasicClass.vConectionString);
             SqlCommand vSqlCommand = new SqlCommand();
@@ -361,7 +365,9 @@ namespace GoodShepherd.Forms
                 vSqlCommand.CommandText = "\n" +
                                    "SELECT       ID, Name" + "\n" +
                                    "FROM         dbo.TBL_MainPerson" + "\n" +
-                                   "WHERE PersType_ID =  2";
+                                   "WHERE   PersType_ID =  2" + "\n" +
+                                   "AND     (City_ID =" + BasicClass.vCityID + ")" + "\n" +
+                                   "AND       (Church_ID =" + pChurchId + ")"; 
                 sqlConnection1.Open();
                 vSQLReader = vSqlCommand.ExecuteReader();
                 while (vSQLReader.Read())
@@ -382,7 +388,7 @@ namespace GoodShepherd.Forms
                 ExceptionHandler.HandleException(ex.Message, this.Name, "sFillServant");
             }
         }
-        private void sFillFather()
+        private void sFillFather(string pChurchId)
         {
             SqlConnection sqlConnection1 = new SqlConnection(BasicClass.vConectionString);
             SqlCommand vSqlCommand = new SqlCommand();
@@ -396,7 +402,9 @@ namespace GoodShepherd.Forms
                 vSqlCommand.CommandText = "\n" +
                                    "SELECT       ID, Name" + "\n" +
                                    "FROM         dbo.TBL_MainPerson" + "\n" +
-                                   "WHERE PersType_ID =  1";
+                                   "WHERE PersType_ID =  1" + "\n" +
+                                   "AND     (City_ID =" + BasicClass.vCityID + ")" + "\n" +
+                                   "AND       (Church_ID =" + pChurchId + ")"; 
                 sqlConnection1.Open();
                 vSQLReader = vSqlCommand.ExecuteReader();
                 while (vSQLReader.Read())
@@ -571,9 +579,9 @@ namespace GoodShepherd.Forms
                 sFillEducationLevel();
                 sFillServantChurch();
                 sFillfatherChurch();
-                sFillServant();
-                sFillFather();
-                sFillService();
+                //sFillServant();
+                //sFillFather();
+                //sFillService();
                 //sFillEucationYear();
                 //sFillCollege();
             }
@@ -757,25 +765,52 @@ namespace GoodShepherd.Forms
                     {
                         sFillDepartment(CollegeId);
                     }
-                    else if (checkedName == "TXT_Service")
+                    else if (checkedName == "CMX_Service")
                     {
-                        sFillService();
+                        if (CMX_ChrService.SelectedItem !=null)
+                        {
+                            sFillService(CMX_ChrService.SelectedItem.DataValue.ToString());
+                        }
+                        else
+                        {
+                            CMX_Service.Items.Clear();
+                        }
+                        
                     }
+
                     else if (checkedName == "TXT_ResponsibleChurch")
                     {
-                        sFillServantChurch();
+                       sFillServantChurch();
+                       
                     }
                     else if (checkedName == "TXT_FatherChurch")
                     {
+
                         sFillfatherChurch();
                     }
                     else if (checkedName == "TXT_Father")
                     {
-                        sFillFather();
+                        //sFillFather();
+                        if (TXT_FatherChurch.SelectedItem != null)
+                        {
+                            sFillFather(TXT_FatherChurch.SelectedItem.DataValue.ToString());
+                        }
+                        else
+                        {
+                            TXT_Father.Items.Clear();
+                        }
                     }
                     else if (checkedName == "TXT_ResponsibleServant")
                     {
-                        sFillServant();
+
+                        if (TXT_ResponsibleChurch.SelectedItem != null)
+                        {
+                            sFillServant(TXT_ResponsibleChurch.SelectedItem.DataValue.ToString());
+                        }
+                        else
+                        {
+                            TXT_ResponsibleServant.Items.Clear();
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -819,10 +854,7 @@ namespace GoodShepherd.Forms
                     vFormMode = "U";
                 }
             }
-            private void CHK_IsWorking_CheckStateChanged(object sender, EventArgs e)
-            {
-
-            }
+            
             private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)                                  
             {
                 if (e.TabPage.Name == "TAB_Summary")
@@ -2247,6 +2279,29 @@ namespace GoodShepherd.Forms
             else if (vFormMode.Trim().ToUpper() == "N")
             {
                 vFormMode = "U";
+            }
+        }
+
+        private void CHK_IsWorking_CheckStateChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                UltraCheckEditor box = (UltraCheckEditor)sender;
+                if (box.Checked == true)
+                {
+                    LBL_WorkDesc.Visible = true;
+                    TXT_WorkDesc.Visible = true;
+                }
+                else
+                {
+                    LBL_WorkDesc.Visible = false;
+                    TXT_WorkDesc.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show(ex.Message);
             }
         }
 

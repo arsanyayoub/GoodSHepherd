@@ -67,8 +67,13 @@ namespace GoodShepherd
 
         }
         private void CMX_City_ValueChanged(object sender, EventArgs e)                      
+        
+        
+
+        
+
         {
-            if (CMX_City.Text != "" && CMX_City.IsItemInList())
+            if (CMX_City.Value != null )
             {
                 this.tBL_AreaTableAdapter.FillByCity(this.adressDataSet.TBL_Area, long.Parse(CMX_City.Value.ToString()));
 
@@ -93,7 +98,7 @@ namespace GoodShepherd
         private void CMX_Area_ValueChanged(object sender, EventArgs e)                      
         {
 
-            if (CMX_Area.Text != "" && CMX_Area.IsItemInList())
+            if (CMX_Area.Value != null)
             {
                 this.tBL_StreetTableAdapter.FillByArea(this.adressDataSet.TBL_Street, long.Parse(CMX_Area.Value.ToString()));
 
@@ -116,6 +121,14 @@ namespace GoodShepherd
             this.tBL_CityTableAdapter.Fill(this.adressDataSet.TBL_City);
         }
         private bool SaveValidation()                                                       
+        
+
+
+
+
+
+
+        
         {
             bool ressult;
             try

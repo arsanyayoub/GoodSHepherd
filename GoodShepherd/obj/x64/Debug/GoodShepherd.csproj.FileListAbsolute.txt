@@ -116,7 +116,6 @@ D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\GoodShepherd.pdb
 D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Telerik.WinControls.dll
 D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Telerik.WinControls.Themes.Office2010Black.dll
 D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Telerik.WinControls.xml
-D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.csprojResolveAssemblyReference.cache
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.Forms.FRM_DBBackupRestore.resources
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.FRM_DBConfiguration.resources
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.FRM_ImportFromExcel.resources
@@ -135,3 +134,18 @@ D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.exe.licenses
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.exe.manifest
 D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.application
 D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\GoodShepherd.exe.config
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\CrystalDecisions.ReportSource.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\CrystalDecisions.Shared.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\CrystalDecisions.Windows.Forms.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Microsoft.SqlServer.Smo.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Telerik.WinControls.UI.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\TelerikCommon.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\UIAutomationProvider.dll
+D:\GoodShepherdA Finalll\GoodShepherd\bin\x64\Debug\Telerik.WinControls.UI.xml
+D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.FRM_ReportAttendance.resources
+D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.Forms.FRM_reportViewer.resources
+D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.FRM_ReportLev1.resources
+D:\GoodShepherdA Finalll\GoodShepherd\obj\x64\Debug\GoodShepherd.csprojResolveAssemblyReference.cache

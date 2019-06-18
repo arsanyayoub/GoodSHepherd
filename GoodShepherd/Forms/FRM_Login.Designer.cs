@@ -36,14 +36,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Login));
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("VIW_Church", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn11 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("CityDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Area_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn14 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Street_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn16 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("CityDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Area_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Street_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
@@ -229,31 +229,31 @@
             appearance1.BackColor = System.Drawing.SystemColors.Window;
             appearance1.BorderColor = System.Drawing.SystemColors.InactiveCaption;
             this.CMX_Church.DisplayLayout.Appearance = appearance1;
-            ultraGridColumn9.Header.VisiblePosition = 0;
-            ultraGridColumn9.Hidden = true;
-            ultraGridColumn10.Header.VisiblePosition = 1;
-            ultraGridColumn10.Hidden = true;
-            ultraGridColumn11.Header.VisiblePosition = 2;
-            ultraGridColumn11.Hidden = true;
-            ultraGridColumn12.Header.VisiblePosition = 3;
-            ultraGridColumn12.Hidden = true;
-            ultraGridColumn13.Header.Caption = "المنطقة";
-            ultraGridColumn13.Header.VisiblePosition = 4;
-            ultraGridColumn14.Header.VisiblePosition = 5;
-            ultraGridColumn14.Hidden = true;
-            ultraGridColumn15.Header.Caption = "الشارع";
-            ultraGridColumn15.Header.VisiblePosition = 6;
-            ultraGridColumn16.Header.Caption = "الكنيسة";
-            ultraGridColumn16.Header.VisiblePosition = 7;
+            ultraGridColumn1.Header.VisiblePosition = 0;
+            ultraGridColumn1.Hidden = true;
+            ultraGridColumn2.Header.VisiblePosition = 1;
+            ultraGridColumn2.Hidden = true;
+            ultraGridColumn3.Header.VisiblePosition = 2;
+            ultraGridColumn3.Hidden = true;
+            ultraGridColumn4.Header.VisiblePosition = 3;
+            ultraGridColumn4.Hidden = true;
+            ultraGridColumn5.Header.Caption = "المنطقة";
+            ultraGridColumn5.Header.VisiblePosition = 4;
+            ultraGridColumn6.Header.VisiblePosition = 5;
+            ultraGridColumn6.Hidden = true;
+            ultraGridColumn7.Header.Caption = "الشارع";
+            ultraGridColumn7.Header.VisiblePosition = 6;
+            ultraGridColumn8.Header.Caption = "الكنيسة";
+            ultraGridColumn8.Header.VisiblePosition = 7;
             ultraGridBand1.Columns.AddRange(new object[] {
-            ultraGridColumn9,
-            ultraGridColumn10,
-            ultraGridColumn11,
-            ultraGridColumn12,
-            ultraGridColumn13,
-            ultraGridColumn14,
-            ultraGridColumn15,
-            ultraGridColumn16});
+            ultraGridColumn1,
+            ultraGridColumn2,
+            ultraGridColumn3,
+            ultraGridColumn4,
+            ultraGridColumn5,
+            ultraGridColumn6,
+            ultraGridColumn7,
+            ultraGridColumn8});
             this.CMX_Church.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.CMX_Church.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_Church.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;

@@ -540,7 +540,7 @@
             this._panel2_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._panel2_Toolbars_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._panel2_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top;
-            this._panel2_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._panel2_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.Color.Black;
             this._panel2_Toolbars_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
             this._panel2_Toolbars_Dock_Area_Top.Name = "_panel2_Toolbars_Dock_Area_Top";
             this._panel2_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1031, 71);
@@ -551,7 +551,7 @@
             this._panel2_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._panel2_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._panel2_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom;
-            this._panel2_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._panel2_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.Color.Black;
             this._panel2_Toolbars_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 460);
             this._panel2_Toolbars_Dock_Area_Bottom.Name = "_panel2_Toolbars_Dock_Area_Bottom";
             this._panel2_Toolbars_Dock_Area_Bottom.Size = new System.Drawing.Size(1031, 0);
@@ -562,7 +562,7 @@
             this._panel2_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._panel2_Toolbars_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._panel2_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
-            this._panel2_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._panel2_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.Color.Black;
             this._panel2_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 71);
             this._panel2_Toolbars_Dock_Area_Left.Name = "_panel2_Toolbars_Dock_Area_Left";
             this._panel2_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(0, 389);
@@ -573,7 +573,7 @@
             this._panel2_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this._panel2_Toolbars_Dock_Area_Right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this._panel2_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
-            this._panel2_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._panel2_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.Color.Black;
             this._panel2_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(1031, 71);
             this._panel2_Toolbars_Dock_Area_Right.Name = "_panel2_Toolbars_Dock_Area_Right";
             this._panel2_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(0, 389);

@@ -266,7 +266,7 @@ public class cImportExcel {
                     {
                             if (vWorkSheet.Cells[x, vNameCol].Value != null)
                             {
-                                vName = vWorkSheet.Cells[x, vNameCol].Value;
+                                vName = vWorkSheet.Cells[x, vNameCol].Value.ToString();
                             }
                     }
 
@@ -287,7 +287,7 @@ public class cImportExcel {
                         {
                                 if (vWorkSheet.Cells[x, vAddressCol].Value != null)
                                 {
-                                    vAddress = vWorkSheet.Cells[x, vAddressCol].Value;
+                                    vAddress = vWorkSheet.Cells[x, vAddressCol].Value.ToString();
                                 }
                         }
                     }
@@ -301,7 +301,7 @@ public class cImportExcel {
                             vErrorMessage = "يرجى  اختيار رقم الموبايل";
 
                         }
-                        else if (isPhoneNumber(vWorkSheet.Cells[x, vMobileNoCol].Value) == false)
+                        else if (isPhoneNumber(vWorkSheet.Cells[x, vMobileNoCol].Value.ToString()) == false)
                                         {
                                             vErrorCol = vMobileNoCol;
                                             vErrorMessage = "خطأ فى رقم الموبايل";
@@ -311,7 +311,7 @@ public class cImportExcel {
                         {
                             if (vWorkSheet.Cells[x, vMobileNoCol].Value != null)
                             {
-                                vMobileNumber = vWorkSheet.Cells[x, vMobileNoCol].Value;
+                                vMobileNumber = vWorkSheet.Cells[x, vMobileNoCol].Value.ToString();
                             }
                         }
                         
@@ -331,7 +331,7 @@ public class cImportExcel {
                                   if (xx.Contains(@"^[a-zA-Z]+$") == false)
                                   {
                                       DateTime time = DateTime.Parse(vWorkSheet.Cells[x, vBirthDateCol].Value.ToString());
-                                      string format = "MM-dd-yyyy";
+                                      string format = "yyyy-MM-dd";
                                       // DateTime dt = DateTime.Parse(TXT_Date.Text);
                                       vBirthdate = time.ToString(format);
                                   }
@@ -352,7 +352,7 @@ public class cImportExcel {
                         {
                             if (vWorkSheet.Cells[x, vEducationCol].Value != null)
                             {
-                                vEducation = vWorkSheet.Cells[x, vEducationCol].Value;
+                                vEducation = vWorkSheet.Cells[x, vEducationCol].Value.ToString();
                             }
               
                         }
@@ -368,11 +368,11 @@ public class cImportExcel {
                         else
                         {
                             vGender = vWorkSheet.Cells[x, vGenderCol].Value;
-                            if (vGender.ToString().Trim().Contains("كر") == true)
+                            if (vGender.ToString().Trim().Contains("كر") == true || vGender.ToString().Trim().Equals("M") == true)
                             {
                                 vGender = "M";
                             }
-                            else
+                            else if (vGender.ToString().Trim().Contains("نث") == true || vGender.ToString().Trim().Equals("F") == true)
                             {
                                 vGender = "F";
                             }

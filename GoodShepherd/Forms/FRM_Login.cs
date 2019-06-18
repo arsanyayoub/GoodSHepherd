@@ -20,12 +20,14 @@ namespace GoodShepherd
 
         private void FRM_Login_Load(object sender, EventArgs e)         
         {
+           // MessageBox.Show("Load Login !!!!!!!!!!!!!!");
             CMX_City.Focus();
             CMX_City.SelectAll();
             this.tBL_CityTableAdapter.Fill(this.userChurchDataSet.TBL_City);
             
-            //Properties.Settings.Default["GoodShepherdConnectionString"] = BasicClass.vConectionString;
-            //this.tBL_UserTableAdapter.Connection   = BasicClass.vSqlConn;
+            Properties.Settings.Default["GoodShepherdConnectionString"] = BasicClass.vConectionString;
+            this.tBL_UserTableAdapter.Connection   = BasicClass.vSqlConn;
+            //MessageBox.Show("End Login !!!!!!!!!!!!!!");
         }
 
         //when click on sign in button

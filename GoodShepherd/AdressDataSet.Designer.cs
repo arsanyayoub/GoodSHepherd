@@ -3588,7 +3588,8 @@ SELECT ID, City_ID, AreaDesc FROM TBL_Area WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByCity(AdressDataSet.TBL_AreaDataTable dataTable, global::System.Nullable<long> City) {
+        public virtual int FillByCity(AdressDataSet.TBL_AreaDataTable dataTable, global::System.Nullable<long> City) 
+        {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((City.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((long)(City.Value));

@@ -174,3 +174,76 @@ Parameter name: dataTable
 	THE SUB NAME THAT HAS OCCURED THE ERROR: NoAttendanceInMonthReport
 		The Error Is Failed to enable constraints. One or more rows contain values violating non-null, unique, or foreign-key constraints.
 ============================================================================
+
+
+19/04/2019  =  01:37 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Services_TBL_Church". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Services", column 'Church_ID'.
+The statement has been terminated.
+============================================================================
+
+
+19/04/2019  =  01:38 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Services_TBL_Church". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Services", column 'Church_ID'.
+The statement has been terminated.
+============================================================================
+
+
+19/04/2019  =  01:40 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is The DELETE statement conflicted with the REFERENCE constraint "FK_TBL_Services_TBL_Church". The conflict occurred in database "GoodShepherd", table "dbo.TBL_Services", column 'Church_ID'.
+The statement has been terminated.
+============================================================================
+
+
+19/04/2019  =  02:13 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\arsany\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+19/04/2019  =  02:16 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\arsany\Desktop\بيانات الاشخاص .xlsx' because it is being used by another process.
+============================================================================
+
+
+19/04/2019  =  07:16 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_ReportLev1
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BtnLoadStreet_Click
+		The Error Is Unable to find the report in the manifest resources. Please build the project, and try again.
+============================================================================
+
+
+24/04/2019  =  06:07 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\arsany\Desktop\شباب.xlsx' because it is being used by another process.
+============================================================================
+
+
+24/04/2019  =  06:34 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\arsany\Desktop\شباب.xlsx' because it is being used by another process.
+============================================================================
+
+
+24/04/2019  =  06:39 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_PersonsData
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sImportFromExcel
+		The Error Is The process cannot access the file 'C:\Users\arsany\Desktop\شباب.xlsx' because it is being used by another process.
+============================================================================
+
+
+24/04/2019  =  06:47 م
+	THE FORM NAME THAT HAS OCCURED THE ERROR: cImportExcel
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sOpenWaitingForm
+		The Error Is Exception from HRESULT: 0x800A03EC
+============================================================================
