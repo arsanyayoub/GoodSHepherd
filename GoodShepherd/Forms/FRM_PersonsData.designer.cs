@@ -29,100 +29,79 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar1 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1");
-            Infragistics.Win.UltraWinToolbars.LabelTool labelTool1 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool8 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool10 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool11 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool9 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
-            Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
-            Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool4 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
-            Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool5 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
-            Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.LabelTool labelTool2 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool2 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
-            Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
-            Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("VIW_GetPeopleData1", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn34 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn35 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Church_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Church_ID");
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn36 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_City");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_City");
             Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn37 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("City");
             Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn38 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Area");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Area");
             Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn39 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AreaDesc");
             Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn40 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_EducYear");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_EducYear");
             Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn41 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("EducYear");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("EducYear");
             Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn42 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Str");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Str");
             Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn43 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc", -1, null, 0, Infragistics.Win.UltraWinGrid.SortIndicator.Ascending, false);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StreetDesc", -1, null, 0, Infragistics.Win.UltraWinGrid.SortIndicator.Ascending, false);
             Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn44 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Pers");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn11 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Pers");
             Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn45 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Name");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Name");
             Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn46 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Gender");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Gender");
             Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn47 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Mobile");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn14 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Mobile");
             Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn48 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("BirthDate");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("BirthDate");
             Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn49 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Collage");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn16 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Collage");
             Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn50 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Collage");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn17 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Collage");
             Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn51 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Depart");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn18 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ID_Depart");
             Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn52 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Department");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn19 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Department");
             Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn53 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("BuildingNum");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn54 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("FloorNum");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn55 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Phone");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn56 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("PersonType");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn57 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("FrName_PersID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn58 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Service_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn59 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Service");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn60 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("PersType_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn61 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("EducLevel_ID");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn62 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("EducLevel");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn63 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Statuse");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn64 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("IsWorking");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn65 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Expr1");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn66 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgeIntYears");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn20 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("BuildingNum");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn21 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("FloorNum");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn22 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Phone");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn23 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("PersonType");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn24 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("FrName_PersID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn25 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Service_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn26 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Service");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn27 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("PersType_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn28 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("EducLevel_ID");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn29 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("EducLevel");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn30 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Statuse");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn31 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("IsWorking");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn32 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Expr1");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn33 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgeIntYears");
             Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
@@ -171,6 +150,27 @@
             Infragistics.Win.ValueListItem valueListItem11 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.ValueListItem valueListItem12 = new Infragistics.Win.ValueListItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_PersonsData));
+            Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar1 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1");
+            Infragistics.Win.UltraWinToolbars.LabelTool labelTool1 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool8 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool10 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool11 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool9 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
+            Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
+            Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool4 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
+            Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool5 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
+            Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.LabelTool labelTool2 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool2 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
+            Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
+            Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
             this.office2010BlackTheme1 = new Telerik.WinControls.Themes.Office2010BlackTheme();
             this.Timer_MSgCleaner = new System.Windows.Forms.Timer(this.components);
             this.radDropDownList5 = new Telerik.WinControls.UI.RadDropDownList();
@@ -178,7 +178,6 @@
             this.radDropDownList9 = new Telerik.WinControls.UI.RadDropDownList();
             this.radDropDownList12 = new Telerik.WinControls.UI.RadDropDownList();
             this._panel2_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
-            this.Toolbar_Options = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
             this._panel2_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._panel2_Toolbars_Dock_Area_Left = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._panel2_Toolbars_Dock_Area_Right = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
@@ -186,6 +185,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TAB_Summary = new System.Windows.Forms.TabPage();
             this.GRD_Summary = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.vIW_GetPeopleData1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.goodShepherdDataSet = new GoodShepherd.GoodShepherdDataSet();
             this.TAB_Details = new System.Windows.Forms.TabPage();
             this.radGroupBox4 = new Telerik.WinControls.UI.RadGroupBox();
             this.TXT_WorkDesc = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
@@ -195,6 +196,7 @@
             this.CHK_IsWorking = new Infragistics.Win.UltraWinEditors.UltraCheckEditor();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
             this.CMX_ChrService = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.vIWChurchBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.LBL_ChrService = new Telerik.WinControls.UI.RadLabel();
             this.TXT_ResponsibleServant = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.TXT_Father = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
@@ -245,29 +247,28 @@
             this.OPT_PersGender = new Infragistics.Win.UltraWinEditors.UltraOptionSet();
             this.LBL_Name = new Telerik.WinControls.UI.RadLabel();
             this.CMX_Churc = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.vIWChurchBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.OPT_PersType = new Infragistics.Win.UltraWinEditors.UltraOptionSet();
             this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
             this.STS_Message = new Telerik.WinControls.UI.RadStatusStrip();
             this.MSG = new Telerik.WinControls.UI.RadLabelElement();
             this.goodShepherdDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ultraGridExcelExporter1 = new Infragistics.Win.UltraWinGrid.ExcelExport.UltraGridExcelExporter(this.components);
-            this.vIW_GetPeopleData1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.goodShepherdDataSet = new GoodShepherd.GoodShepherdDataSet();
-            this.vIWChurchBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.vIWChurchBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vIW_GetPeopleData1TableAdapter = new GoodShepherd.GoodShepherdDataSetTableAdapters.VIW_GetPeopleData1TableAdapter();
             this.tableAdapterManager = new GoodShepherd.GoodShepherdDataSetTableAdapters.TableAdapterManager();
             this.vIW_ChurchTableAdapter = new GoodShepherd.GoodShepherdDataSetTableAdapters.VIW_ChurchTableAdapter();
+            this.Toolbar_Options = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).BeginInit();
             this.FRM_PersonsData_Fill_Panel.ClientArea.SuspendLayout();
             this.FRM_PersonsData_Fill_Panel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TAB_Summary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRD_Summary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIW_GetPeopleData1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSet)).BeginInit();
             this.TAB_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox4)).BeginInit();
             this.radGroupBox4.SuspendLayout();
@@ -279,6 +280,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CMX_ChrService)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_ChrService)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_ResponsibleServant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_Father)).BeginInit();
@@ -333,13 +335,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPT_PersGender)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_Name)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CMX_Churc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPT_PersType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Message)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vIW_GetPeopleData1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -398,69 +398,6 @@
             this._panel2_Toolbars_Dock_Area_Top.Name = "_panel2_Toolbars_Dock_Area_Top";
             this._panel2_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1102, 75);
             this._panel2_Toolbars_Dock_Area_Top.ToolbarsManager = this.Toolbar_Options;
-            // 
-            // Toolbar_Options
-            // 
-            this.Toolbar_Options.AlwaysShowMenusExpanded = Infragistics.Win.DefaultableBoolean.True;
-            this.Toolbar_Options.DesignerFlags = 1;
-            this.Toolbar_Options.DockWithinContainer = this;
-            this.Toolbar_Options.DockWithinContainerBaseType = typeof(Telerik.WinControls.UI.RadForm);
-            this.Toolbar_Options.ImageSizeLarge = new System.Drawing.Size(64, 64);
-            this.Toolbar_Options.ShowFullMenusDelay = 500;
-            ultraToolbar1.DockedColumn = 0;
-            ultraToolbar1.DockedRow = 0;
-            ultraToolbar1.FloatingSize = new System.Drawing.Size(261, 290);
-            ultraToolbar1.IsMainMenuBar = true;
-            labelTool1.InstanceProps.Width = 77;
-            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            labelTool1,
-            buttonTool8,
-            buttonTool6,
-            buttonTool12,
-            buttonTool10,
-            buttonTool11,
-            buttonTool9});
-            ultraToolbar1.Text = "UltraToolbar1";
-            this.Toolbar_Options.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
-            ultraToolbar1});
-            this.Toolbar_Options.ToolbarSettings.AllowFloating = Infragistics.Win.DefaultableBoolean.True;
-            this.Toolbar_Options.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
-            this.Toolbar_Options.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal;
-            this.Toolbar_Options.ToolbarSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.True;
-            appearance75.Image = global::GoodShepherd.Properties.Resources._1468181667_file_add;
-            buttonTool1.SharedPropsInternal.AppearancesSmall.Appearance = appearance75;
-            buttonTool1.SharedPropsInternal.Caption = "جديد";
-            buttonTool1.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
-            appearance76.Image = global::GoodShepherd.Properties.Resources._1468181872_document_save_as;
-            buttonTool3.SharedPropsInternal.AppearancesSmall.Appearance = appearance76;
-            buttonTool3.SharedPropsInternal.Caption = "حفظ";
-            buttonTool3.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
-            appearance77.Image = global::GoodShepherd.Properties.Resources._1468181797_Close_Box_Red;
-            buttonTool4.SharedPropsInternal.AppearancesSmall.Appearance = appearance77;
-            buttonTool4.SharedPropsInternal.Caption = "حذف";
-            buttonTool4.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            appearance78.Image = global::GoodShepherd.Properties.Resources._1468181962_shutdown;
-            buttonTool5.SharedPropsInternal.AppearancesSmall.Appearance = appearance78;
-            buttonTool5.SharedPropsInternal.Caption = "اغلاق";
-            buttonTool5.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltF4;
-            buttonTool5.SharedPropsInternal.Visible = false;
-            appearance79.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
-            buttonTool2.SharedPropsInternal.AppearancesSmall.Appearance = appearance79;
-            buttonTool2.SharedPropsInternal.Caption = "تصدير لملف اكسيل";
-            buttonTool2.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            appearance80.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
-            buttonTool7.SharedPropsInternal.AppearancesSmall.Appearance = appearance80;
-            buttonTool7.SharedPropsInternal.Caption = "استيراد بيانات من اكسيل";
-            buttonTool7.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            this.Toolbar_Options.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            buttonTool1,
-            buttonTool3,
-            buttonTool4,
-            buttonTool5,
-            labelTool2,
-            buttonTool2,
-            buttonTool7});
-            this.Toolbar_Options.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.Toolbar_Options_ToolClick);
             // 
             // _panel2_Toolbars_Dock_Area_Bottom
             // 
@@ -544,282 +481,282 @@
             appearance2.FontData.SizeInPoints = 9F;
             appearance2.TextHAlignAsString = "Right";
             appearance2.TextVAlignAsString = "Middle";
-            ultraGridColumn34.CellAppearance = appearance2;
+            ultraGridColumn1.CellAppearance = appearance2;
             appearance3.FontData.BoldAsString = "True";
             appearance3.FontData.Name = "Segoe UI";
             appearance3.FontData.SizeInPoints = 9F;
             appearance3.TextHAlignAsString = "Right";
             appearance3.TextVAlignAsString = "Middle";
-            ultraGridColumn34.Header.Appearance = appearance3;
-            ultraGridColumn34.Header.Caption = "الكنيسة";
-            ultraGridColumn34.Header.VisiblePosition = 15;
-            ultraGridColumn34.Width = 84;
+            ultraGridColumn1.Header.Appearance = appearance3;
+            ultraGridColumn1.Header.Caption = "الكنيسة";
+            ultraGridColumn1.Header.VisiblePosition = 15;
+            ultraGridColumn1.Width = 84;
             appearance4.FontData.Name = "Segoe UI";
             appearance4.FontData.SizeInPoints = 9F;
             appearance4.TextHAlignAsString = "Right";
             appearance4.TextVAlignAsString = "Middle";
-            ultraGridColumn35.CellAppearance = appearance4;
+            ultraGridColumn2.CellAppearance = appearance4;
             appearance5.FontData.BoldAsString = "True";
             appearance5.FontData.Name = "Segoe UI";
             appearance5.FontData.SizeInPoints = 9F;
-            ultraGridColumn35.Header.Appearance = appearance5;
-            ultraGridColumn35.Header.VisiblePosition = 0;
-            ultraGridColumn35.Hidden = true;
-            ultraGridColumn35.Width = 59;
+            ultraGridColumn2.Header.Appearance = appearance5;
+            ultraGridColumn2.Header.VisiblePosition = 0;
+            ultraGridColumn2.Hidden = true;
+            ultraGridColumn2.Width = 59;
             appearance6.FontData.Name = "Segoe UI";
             appearance6.FontData.SizeInPoints = 9F;
             appearance6.TextHAlignAsString = "Right";
             appearance6.TextVAlignAsString = "Middle";
-            ultraGridColumn36.CellAppearance = appearance6;
+            ultraGridColumn3.CellAppearance = appearance6;
             appearance7.FontData.BoldAsString = "True";
             appearance7.FontData.Name = "Segoe UI";
             appearance7.FontData.SizeInPoints = 9F;
-            ultraGridColumn36.Header.Appearance = appearance7;
-            ultraGridColumn36.Header.VisiblePosition = 1;
-            ultraGridColumn36.Hidden = true;
-            ultraGridColumn36.Width = 51;
+            ultraGridColumn3.Header.Appearance = appearance7;
+            ultraGridColumn3.Header.VisiblePosition = 1;
+            ultraGridColumn3.Hidden = true;
+            ultraGridColumn3.Width = 51;
             appearance8.FontData.Name = "Segoe UI";
             appearance8.FontData.SizeInPoints = 9F;
             appearance8.TextHAlignAsString = "Right";
             appearance8.TextVAlignAsString = "Middle";
-            ultraGridColumn37.CellAppearance = appearance8;
+            ultraGridColumn4.CellAppearance = appearance8;
             appearance9.FontData.BoldAsString = "True";
             appearance9.FontData.Name = "Segoe UI";
             appearance9.FontData.SizeInPoints = 9F;
-            ultraGridColumn37.Header.Appearance = appearance9;
-            ultraGridColumn37.Header.Caption = "المحافظة";
-            ultraGridColumn37.Header.VisiblePosition = 12;
-            ultraGridColumn37.Width = 105;
+            ultraGridColumn4.Header.Appearance = appearance9;
+            ultraGridColumn4.Header.Caption = "المحافظة";
+            ultraGridColumn4.Header.VisiblePosition = 12;
+            ultraGridColumn4.Width = 105;
             appearance10.FontData.Name = "Segoe UI";
             appearance10.FontData.SizeInPoints = 9F;
             appearance10.TextHAlignAsString = "Right";
             appearance10.TextVAlignAsString = "Middle";
-            ultraGridColumn38.CellAppearance = appearance10;
+            ultraGridColumn5.CellAppearance = appearance10;
             appearance11.FontData.BoldAsString = "True";
             appearance11.FontData.Name = "Segoe UI";
             appearance11.FontData.SizeInPoints = 9F;
-            ultraGridColumn38.Header.Appearance = appearance11;
-            ultraGridColumn38.Header.VisiblePosition = 2;
-            ultraGridColumn38.Hidden = true;
-            ultraGridColumn38.Width = 51;
+            ultraGridColumn5.Header.Appearance = appearance11;
+            ultraGridColumn5.Header.VisiblePosition = 2;
+            ultraGridColumn5.Hidden = true;
+            ultraGridColumn5.Width = 51;
             appearance12.FontData.Name = "Segoe UI";
             appearance12.FontData.SizeInPoints = 9F;
             appearance12.TextHAlignAsString = "Right";
             appearance12.TextVAlignAsString = "Middle";
-            ultraGridColumn39.CellAppearance = appearance12;
+            ultraGridColumn6.CellAppearance = appearance12;
             appearance13.FontData.BoldAsString = "True";
             appearance13.FontData.Name = "Segoe UI";
             appearance13.FontData.SizeInPoints = 9F;
-            ultraGridColumn39.Header.Appearance = appearance13;
-            ultraGridColumn39.Header.Caption = "المنطقة";
-            ultraGridColumn39.Header.VisiblePosition = 13;
-            ultraGridColumn39.Width = 103;
+            ultraGridColumn6.Header.Appearance = appearance13;
+            ultraGridColumn6.Header.Caption = "المنطقة";
+            ultraGridColumn6.Header.VisiblePosition = 13;
+            ultraGridColumn6.Width = 103;
             appearance14.FontData.Name = "Segoe UI";
             appearance14.FontData.SizeInPoints = 9F;
             appearance14.TextHAlignAsString = "Right";
             appearance14.TextVAlignAsString = "Middle";
-            ultraGridColumn40.CellAppearance = appearance14;
+            ultraGridColumn7.CellAppearance = appearance14;
             appearance15.FontData.BoldAsString = "True";
             appearance15.FontData.Name = "Segoe UI";
             appearance15.FontData.SizeInPoints = 9F;
-            ultraGridColumn40.Header.Appearance = appearance15;
-            ultraGridColumn40.Header.VisiblePosition = 3;
-            ultraGridColumn40.Hidden = true;
-            ultraGridColumn40.Width = 44;
+            ultraGridColumn7.Header.Appearance = appearance15;
+            ultraGridColumn7.Header.VisiblePosition = 3;
+            ultraGridColumn7.Hidden = true;
+            ultraGridColumn7.Width = 44;
             appearance16.FontData.Name = "Segoe UI";
             appearance16.FontData.SizeInPoints = 9F;
             appearance16.TextHAlignAsString = "Right";
             appearance16.TextVAlignAsString = "Middle";
-            ultraGridColumn41.CellAppearance = appearance16;
+            ultraGridColumn8.CellAppearance = appearance16;
             appearance17.FontData.BoldAsString = "True";
             appearance17.FontData.Name = "Segoe UI";
             appearance17.FontData.SizeInPoints = 9F;
-            ultraGridColumn41.Header.Appearance = appearance17;
-            ultraGridColumn41.Header.Caption = "السنة الدراسية";
-            ultraGridColumn41.Header.VisiblePosition = 16;
-            ultraGridColumn41.Width = 89;
+            ultraGridColumn8.Header.Appearance = appearance17;
+            ultraGridColumn8.Header.Caption = "السنة الدراسية";
+            ultraGridColumn8.Header.VisiblePosition = 16;
+            ultraGridColumn8.Width = 89;
             appearance18.FontData.Name = "Segoe UI";
             appearance18.FontData.SizeInPoints = 9F;
             appearance18.TextHAlignAsString = "Right";
             appearance18.TextVAlignAsString = "Middle";
-            ultraGridColumn42.CellAppearance = appearance18;
+            ultraGridColumn9.CellAppearance = appearance18;
             appearance19.FontData.BoldAsString = "True";
             appearance19.FontData.Name = "Segoe UI";
             appearance19.FontData.SizeInPoints = 9F;
-            ultraGridColumn42.Header.Appearance = appearance19;
-            ultraGridColumn42.Header.VisiblePosition = 4;
-            ultraGridColumn42.Hidden = true;
-            ultraGridColumn42.Width = 51;
+            ultraGridColumn9.Header.Appearance = appearance19;
+            ultraGridColumn9.Header.VisiblePosition = 4;
+            ultraGridColumn9.Hidden = true;
+            ultraGridColumn9.Width = 51;
             appearance20.FontData.Name = "Segoe UI";
             appearance20.FontData.SizeInPoints = 9F;
             appearance20.TextHAlignAsString = "Right";
             appearance20.TextVAlignAsString = "Middle";
-            ultraGridColumn43.CellAppearance = appearance20;
+            ultraGridColumn10.CellAppearance = appearance20;
             appearance21.FontData.BoldAsString = "True";
             appearance21.FontData.Name = "Segoe UI";
             appearance21.FontData.SizeInPoints = 9F;
-            ultraGridColumn43.Header.Appearance = appearance21;
-            ultraGridColumn43.Header.Caption = "الشارع";
-            ultraGridColumn43.Header.VisiblePosition = 14;
-            ultraGridColumn43.Width = 103;
+            ultraGridColumn10.Header.Appearance = appearance21;
+            ultraGridColumn10.Header.Caption = "الشارع";
+            ultraGridColumn10.Header.VisiblePosition = 14;
+            ultraGridColumn10.Width = 103;
             appearance22.FontData.Name = "Segoe UI";
             appearance22.FontData.SizeInPoints = 9F;
             appearance22.TextHAlignAsString = "Right";
             appearance22.TextVAlignAsString = "Middle";
-            ultraGridColumn44.CellAppearance = appearance22;
+            ultraGridColumn11.CellAppearance = appearance22;
             appearance23.FontData.BoldAsString = "True";
             appearance23.FontData.Name = "Segoe UI";
             appearance23.FontData.SizeInPoints = 9F;
-            ultraGridColumn44.Header.Appearance = appearance23;
-            ultraGridColumn44.Header.VisiblePosition = 5;
-            ultraGridColumn44.Hidden = true;
-            ultraGridColumn44.Width = 51;
+            ultraGridColumn11.Header.Appearance = appearance23;
+            ultraGridColumn11.Header.VisiblePosition = 5;
+            ultraGridColumn11.Hidden = true;
+            ultraGridColumn11.Width = 51;
             appearance24.FontData.Name = "Segoe UI";
             appearance24.FontData.SizeInPoints = 9F;
             appearance24.TextHAlignAsString = "Right";
             appearance24.TextVAlignAsString = "Middle";
-            ultraGridColumn45.CellAppearance = appearance24;
+            ultraGridColumn12.CellAppearance = appearance24;
             appearance25.FontData.BoldAsString = "True";
             appearance25.FontData.Name = "Segoe UI";
             appearance25.FontData.SizeInPoints = 9F;
-            ultraGridColumn45.Header.Appearance = appearance25;
-            ultraGridColumn45.Header.Caption = "الاسم";
-            ultraGridColumn45.Header.VisiblePosition = 8;
-            ultraGridColumn45.Width = 102;
+            ultraGridColumn12.Header.Appearance = appearance25;
+            ultraGridColumn12.Header.Caption = "الاسم";
+            ultraGridColumn12.Header.VisiblePosition = 8;
+            ultraGridColumn12.Width = 102;
             appearance26.FontData.Name = "Segoe UI";
             appearance26.FontData.SizeInPoints = 9F;
             appearance26.TextHAlignAsString = "Right";
             appearance26.TextVAlignAsString = "Middle";
-            ultraGridColumn46.CellAppearance = appearance26;
+            ultraGridColumn13.CellAppearance = appearance26;
             appearance27.FontData.BoldAsString = "True";
             appearance27.FontData.Name = "Segoe UI";
             appearance27.FontData.SizeInPoints = 9F;
-            ultraGridColumn46.Header.Appearance = appearance27;
-            ultraGridColumn46.Header.Caption = "النوع";
-            ultraGridColumn46.Header.VisiblePosition = 9;
-            ultraGridColumn46.Width = 108;
+            ultraGridColumn13.Header.Appearance = appearance27;
+            ultraGridColumn13.Header.Caption = "النوع";
+            ultraGridColumn13.Header.VisiblePosition = 9;
+            ultraGridColumn13.Width = 108;
             appearance28.FontData.Name = "Segoe UI";
             appearance28.FontData.SizeInPoints = 9F;
             appearance28.TextHAlignAsString = "Right";
             appearance28.TextVAlignAsString = "Middle";
-            ultraGridColumn47.CellAppearance = appearance28;
+            ultraGridColumn14.CellAppearance = appearance28;
             appearance29.FontData.BoldAsString = "True";
             appearance29.FontData.Name = "Segoe UI";
             appearance29.FontData.SizeInPoints = 9F;
-            ultraGridColumn47.Header.Appearance = appearance29;
-            ultraGridColumn47.Header.Caption = "الموبايل";
-            ultraGridColumn47.Header.VisiblePosition = 10;
-            ultraGridColumn47.Width = 103;
+            ultraGridColumn14.Header.Appearance = appearance29;
+            ultraGridColumn14.Header.Caption = "الموبايل";
+            ultraGridColumn14.Header.VisiblePosition = 10;
+            ultraGridColumn14.Width = 103;
             appearance30.FontData.Name = "Segoe UI";
             appearance30.FontData.SizeInPoints = 9F;
             appearance30.TextHAlignAsString = "Right";
             appearance30.TextVAlignAsString = "Middle";
-            ultraGridColumn48.CellAppearance = appearance30;
-            ultraGridColumn48.Format = "dd-MM-yyyy";
+            ultraGridColumn15.CellAppearance = appearance30;
+            ultraGridColumn15.Format = "dd-MM-yyyy";
             appearance31.FontData.BoldAsString = "True";
             appearance31.FontData.Name = "Segoe UI";
             appearance31.FontData.SizeInPoints = 9F;
-            ultraGridColumn48.Header.Appearance = appearance31;
-            ultraGridColumn48.Header.Caption = "تاريخ الميلاد";
-            ultraGridColumn48.Header.VisiblePosition = 11;
-            ultraGridColumn48.MaskInput = "{LOC}dd-mm-yyyy";
-            ultraGridColumn48.Width = 85;
+            ultraGridColumn15.Header.Appearance = appearance31;
+            ultraGridColumn15.Header.Caption = "تاريخ الميلاد";
+            ultraGridColumn15.Header.VisiblePosition = 11;
+            ultraGridColumn15.MaskInput = "{LOC}dd-mm-yyyy";
+            ultraGridColumn15.Width = 85;
             appearance32.FontData.Name = "Segoe UI";
             appearance32.FontData.SizeInPoints = 9F;
             appearance32.TextHAlignAsString = "Right";
             appearance32.TextVAlignAsString = "Middle";
-            ultraGridColumn49.CellAppearance = appearance32;
+            ultraGridColumn16.CellAppearance = appearance32;
             appearance33.FontData.BoldAsString = "True";
             appearance33.FontData.Name = "Segoe UI";
             appearance33.FontData.SizeInPoints = 9F;
-            ultraGridColumn49.Header.Appearance = appearance33;
-            ultraGridColumn49.Header.VisiblePosition = 6;
-            ultraGridColumn49.Hidden = true;
-            ultraGridColumn49.Width = 39;
+            ultraGridColumn16.Header.Appearance = appearance33;
+            ultraGridColumn16.Header.VisiblePosition = 6;
+            ultraGridColumn16.Hidden = true;
+            ultraGridColumn16.Width = 39;
             appearance34.FontData.Name = "Segoe UI";
             appearance34.FontData.SizeInPoints = 9F;
             appearance34.TextHAlignAsString = "Right";
             appearance34.TextVAlignAsString = "Middle";
-            ultraGridColumn50.CellAppearance = appearance34;
+            ultraGridColumn17.CellAppearance = appearance34;
             appearance35.FontData.BoldAsString = "True";
             appearance35.FontData.Name = "Segoe UI";
             appearance35.FontData.SizeInPoints = 9F;
-            ultraGridColumn50.Header.Appearance = appearance35;
-            ultraGridColumn50.Header.Caption = "الكلية";
-            ultraGridColumn50.Header.VisiblePosition = 17;
-            ultraGridColumn50.Width = 94;
+            ultraGridColumn17.Header.Appearance = appearance35;
+            ultraGridColumn17.Header.Caption = "الكلية";
+            ultraGridColumn17.Header.VisiblePosition = 17;
+            ultraGridColumn17.Width = 94;
             appearance36.FontData.Name = "Segoe UI";
             appearance36.FontData.SizeInPoints = 9F;
             appearance36.TextHAlignAsString = "Right";
             appearance36.TextVAlignAsString = "Middle";
-            ultraGridColumn51.CellAppearance = appearance36;
+            ultraGridColumn18.CellAppearance = appearance36;
             appearance37.FontData.BoldAsString = "True";
             appearance37.FontData.Name = "Segoe UI";
             appearance37.FontData.SizeInPoints = 9F;
-            ultraGridColumn51.Header.Appearance = appearance37;
-            ultraGridColumn51.Header.VisiblePosition = 7;
-            ultraGridColumn51.Hidden = true;
-            ultraGridColumn51.Width = 37;
+            ultraGridColumn18.Header.Appearance = appearance37;
+            ultraGridColumn18.Header.VisiblePosition = 7;
+            ultraGridColumn18.Hidden = true;
+            ultraGridColumn18.Width = 37;
             appearance38.FontData.Name = "Segoe UI";
             appearance38.FontData.SizeInPoints = 9F;
             appearance38.TextHAlignAsString = "Right";
             appearance38.TextVAlignAsString = "Middle";
-            ultraGridColumn52.CellAppearance = appearance38;
+            ultraGridColumn19.CellAppearance = appearance38;
             appearance39.FontData.BoldAsString = "True";
             appearance39.FontData.Name = "Segoe UI";
             appearance39.FontData.SizeInPoints = 9F;
-            ultraGridColumn52.Header.Appearance = appearance39;
-            ultraGridColumn52.Header.Caption = "القسم";
-            ultraGridColumn52.Header.VisiblePosition = 18;
-            ultraGridColumn52.Width = 91;
-            ultraGridColumn53.Header.VisiblePosition = 19;
-            ultraGridColumn54.Header.VisiblePosition = 20;
-            ultraGridColumn55.Header.VisiblePosition = 21;
-            ultraGridColumn56.Header.VisiblePosition = 22;
-            ultraGridColumn57.Header.VisiblePosition = 23;
-            ultraGridColumn58.Header.VisiblePosition = 24;
-            ultraGridColumn59.Header.VisiblePosition = 25;
-            ultraGridColumn60.Header.VisiblePosition = 26;
-            ultraGridColumn61.Header.VisiblePosition = 27;
-            ultraGridColumn62.Header.VisiblePosition = 28;
-            ultraGridColumn63.Header.VisiblePosition = 29;
-            ultraGridColumn64.Header.VisiblePosition = 30;
-            ultraGridColumn65.Header.VisiblePosition = 31;
-            ultraGridColumn66.Header.VisiblePosition = 32;
+            ultraGridColumn19.Header.Appearance = appearance39;
+            ultraGridColumn19.Header.Caption = "القسم";
+            ultraGridColumn19.Header.VisiblePosition = 18;
+            ultraGridColumn19.Width = 91;
+            ultraGridColumn20.Header.VisiblePosition = 19;
+            ultraGridColumn21.Header.VisiblePosition = 20;
+            ultraGridColumn22.Header.VisiblePosition = 21;
+            ultraGridColumn23.Header.VisiblePosition = 22;
+            ultraGridColumn24.Header.VisiblePosition = 23;
+            ultraGridColumn25.Header.VisiblePosition = 24;
+            ultraGridColumn26.Header.VisiblePosition = 25;
+            ultraGridColumn27.Header.VisiblePosition = 26;
+            ultraGridColumn28.Header.VisiblePosition = 27;
+            ultraGridColumn29.Header.VisiblePosition = 28;
+            ultraGridColumn30.Header.VisiblePosition = 29;
+            ultraGridColumn31.Header.VisiblePosition = 30;
+            ultraGridColumn32.Header.VisiblePosition = 31;
+            ultraGridColumn33.Header.VisiblePosition = 32;
             ultraGridBand1.Columns.AddRange(new object[] {
-            ultraGridColumn34,
-            ultraGridColumn35,
-            ultraGridColumn36,
-            ultraGridColumn37,
-            ultraGridColumn38,
-            ultraGridColumn39,
-            ultraGridColumn40,
-            ultraGridColumn41,
-            ultraGridColumn42,
-            ultraGridColumn43,
-            ultraGridColumn44,
-            ultraGridColumn45,
-            ultraGridColumn46,
-            ultraGridColumn47,
-            ultraGridColumn48,
-            ultraGridColumn49,
-            ultraGridColumn50,
-            ultraGridColumn51,
-            ultraGridColumn52,
-            ultraGridColumn53,
-            ultraGridColumn54,
-            ultraGridColumn55,
-            ultraGridColumn56,
-            ultraGridColumn57,
-            ultraGridColumn58,
-            ultraGridColumn59,
-            ultraGridColumn60,
-            ultraGridColumn61,
-            ultraGridColumn62,
-            ultraGridColumn63,
-            ultraGridColumn64,
-            ultraGridColumn65,
-            ultraGridColumn66});
+            ultraGridColumn1,
+            ultraGridColumn2,
+            ultraGridColumn3,
+            ultraGridColumn4,
+            ultraGridColumn5,
+            ultraGridColumn6,
+            ultraGridColumn7,
+            ultraGridColumn8,
+            ultraGridColumn9,
+            ultraGridColumn10,
+            ultraGridColumn11,
+            ultraGridColumn12,
+            ultraGridColumn13,
+            ultraGridColumn14,
+            ultraGridColumn15,
+            ultraGridColumn16,
+            ultraGridColumn17,
+            ultraGridColumn18,
+            ultraGridColumn19,
+            ultraGridColumn20,
+            ultraGridColumn21,
+            ultraGridColumn22,
+            ultraGridColumn23,
+            ultraGridColumn24,
+            ultraGridColumn25,
+            ultraGridColumn26,
+            ultraGridColumn27,
+            ultraGridColumn28,
+            ultraGridColumn29,
+            ultraGridColumn30,
+            ultraGridColumn31,
+            ultraGridColumn32,
+            ultraGridColumn33});
             ultraGridBand1.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.True;
             this.GRD_Summary.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.GRD_Summary.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
@@ -894,6 +831,16 @@
             this.GRD_Summary.TabIndex = 57;
             this.GRD_Summary.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
             this.GRD_Summary.DoubleClick += new System.EventHandler(this.GRD_Summary_DoubleClick);
+            // 
+            // vIW_GetPeopleData1BindingSource
+            // 
+            this.vIW_GetPeopleData1BindingSource.DataMember = "VIW_GetPeopleData1";
+            this.vIW_GetPeopleData1BindingSource.DataSource = this.goodShepherdDataSet;
+            // 
+            // goodShepherdDataSet
+            // 
+            this.goodShepherdDataSet.DataSetName = "GoodShepherdDataSet";
+            this.goodShepherdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // TAB_Details
             // 
@@ -1082,7 +1029,8 @@
             appearance52.TextHAlignAsString = "Right";
             appearance52.TextVAlignAsString = "Middle";
             this.CMX_ChrService.Appearance = appearance52;
-            this.CMX_ChrService.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.CMX_ChrService.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.CMX_ChrService.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.CMX_ChrService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CMX_ChrService.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_ChrService.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1100,6 +1048,11 @@
             this.CMX_ChrService.TabIndex = 220;
             this.CMX_ChrService.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
             this.CMX_ChrService.ValueMember = "ID";
+            // 
+            // vIWChurchBindingSource1
+            // 
+            this.vIWChurchBindingSource1.DataMember = "VIW_Church";
+            this.vIWChurchBindingSource1.DataSource = this.goodShepherdDataSet;
             // 
             // LBL_ChrService
             // 
@@ -1120,7 +1073,8 @@
             appearance53.TextHAlignAsString = "Right";
             appearance53.TextVAlignAsString = "Middle";
             this.TXT_ResponsibleServant.Appearance = appearance53;
-            this.TXT_ResponsibleServant.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_ResponsibleServant.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.TXT_ResponsibleServant.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_ResponsibleServant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_ResponsibleServant.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_ResponsibleServant.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1146,7 +1100,8 @@
             appearance54.TextHAlignAsString = "Right";
             appearance54.TextVAlignAsString = "Middle";
             this.TXT_Father.Appearance = appearance54;
-            this.TXT_Father.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_Father.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.TXT_Father.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_Father.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_Father.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_Father.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1172,7 +1127,8 @@
             appearance55.TextHAlignAsString = "Right";
             appearance55.TextVAlignAsString = "Middle";
             this.TXT_FatherChurch.Appearance = appearance55;
-            this.TXT_FatherChurch.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_FatherChurch.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.TXT_FatherChurch.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_FatherChurch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_FatherChurch.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_FatherChurch.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1198,7 +1154,8 @@
             appearance56.TextHAlignAsString = "Right";
             appearance56.TextVAlignAsString = "Middle";
             this.TXT_ResponsibleChurch.Appearance = appearance56;
-            this.TXT_ResponsibleChurch.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_ResponsibleChurch.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.TXT_ResponsibleChurch.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_ResponsibleChurch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_ResponsibleChurch.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_ResponsibleChurch.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1223,7 +1180,8 @@
             appearance57.TextHAlignAsString = "Right";
             appearance57.TextVAlignAsString = "Middle";
             this.CMX_Service.Appearance = appearance57;
-            this.CMX_Service.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.CMX_Service.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.CMX_Service.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.CMX_Service.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CMX_Service.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_Service.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1349,7 +1307,8 @@
             appearance58.TextHAlignAsString = "Right";
             appearance58.TextVAlignAsString = "Middle";
             this.CMX_Department.Appearance = appearance58;
-            this.CMX_Department.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.CMX_Department.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.CMX_Department.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.CMX_Department.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CMX_Department.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_Department.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1376,7 +1335,8 @@
             appearance59.TextHAlignAsString = "Right";
             appearance59.TextVAlignAsString = "Middle";
             this.TXT_AcademicLevel.Appearance = appearance59;
-            this.TXT_AcademicLevel.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_AcademicLevel.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.TXT_AcademicLevel.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_AcademicLevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_AcademicLevel.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_AcademicLevel.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1425,7 +1385,8 @@
             appearance60.TextHAlignAsString = "Right";
             appearance60.TextVAlignAsString = "Middle";
             this.TXT_AcademicYear.Appearance = appearance60;
-            this.TXT_AcademicYear.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_AcademicYear.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.TXT_AcademicYear.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_AcademicYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_AcademicYear.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_AcademicYear.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1450,7 +1411,8 @@
             appearance61.TextHAlignAsString = "Right";
             appearance61.TextVAlignAsString = "Middle";
             this.CMX_College.Appearance = appearance61;
-            this.CMX_College.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.CMX_College.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Suggest;
+            this.CMX_College.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.CMX_College.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CMX_College.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_College.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1756,7 +1718,8 @@
             appearance70.TextHAlignAsString = "Right";
             appearance70.TextVAlignAsString = "Middle";
             this.TXT_Street.Appearance = appearance70;
-            this.TXT_Street.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_Street.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.SuggestAppend;
+            this.TXT_Street.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_Street.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_Street.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_Street.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1782,7 +1745,8 @@
             appearance71.TextHAlignAsString = "Right";
             appearance71.TextVAlignAsString = "Middle";
             this.TXT_Area.Appearance = appearance71;
-            this.TXT_Area.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_Area.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.SuggestAppend;
+            this.TXT_Area.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_Area.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_Area.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_Area.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1808,7 +1772,8 @@
             appearance72.TextHAlignAsString = "Right";
             appearance72.TextVAlignAsString = "Middle";
             this.TXT_City.Appearance = appearance72;
-            this.TXT_City.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.TXT_City.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.SuggestAppend;
+            this.TXT_City.AutoSuggestFilterMode = Infragistics.Win.AutoSuggestFilterMode.StartsWith;
             this.TXT_City.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TXT_City.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.TXT_City.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1967,7 +1932,7 @@
             appearance74.TextHAlignAsString = "Right";
             appearance74.TextVAlignAsString = "Middle";
             this.CMX_Churc.Appearance = appearance74;
-            this.CMX_Churc.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.Append;
+            this.CMX_Churc.AutoCompleteMode = Infragistics.Win.AutoCompleteMode.SuggestAppend;
             this.CMX_Churc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CMX_Churc.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.CMX_Churc.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
@@ -1985,6 +1950,11 @@
             this.CMX_Churc.TabIndex = 218;
             this.CMX_Churc.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
             this.CMX_Churc.ValueMember = "ID";
+            // 
+            // vIWChurchBindingSource
+            // 
+            this.vIWChurchBindingSource.DataMember = "VIW_Church";
+            this.vIWChurchBindingSource.DataSource = this.goodShepherdDataSet;
             // 
             // OPT_PersType
             // 
@@ -2044,26 +2014,6 @@
             this.MSG.TextWrap = true;
             this.MSG.Visibility = Telerik.WinControls.ElementVisibility.Visible;
             // 
-            // vIW_GetPeopleData1BindingSource
-            // 
-            this.vIW_GetPeopleData1BindingSource.DataMember = "VIW_GetPeopleData1";
-            this.vIW_GetPeopleData1BindingSource.DataSource = this.goodShepherdDataSet;
-            // 
-            // goodShepherdDataSet
-            // 
-            this.goodShepherdDataSet.DataSetName = "GoodShepherdDataSet";
-            this.goodShepherdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vIWChurchBindingSource1
-            // 
-            this.vIWChurchBindingSource1.DataMember = "VIW_Church";
-            this.vIWChurchBindingSource1.DataSource = this.goodShepherdDataSet;
-            // 
-            // vIWChurchBindingSource
-            // 
-            this.vIWChurchBindingSource.DataMember = "VIW_Church";
-            this.vIWChurchBindingSource.DataSource = this.goodShepherdDataSet;
-            // 
             // vIW_GetPeopleData1TableAdapter
             // 
             this.vIW_GetPeopleData1TableAdapter.ClearBeforeFill = true;
@@ -2077,6 +2027,69 @@
             // vIW_ChurchTableAdapter
             // 
             this.vIW_ChurchTableAdapter.ClearBeforeFill = true;
+            // 
+            // Toolbar_Options
+            // 
+            this.Toolbar_Options.AlwaysShowMenusExpanded = Infragistics.Win.DefaultableBoolean.True;
+            this.Toolbar_Options.DesignerFlags = 1;
+            this.Toolbar_Options.DockWithinContainer = this;
+            this.Toolbar_Options.DockWithinContainerBaseType = typeof(Telerik.WinControls.UI.RadForm);
+            this.Toolbar_Options.ImageSizeLarge = new System.Drawing.Size(64, 64);
+            this.Toolbar_Options.ShowFullMenusDelay = 500;
+            ultraToolbar1.DockedColumn = 0;
+            ultraToolbar1.DockedRow = 0;
+            ultraToolbar1.FloatingSize = new System.Drawing.Size(261, 290);
+            ultraToolbar1.IsMainMenuBar = true;
+            labelTool1.InstanceProps.Width = 77;
+            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            labelTool1,
+            buttonTool8,
+            buttonTool6,
+            buttonTool12,
+            buttonTool10,
+            buttonTool11,
+            buttonTool9});
+            ultraToolbar1.Text = "UltraToolbar1";
+            this.Toolbar_Options.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
+            ultraToolbar1});
+            this.Toolbar_Options.ToolbarSettings.AllowFloating = Infragistics.Win.DefaultableBoolean.True;
+            this.Toolbar_Options.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
+            this.Toolbar_Options.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal;
+            this.Toolbar_Options.ToolbarSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.True;
+            appearance75.Image = global::GoodShepherd.Properties.Resources._1468181667_file_add;
+            buttonTool1.SharedPropsInternal.AppearancesSmall.Appearance = appearance75;
+            buttonTool1.SharedPropsInternal.Caption = "جديد";
+            buttonTool1.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
+            appearance76.Image = global::GoodShepherd.Properties.Resources._1468181872_document_save_as;
+            buttonTool3.SharedPropsInternal.AppearancesSmall.Appearance = appearance76;
+            buttonTool3.SharedPropsInternal.Caption = "حفظ";
+            buttonTool3.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
+            appearance77.Image = global::GoodShepherd.Properties.Resources._1468181797_Close_Box_Red;
+            buttonTool4.SharedPropsInternal.AppearancesSmall.Appearance = appearance77;
+            buttonTool4.SharedPropsInternal.Caption = "حذف";
+            buttonTool4.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            appearance78.Image = global::GoodShepherd.Properties.Resources._1468181962_shutdown;
+            buttonTool5.SharedPropsInternal.AppearancesSmall.Appearance = appearance78;
+            buttonTool5.SharedPropsInternal.Caption = "اغلاق";
+            buttonTool5.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltF4;
+            buttonTool5.SharedPropsInternal.Visible = false;
+            appearance79.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
+            buttonTool2.SharedPropsInternal.AppearancesSmall.Appearance = appearance79;
+            buttonTool2.SharedPropsInternal.Caption = "تصدير لملف اكسيل";
+            buttonTool2.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            appearance80.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
+            buttonTool7.SharedPropsInternal.AppearancesSmall.Appearance = appearance80;
+            buttonTool7.SharedPropsInternal.Caption = "استيراد بيانات من اكسيل";
+            buttonTool7.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            this.Toolbar_Options.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            buttonTool1,
+            buttonTool3,
+            buttonTool4,
+            buttonTool5,
+            labelTool2,
+            buttonTool2,
+            buttonTool7});
+            this.Toolbar_Options.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.Toolbar_Options_ToolClick);
             // 
             // FRM_PersonsData
             // 
@@ -2105,13 +2118,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).EndInit();
             this.FRM_PersonsData_Fill_Panel.ClientArea.ResumeLayout(false);
             this.FRM_PersonsData_Fill_Panel.ClientArea.PerformLayout();
             this.FRM_PersonsData_Fill_Panel.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.TAB_Summary.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GRD_Summary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIW_GetPeopleData1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSet)).EndInit();
             this.TAB_Details.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox4)).EndInit();
             this.radGroupBox4.ResumeLayout(false);
@@ -2125,6 +2139,7 @@
             this.radGroupBox3.ResumeLayout(false);
             this.radGroupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CMX_ChrService)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_ChrService)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_ResponsibleServant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_Father)).EndInit();
@@ -2183,13 +2198,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPT_PersGender)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_Name)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CMX_Churc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPT_PersType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Message)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vIW_GetPeopleData1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vIWChurchBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 

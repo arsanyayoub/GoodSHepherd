@@ -19,6 +19,7 @@ namespace GoodShepherd.Forms
         public FRM_Meetings()
         {
             InitializeComponent();
+
         }
        
         #region VARIABLES__DECLARATION
@@ -386,13 +387,33 @@ namespace GoodShepherd.Forms
                     {
                         if (CMX_Person.Value != null)
                         {
-                            GRD_Details.ActiveRow.Cells["ID_Pers"].Value = long.Parse(CMX_Person.Value.ToString().Trim());
-                            GRD_Details.ActiveRow.Cells["Name"].Value = CMX_Person.SelectedRow.Cells["Name"].Value.ToString();
-                            GRD_Details.ActiveRow.Cells["MobileNumber"].Value = CMX_Person.SelectedRow.Cells["Mobile"].Value.ToString();
-                            GRD_Details.ActiveRow.Cells["City"].Value = CMX_Person.SelectedRow.Cells["City"].Value.ToString();
-                            GRD_Details.ActiveRow.Cells["Area"].Value = CMX_Person.SelectedRow.Cells["AreaDesc"].Value.ToString();
-                            GRD_Details.ActiveRow.Cells["Street"].Value = CMX_Person.SelectedRow.Cells["StreetDesc"].Value.ToString();
-                   
+                            if (CMX_Person.Value !=null)
+                            {
+                                GRD_Details.ActiveRow.Cells["ID_Pers"].Value = long.Parse(CMX_Person.Value.ToString().Trim());
+                            }
+                            if (CMX_Person.SelectedRow.Cells["Name"].Value != null)
+                            {
+                                GRD_Details.ActiveRow.Cells["Name"].Value = CMX_Person.SelectedRow.Cells["Name"].Value.ToString();
+                            }
+                            if (CMX_Person.SelectedRow.Cells["Mobile"].Value != null)
+                            {
+                                GRD_Details.ActiveRow.Cells["MobileNumber"].Value = CMX_Person.SelectedRow.Cells["Mobile"].Value.ToString();
+                            }
+                            if (CMX_Person.SelectedRow.Cells["City"].Value != null)
+                            {
+                                GRD_Details.ActiveRow.Cells["City"].Value = CMX_Person.SelectedRow.Cells["City"].Value.ToString();
+                            }
+                            if (CMX_Person.SelectedRow.Cells["AreaDesc"].Value != null)
+                            {
+                                GRD_Details.ActiveRow.Cells["Area"].Value = CMX_Person.SelectedRow.Cells["AreaDesc"].Value.ToString();
+                            }
+                            if (CMX_Person.SelectedRow.Cells["StreetDesc"].Value != null)
+                            {
+                                GRD_Details.ActiveRow.Cells["Street"].Value = CMX_Person.SelectedRow.Cells["StreetDesc"].Value.ToString();
+
+                            }
+
+
                             if (CMX_Person.SelectedRow.Cells["BirthDate"].Value != System.DBNull.Value)
                             {
                                 DateTime time = DateTime.Parse(CMX_Person.SelectedRow.Cells["BirthDate"].Value.ToString());
@@ -400,11 +421,6 @@ namespace GoodShepherd.Forms
                                 // DateTime dt = DateTime.Parse(TXT_Date.Text);
                                 string vTDate = time.ToString(format);
                                 GRD_Details.ActiveRow.Cells["BirthDate"].Value = vTDate;
-                            }
-
-                            else
-                            {
-                                GRD_Details.ActiveRow.Cells["BirthDate"].Value = null;
                             }
 
                             DateTime attTime = DateTime.Parse(BasicClass.fGetCurDateTime().ToString());
@@ -1662,9 +1678,12 @@ namespace GoodShepherd.Forms
 
         #endregion
 
-     
-        
+        private void CMX_Person_InitializeLayout(object sender, InitializeLayoutEventArgs e)
+        {
+            e.Layout.Bands[0].ColumnFilters["Name"].FilterConditions.Add(FilterComparisionOperator.Equals, CMX_Person.Text.ToString());
+        }
 
+       
 
 
     }
