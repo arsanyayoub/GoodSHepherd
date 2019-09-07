@@ -29,6 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar1 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1");
+            Infragistics.Win.UltraWinToolbars.LabelTool labelTool1 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool8 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool10 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool11 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool9 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
+            Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
+            Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool4 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
+            Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool5 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
+            Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.LabelTool labelTool2 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool2 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
+            Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
+            Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("VIW_GetPeopleData1", -1);
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ChurchName");
@@ -150,27 +171,6 @@
             Infragistics.Win.ValueListItem valueListItem11 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.ValueListItem valueListItem12 = new Infragistics.Win.ValueListItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_PersonsData));
-            Infragistics.Win.UltraWinToolbars.UltraToolbar ultraToolbar1 = new Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1");
-            Infragistics.Win.UltraWinToolbars.LabelTool labelTool1 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool8 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool6 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool12 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool10 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool11 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool9 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool1 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_New");
-            Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool3 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Save");
-            Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool4 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Delete");
-            Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool5 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_Exit");
-            Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.LabelTool labelTool2 = new Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1");
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool2 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ExportToExcel");
-            Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinToolbars.ButtonTool buttonTool7 = new Infragistics.Win.UltraWinToolbars.ButtonTool("BTN_ImportFromExcel");
-            Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
             this.office2010BlackTheme1 = new Telerik.WinControls.Themes.Office2010BlackTheme();
             this.Timer_MSgCleaner = new System.Windows.Forms.Timer(this.components);
             this.radDropDownList5 = new Telerik.WinControls.UI.RadDropDownList();
@@ -178,6 +178,7 @@
             this.radDropDownList9 = new Telerik.WinControls.UI.RadDropDownList();
             this.radDropDownList12 = new Telerik.WinControls.UI.RadDropDownList();
             this._panel2_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
+            this.Toolbar_Options = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
             this._panel2_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._panel2_Toolbars_Dock_Area_Left = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
             this._panel2_Toolbars_Dock_Area_Right = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
@@ -257,11 +258,11 @@
             this.vIW_GetPeopleData1TableAdapter = new GoodShepherd.GoodShepherdDataSetTableAdapters.VIW_GetPeopleData1TableAdapter();
             this.tableAdapterManager = new GoodShepherd.GoodShepherdDataSetTableAdapters.TableAdapterManager();
             this.vIW_ChurchTableAdapter = new GoodShepherd.GoodShepherdDataSetTableAdapters.VIW_ChurchTableAdapter();
-            this.Toolbar_Options = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).BeginInit();
             this.FRM_PersonsData_Fill_Panel.ClientArea.SuspendLayout();
             this.FRM_PersonsData_Fill_Panel.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -339,7 +340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPT_PersType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Message)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -398,6 +398,69 @@
             this._panel2_Toolbars_Dock_Area_Top.Name = "_panel2_Toolbars_Dock_Area_Top";
             this._panel2_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(1102, 75);
             this._panel2_Toolbars_Dock_Area_Top.ToolbarsManager = this.Toolbar_Options;
+            // 
+            // Toolbar_Options
+            // 
+            this.Toolbar_Options.AlwaysShowMenusExpanded = Infragistics.Win.DefaultableBoolean.True;
+            this.Toolbar_Options.DesignerFlags = 1;
+            this.Toolbar_Options.DockWithinContainer = this;
+            this.Toolbar_Options.DockWithinContainerBaseType = typeof(Telerik.WinControls.UI.RadForm);
+            this.Toolbar_Options.ImageSizeLarge = new System.Drawing.Size(64, 64);
+            this.Toolbar_Options.ShowFullMenusDelay = 500;
+            ultraToolbar1.DockedColumn = 0;
+            ultraToolbar1.DockedRow = 0;
+            ultraToolbar1.FloatingSize = new System.Drawing.Size(261, 290);
+            ultraToolbar1.IsMainMenuBar = true;
+            labelTool1.InstanceProps.Width = 77;
+            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            labelTool1,
+            buttonTool8,
+            buttonTool6,
+            buttonTool12,
+            buttonTool10,
+            buttonTool11,
+            buttonTool9});
+            ultraToolbar1.Text = "UltraToolbar1";
+            this.Toolbar_Options.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
+            ultraToolbar1});
+            this.Toolbar_Options.ToolbarSettings.AllowFloating = Infragistics.Win.DefaultableBoolean.True;
+            this.Toolbar_Options.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
+            this.Toolbar_Options.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal;
+            this.Toolbar_Options.ToolbarSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.True;
+            appearance75.Image = global::GoodShepherd.Properties.Resources._1468181667_file_add;
+            buttonTool1.SharedPropsInternal.AppearancesSmall.Appearance = appearance75;
+            buttonTool1.SharedPropsInternal.Caption = "جديد";
+            buttonTool1.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
+            appearance76.Image = global::GoodShepherd.Properties.Resources._1468181872_document_save_as;
+            buttonTool3.SharedPropsInternal.AppearancesSmall.Appearance = appearance76;
+            buttonTool3.SharedPropsInternal.Caption = "حفظ";
+            buttonTool3.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
+            appearance77.Image = global::GoodShepherd.Properties.Resources._1468181797_Close_Box_Red;
+            buttonTool4.SharedPropsInternal.AppearancesSmall.Appearance = appearance77;
+            buttonTool4.SharedPropsInternal.Caption = "حذف";
+            buttonTool4.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            appearance78.Image = global::GoodShepherd.Properties.Resources._1468181962_shutdown;
+            buttonTool5.SharedPropsInternal.AppearancesSmall.Appearance = appearance78;
+            buttonTool5.SharedPropsInternal.Caption = "اغلاق";
+            buttonTool5.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltF4;
+            buttonTool5.SharedPropsInternal.Visible = false;
+            appearance79.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
+            buttonTool2.SharedPropsInternal.AppearancesSmall.Appearance = appearance79;
+            buttonTool2.SharedPropsInternal.Caption = "تصدير لملف اكسيل";
+            buttonTool2.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            appearance80.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
+            buttonTool7.SharedPropsInternal.AppearancesSmall.Appearance = appearance80;
+            buttonTool7.SharedPropsInternal.Caption = "استيراد بيانات من اكسيل";
+            buttonTool7.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
+            this.Toolbar_Options.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
+            buttonTool1,
+            buttonTool3,
+            buttonTool4,
+            buttonTool5,
+            labelTool2,
+            buttonTool2,
+            buttonTool7});
+            this.Toolbar_Options.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.Toolbar_Options_ToolClick);
             // 
             // _panel2_Toolbars_Dock_Area_Bottom
             // 
@@ -903,6 +966,7 @@
             this.TXT_WorkDesc.Name = "TXT_WorkDesc";
             this.TXT_WorkDesc.Size = new System.Drawing.Size(162, 25);
             this.TXT_WorkDesc.TabIndex = 2;
+            this.TXT_WorkDesc.TextChanged += new System.EventHandler(this.TXTs_TextChanged);
             // 
             // TXT_Status
             // 
@@ -2028,69 +2092,6 @@
             // 
             this.vIW_ChurchTableAdapter.ClearBeforeFill = true;
             // 
-            // Toolbar_Options
-            // 
-            this.Toolbar_Options.AlwaysShowMenusExpanded = Infragistics.Win.DefaultableBoolean.True;
-            this.Toolbar_Options.DesignerFlags = 1;
-            this.Toolbar_Options.DockWithinContainer = this;
-            this.Toolbar_Options.DockWithinContainerBaseType = typeof(Telerik.WinControls.UI.RadForm);
-            this.Toolbar_Options.ImageSizeLarge = new System.Drawing.Size(64, 64);
-            this.Toolbar_Options.ShowFullMenusDelay = 500;
-            ultraToolbar1.DockedColumn = 0;
-            ultraToolbar1.DockedRow = 0;
-            ultraToolbar1.FloatingSize = new System.Drawing.Size(261, 290);
-            ultraToolbar1.IsMainMenuBar = true;
-            labelTool1.InstanceProps.Width = 77;
-            ultraToolbar1.NonInheritedTools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            labelTool1,
-            buttonTool8,
-            buttonTool6,
-            buttonTool12,
-            buttonTool10,
-            buttonTool11,
-            buttonTool9});
-            ultraToolbar1.Text = "UltraToolbar1";
-            this.Toolbar_Options.Toolbars.AddRange(new Infragistics.Win.UltraWinToolbars.UltraToolbar[] {
-            ultraToolbar1});
-            this.Toolbar_Options.ToolbarSettings.AllowFloating = Infragistics.Win.DefaultableBoolean.True;
-            this.Toolbar_Options.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText;
-            this.Toolbar_Options.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal;
-            this.Toolbar_Options.ToolbarSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.True;
-            appearance75.Image = global::GoodShepherd.Properties.Resources._1468181667_file_add;
-            buttonTool1.SharedPropsInternal.AppearancesSmall.Appearance = appearance75;
-            buttonTool1.SharedPropsInternal.Caption = "جديد";
-            buttonTool1.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
-            appearance76.Image = global::GoodShepherd.Properties.Resources._1468181872_document_save_as;
-            buttonTool3.SharedPropsInternal.AppearancesSmall.Appearance = appearance76;
-            buttonTool3.SharedPropsInternal.Caption = "حفظ";
-            buttonTool3.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
-            appearance77.Image = global::GoodShepherd.Properties.Resources._1468181797_Close_Box_Red;
-            buttonTool4.SharedPropsInternal.AppearancesSmall.Appearance = appearance77;
-            buttonTool4.SharedPropsInternal.Caption = "حذف";
-            buttonTool4.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            appearance78.Image = global::GoodShepherd.Properties.Resources._1468181962_shutdown;
-            buttonTool5.SharedPropsInternal.AppearancesSmall.Appearance = appearance78;
-            buttonTool5.SharedPropsInternal.Caption = "اغلاق";
-            buttonTool5.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.AltF4;
-            buttonTool5.SharedPropsInternal.Visible = false;
-            appearance79.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
-            buttonTool2.SharedPropsInternal.AppearancesSmall.Appearance = appearance79;
-            buttonTool2.SharedPropsInternal.Caption = "تصدير لملف اكسيل";
-            buttonTool2.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            appearance80.Image = global::GoodShepherd.Properties.Resources.if_excel_272697;
-            buttonTool7.SharedPropsInternal.AppearancesSmall.Appearance = appearance80;
-            buttonTool7.SharedPropsInternal.Caption = "استيراد بيانات من اكسيل";
-            buttonTool7.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlD;
-            this.Toolbar_Options.Tools.AddRange(new Infragistics.Win.UltraWinToolbars.ToolBase[] {
-            buttonTool1,
-            buttonTool3,
-            buttonTool4,
-            buttonTool5,
-            labelTool2,
-            buttonTool2,
-            buttonTool7});
-            this.Toolbar_Options.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.Toolbar_Options_ToolClick);
-            // 
             // FRM_PersonsData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2118,6 +2119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).EndInit();
             this.FRM_PersonsData_Fill_Panel.ClientArea.ResumeLayout(false);
             this.FRM_PersonsData_Fill_Panel.ClientArea.PerformLayout();
             this.FRM_PersonsData_Fill_Panel.ResumeLayout(false);
@@ -2202,7 +2204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPT_PersType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Message)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodShepherdDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Toolbar_Options)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 

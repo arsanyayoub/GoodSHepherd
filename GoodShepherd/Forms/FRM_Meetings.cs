@@ -479,7 +479,8 @@ namespace GoodShepherd.Forms
             }
             private void CMX_Person_BeforeDropDown(object sender, CancelEventArgs e)
             {
-                this.vIW_MeetingsDataTableAdapter.FillByCityAndChurch(this.dS_Meetings.VIW_MeetingsData, BasicClass.vChurchID, BasicClass.vCityID);
+               // this.vIW_MeetingsDataTableAdapter.FillByCityAndChurch(this.dS_Meetings.VIW_MeetingsData, BasicClass.vChurchID, BasicClass.vCityID);
+                this.vIW_GetPeopleData1TableAdapter.FillByChurchID(this.goodShepherdDataSet.VIW_GetPeopleData1, BasicClass.vChurchID);
             }
             private void Toolbar_Options_ToolClick(object sender, Infragistics.Win.UltraWinToolbars.ToolClickEventArgs e)
             {
@@ -856,7 +857,7 @@ namespace GoodShepherd.Forms
                                     {
                                         vIsSaved = true;
                                         this.vIW_MeetingsDataTableAdapter.FillByCityAndChurch(this.dS_Meetings.VIW_MeetingsData,BasicClass.vChurchID , BasicClass.vCityID);
-                                        sNewRecord();
+                                        //sNewRecord();
                                         sResetFormMode();
                                     }
                                     else
@@ -894,7 +895,7 @@ namespace GoodShepherd.Forms
                         {
                             vIsSaved = true;
                             this.vIW_MeetingsDataTableAdapter.Fill(this.dS_Meetings.VIW_MeetingsData);
-                            sNewRecord();
+                            //sNewRecord();
                             sResetFormMode();
                         }
                         else
@@ -1682,6 +1683,8 @@ namespace GoodShepherd.Forms
         {
             e.Layout.Bands[0].ColumnFilters["Name"].FilterConditions.Add(FilterComparisionOperator.Equals, CMX_Person.Text.ToString());
         }
+
+        
 
        
 

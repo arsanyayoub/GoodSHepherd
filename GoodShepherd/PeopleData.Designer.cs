@@ -2803,7 +2803,7 @@ namespace GoodShepherd.GoodShepherdDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"/****** Script for SelectTopNRows command from SSMS  ******/
-SELECT        TOP (1000) ChurchName, Church_ID, ID_City, City, ID_Area, AreaDesc, ID_EducYear, EducYear, ID_Str, StreetDesc, ID_Pers, Name, Gender, Mobile, BirthDate, ID_Collage, Collage, ID_Depart, Department, BuildingNum, 
+SELECT         ChurchName, Church_ID, ID_City, City, ID_Area, AreaDesc, ID_EducYear, EducYear, ID_Str, StreetDesc, ID_Pers, Name, Gender, Mobile, BirthDate, ID_Collage, Collage, ID_Depart, Department, BuildingNum, 
                          FloorNum, Phone, PersonType, FrName_PersID, Service_ID, Service, PersType_ID, EducLevel_ID, EducLevel, Statuse, IsWorking, Expr1, AgeIntYears
 FROM            VIW_GetPeopleData";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
@@ -2820,7 +2820,7 @@ FROM            VIW_GetPeopleData";
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Area", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID_Area", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"SELECT TOP (1000) AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (Church_ID = @Church_ID)";
+            this._commandCollection[3].CommandText = @"SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (Church_ID = @Church_ID)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Church_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Church_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
@@ -2835,7 +2835,7 @@ FROM            VIW_GetPeopleData";
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Educ", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "EducLevel_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = @"SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (FrFrom_ChurchID= @Church)";
+            this._commandCollection[6].CommandText = @"SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (FrFrom_ChurchID = @Church)";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Church", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "FrFrom_ChurchID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
@@ -2845,7 +2845,7 @@ FROM            VIW_GetPeopleData";
             this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FrName", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "FrName_PersID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[8].Connection = this.Connection;
-            this._commandCollection[8].CommandText = @"SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (ISNULL(IsWorking,'N') = @Work) AND (ID_City = @City)";
+            this._commandCollection[8].CommandText = @"SELECT AgeIntYears, AreaDesc, BirthDate, BuildingNum, ChurchName, Church_ID, City, Collage, Department, EducLevel, EducLevel_ID, EducYear, Expr1, FloorNum, FrName_PersID, Gender, ID_Area, ID_City, ID_Collage, ID_Depart, ID_EducYear, ID_Pers, ID_Str, IsWorking, Mobile, Name, PersType_ID, PersonType, Phone, Service, Service_ID, Statuse, StreetDesc FROM VIW_GetPeopleData WHERE (ISNULL(IsWorking, N'N') = @Work) AND (ID_City = @City)";
             this._commandCollection[8].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Work", global::System.Data.SqlDbType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID_City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2918,7 +2918,7 @@ FROM            VIW_GetPeopleData";
         public virtual int FillByAge(GoodShepherdDataSet.VIW_GetPeopleData1DataTable dataTable, object Age, global::System.Nullable<long> Church) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((Age == null)) {
-                throw new global::System.ArgumentNullException("Age");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(Age));
@@ -2943,7 +2943,7 @@ FROM            VIW_GetPeopleData";
         public virtual GoodShepherdDataSet.VIW_GetPeopleData1DataTable GetDataByAge(object Age, global::System.Nullable<long> Church) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((Age == null)) {
-                throw new global::System.ArgumentNullException("Age");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(Age));
@@ -3074,7 +3074,7 @@ FROM            VIW_GetPeopleData";
         public virtual int FillByEduc(GoodShepherdDataSet.VIW_GetPeopleData1DataTable dataTable, object Educ) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((Educ == null)) {
-                throw new global::System.ArgumentNullException("Educ");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(Educ));
@@ -3093,7 +3093,7 @@ FROM            VIW_GetPeopleData";
         public virtual GoodShepherdDataSet.VIW_GetPeopleData1DataTable GetDataByEduc(object Educ) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((Educ == null)) {
-                throw new global::System.ArgumentNullException("Educ");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(Educ));
@@ -3268,13 +3268,13 @@ FROM            VIW_GetPeopleData";
         public virtual int FillByPartAge(GoodShepherdDataSet.VIW_GetPeopleData1DataTable dataTable, object From, object To, global::System.Nullable<long> Church) {
             this.Adapter.SelectCommand = this.CommandCollection[10];
             if ((From == null)) {
-                throw new global::System.ArgumentNullException("From");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(From));
             }
             if ((To == null)) {
-                throw new global::System.ArgumentNullException("To");
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((object)(To));
@@ -3299,13 +3299,13 @@ FROM            VIW_GetPeopleData";
         public virtual GoodShepherdDataSet.VIW_GetPeopleData1DataTable GetDataByPartAge(object From, object To, global::System.Nullable<long> Church) {
             this.Adapter.SelectCommand = this.CommandCollection[10];
             if ((From == null)) {
-                throw new global::System.ArgumentNullException("From");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(From));
             }
             if ((To == null)) {
-                throw new global::System.ArgumentNullException("To");
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((object)(To));
@@ -3416,7 +3416,7 @@ FROM            VIW_GetPeopleData";
         public virtual int FillByStatuse(GoodShepherdDataSet.VIW_GetPeopleData1DataTable dataTable, object Statuse) {
             this.Adapter.SelectCommand = this.CommandCollection[13];
             if ((Statuse == null)) {
-                throw new global::System.ArgumentNullException("Statuse");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(Statuse));
@@ -3435,7 +3435,7 @@ FROM            VIW_GetPeopleData";
         public virtual GoodShepherdDataSet.VIW_GetPeopleData1DataTable GetDataByStatuse(object Statuse) {
             this.Adapter.SelectCommand = this.CommandCollection[13];
             if ((Statuse == null)) {
-                throw new global::System.ArgumentNullException("Statuse");
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((object)(Statuse));

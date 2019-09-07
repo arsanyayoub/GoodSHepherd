@@ -657,7 +657,6 @@ namespace GoodShepherd.Forms
             private void FRM_PersonsData_Load(object sender, EventArgs e)                                                   
             {
                 this.vIW_ChurchTableAdapter.Fill(this.goodShepherdDataSet.VIW_Church);
-                this.vIW_ChurchTableAdapter.Fill(this.goodShepherdDataSet.VIW_Church);
             
                 //this.vIW_GetPeopleData1TableAdapter.GetDataByCityID(BasicClass.vCityID);
                 this.vIW_GetPeopleData1TableAdapter.FillByChurchID(this.goodShepherdDataSet.VIW_GetPeopleData1,BasicClass.vChurchID);
